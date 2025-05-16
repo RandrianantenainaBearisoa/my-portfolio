@@ -1,0 +1,22 @@
+{
+    "contacts": {
+        "gmail": {
+            "icon": "gmail",
+            "link": "rabearisoabex@gmail.com"
+        },
+        "whatsapp": {
+            "icon": "whatsapp",
+            "link": "+261 34 94 910 40"
+        }
+    },
+    "links": {
+        "github": {
+            "icon": "github",
+            "link": "https://github.com/RandrianantenainaBearisoa"
+        },
+        "linkedin": {
+            "icon": "linkedin-square",
+            "link": "https://www.linkedin.com/in/bearisoa-randrianantenaina-892a5a225"
+        }
+    }
+}

@@ -1,11 +1,17 @@
-import './assets/main.css'
 
 import { createApp } from 'vue'
+import Loader from '@/app/components/loader/loader.vue';
 import App from './App.vue'
 import router from './router'
+import '@/assets/scss/main.scss';
+
+import primevue from '@/app/plugins/primevue';
+import '@/app/plugins/boxicons';
 
 const app = createApp(App)
 
-app.use(router)
+primevue(app);
 
+app.use(router)
+app.component('Loader', Loader);
 app.mount('#app')

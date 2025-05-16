@@ -1,0 +1,82 @@
+.light {
+  // Nature Douce (light)
+  --background-color-01: #f5f5f2;
+  --text-color-01: #2f2f2f;
+  --primary-color-01: #8cbf99;
+  --secondary-color-01: #dad7cd;
+  --accent-color-01: #6b9080;
+  --danger-color-01: #d9534f;
+
+  // Coucher de Soleil (light)
+  --background-color-02: #fff9f3;
+  --text-color-02: #2b1d1a;
+  --primary-color-02: #ffad60;
+  --secondary-color-02: #ffd6a5;
+  --accent-color-02: #ff6363;
+  --danger-color-02: #c0392b;
+
+  // Brume Nordique (light)
+  --background-color-03: #e8ecef;
+  --text-color-03: #1e2b3c;
+  --primary-color-03: #a7c5eb;
+  --secondary-color-03: #c9d6df;
+  --accent-color-03: #557a95;
+  --danger-color-03: #e74c3c;
+
+  // Lavande & Lune (light)
+  --background-color-04: #faf8ff;
+  --text-color-04: #1c1b2f;
+  --primary-color-04: #bfa2db;
+  --secondary-color-04: #e3dff5;
+  --accent-color-04: #9f86c0;
+  --danger-color-04: #d62839;
+
+  background-image: url('@/assets/img/background-light.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+
+  &.schemes-01 {
+      background-color: var(--background-color-01);
+      color: var(--text-color-01);
+      --background-color: var(--background-color-01);
+      --text-color: var(--text-color-01);
+      --primary-color: var(--primary-color-01);
+      --secondary-color: var(--secondary-color-01);
+      --accent-color: var(--accent-color-01);
+      --danger-color: var(--danger-color-01);
+  }
+
+  &.schemes-02 {
+      background-color: var(--background-color-02);
+      color: var(--text-color-02);
+      --background-color: var(--background-color-02);
+      --text-color: var(--text-color-02);
+      --primary-color: var(--primary-color-02);
+      --secondary-color: var(--secondary-color-02);
+      --accent-color: var(--accent-color-02);
+      --danger-color: var(--danger-color-02);
+  }
+
+  &.schemes-03 {
+      background-color: var(--background-color-03);
+      color: var(--text-color-03);
+      --background-color: var(--background-color-03);
+      --text-color: var(--text-color-03);
+      --primary-color: var(--primary-color-03);
+      --secondary-color: var(--secondary-color-03);
+      --accent-color: var(--accent-color-03);
+      --danger-color: var(--danger-color-03);
+  }
+
+  &.schemes-04 {
+      background-color: var(--background-color-04);
+      color: var(--text-color-04);
+      --background-color: var(--background-color-04);
+      --text-color: var(--text-color-04);
+      --primary-color: var(--primary-color-04);
+      --secondary-color: var(--secondary-color-04);
+      --accent-color: var(--accent-color-04);
+      --danger-color: var(--danger-color-04);
+  }
+}
