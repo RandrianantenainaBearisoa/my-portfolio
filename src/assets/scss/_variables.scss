@@ -82,6 +82,19 @@
     color: var(--text-color);
   }
 
+  .small-font {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+
+    &-italic {
+      font-family: 'Lato', sans-serif;
+      font-weight: 400;
+      font-style: italic;
+      font-size: 12px;
+    }
+  }
+
   .regular-font {
     font-family: 'Lato', sans-serif;
     font-weight: 400;

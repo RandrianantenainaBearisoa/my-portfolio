@@ -9,7 +9,7 @@ import Contact from "@/app/components/contact/contact.vue"
       <Intro />
     </div>
     <div class="menu-container">
-      <router-link to="#">
+      <router-link to="/about-me">
         <div class="menu">
           <h1 class="regular-font-italic">About me</h1>
         </div>

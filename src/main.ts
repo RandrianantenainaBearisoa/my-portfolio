@@ -6,7 +6,9 @@ import router from './router'
 import '@/assets/scss/main.scss';
 
 import primevue from '@/app/plugins/primevue';
-import '@/app/plugins/boxicons';
+// import '@/app/plugins/boxicons';
+import 'boxicons/css/boxicons.min.css'
+
 
 const app = createApp(App)
 
