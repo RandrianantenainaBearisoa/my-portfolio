@@ -1,36 +1,37 @@
 <script setup lang="ts">
 import data from '@/app/components/contact/data/contacts.json';
+import GitHubIcon from '@/app/components/icons/github-icon.vue';
+import LinkedinIcon from '@/app/components/icons/linkedin-icon.vue';
+import GmailIcon from '@/app/components/icons/gmail-icon.vue';
+import WhatsappIcon from '@/app/components/icons/whatsapp-icon.vue';
 </script>
 
 <template>
+  
   <div class="contact-page">
-    <div class="contact-list">
-      <template v-for="(contact, index) in contacts" :key="index">
-        <div class="contact-container small-font">
-          <div class="box-icon">
-            <!-- <box-icon :name='contact.icon' type='logo' color="var(--background-color)"></box-icon> -->
-          </div>
-          <p>
-            {{ contact.link }}
-          </p>
-        </div>
-      </template>
+    <div class="contacts-container">
+      <ButtonLink buttonType="copy" :toCopy="contacts.gmail.link" :iconMode="3">
+        <GmailIcon />
+        <span class="contact-label bold-font">
+          {{ contacts.gmail.link }}
+        </span>
+      </ButtonLink>
+      <ButtonLink buttonType="copy" :toCopy="contacts.whatsapp.link" :iconMode="3">
+        <WhatsappIcon />
+        <span class="contact-label bold-font">
+          {{ contacts.whatsapp.link }}
+        </span>
+      </ButtonLink>
     </div>
-
-    <div class="link-list">
-      <template v-for="(link, index) in links" :key="index">
-        <a :href="link.link" target="_blank">
-          <div class="link-container">
-            <div class="box-icon">
-              <!-- <box-icon :name='link.icon' type='logo' color="var(--background-color)"></box-icon> -->
-              <i class=`bx ${link.icon}`></i>
-            </div>
-          </div>
-        </a>
-      </template>
+    <div class="links-container">
+      <ButtonLink buttonType="external" :to="links.github.link" :iconMode="2">
+        <GitHubIcon />
+      </ButtonLink>
+      <ButtonLink buttonType="external" :to="links.linkedin.link" :iconMode="2">
+        <LinkedinIcon />
+      </ButtonLink>
     </div>
   </div>
-
 </template>
 
 <script lang="ts">
@@ -61,64 +62,35 @@ export default {
 <style scoped lang="scss">
 .contact-page {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
 
-.contact-list {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: start;
-  gap: 10px;
-
-  .contact-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: solid 1px var(--text-color);
+  .contact-label {
+    font-size: 12px;
+    padding: 5px;
+    color: var(--button-color-01);
+    background-color: var(--button-color-02);
     border-radius: 5px;
-
-    .box-icon {
-      border-right: solid 1px var(--text-color);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 1px;
-      background-color: var(--text-color);
-    }
-
-    p {
-      padding: 1px;
-      margin: 1px;
-    }
   }
 
-}
-
-.link-list {
-  display: flex;
-  justify-content: center;
-  align-items: start;
-  gap: 10px;
-
-  .link-container {
+  .links-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: solid 1px var(--text-color);
-    border-radius: 5px;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+  }
 
-    .box-icon {
-      border-right: solid 1px var(--text-color);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 1px;
-      background-color: var(--text-color);
-    }
+  .contacts-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    gap: 5px;
   }
 
 }

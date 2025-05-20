@@ -4,35 +4,44 @@ import Contact from "@/app/components/contact/contact.vue"
 </script>
 
 <template>
-  <div class="content-container">
-    <div class="introduction-container">
-      <Intro />
+  <div>
+    <Intro />
+  </div>
+  <div class="links-container">
+    <div class="link">
+      <ButtonLink to="#" text="About me" />
     </div>
-    <div class="menu-container">
-      <router-link to="/about-me">
-        <div class="menu">
-          <h1 class="regular-font-italic">About me</h1>
-        </div>
-      </router-link>
-      <router-link to="#">
-        <div class="menu">
-          <h1 class="regular-font-italic">My skills</h1>
-        </div>
-      </router-link>
-      <router-link to="#">
-        <div class="menu">
-          <h1 class="regular-font-italic">My projects</h1>
-        </div>
-      </router-link>
+    <div class="link">
+      <ButtonLink to="#" text="My Skills" />
+    </div>
+    <div class="link">
+      <ButtonLink to="#" text="My projects" />
     </div>
   </div>
-  <div class="contact-container">
+  <div class="contact-container bold-font">
+    Let's get in touch and work together
     <Contact />
   </div>
 </template>
 
 <style scoped lang="scss">
-.content-container {
+.links-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+
+  .link {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.contact-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -40,41 +49,6 @@ import Contact from "@/app/components/contact/contact.vue"
   width: 100%;
   height: 100%;
   padding: 10px;
-  backdrop-filter: var(--backdrop-filter);
-
-  .introduction-container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .menu-container {
-    width: 80%;
-    display: flex;
-    justify-content: space-around;
-
-    .menu {
-      padding: 0px 20px;
-      border: 1px solid var(--text-color);
-      border-radius: 10px;
-      cursor: pointer;
-
-      &:hover {
-        background: var(--text-color);
-        color: var(--background-color);
-        transition: all 0.3s ease;
-      }
-    }
-  }
-}
-
-.contact-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  backdrop-filter: var(--backdrop-filter);
+  margin: 20px;
 }
 </style>
