@@ -12,7 +12,7 @@
     </router-link>
   </template>
   <template v-else-if="buttonType === 'external'">
-    <a :href="to">
+    <a :href="to" target="_blank" rel="noopener noreferrer">
       <div :class="`button-01 ${IconMode}`" role="button">
         <span class="text">
           <slot>
