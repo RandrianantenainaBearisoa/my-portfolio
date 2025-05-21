@@ -22,7 +22,7 @@
     </a>
   </template>
   <template v-else-if="buttonType === 'copy'">
-    <div @click="copyToClipboard">
+    <div @click="onCopyToClipboard(toCopy)">
       <div :class="`button-01 ${IconMode}`" role="button">
         <span class="text">
           <slot>
@@ -34,7 +34,7 @@
   </template>
 </template>
 <script lang="ts">
-import { useToast } from 'primevue/usetoast';
+import Helper from "@/app/helpers/helpers";
 
 export default {
   name: "ButtonLink",
@@ -63,15 +63,9 @@ export default {
   },
 
   setup() {
-    const toast = useToast();
+    const helper = new Helper();
     return {
-      toast,
-    };
-  },
-
-  data() {
-    return {
-      //
+      helper,
     };
   },
 
@@ -87,33 +81,10 @@ export default {
     },
   },
 
-  watch: {
-    //
-  },
-
-  mounted() {
-    //
-  },
-
   methods: {
-    copyToClipboard() {
-      const textToCopy = this.toCopy;
-      navigator.clipboard.writeText(textToCopy).then(() => {
-        this.toast.add({
-          severity: "success",
-          summary: "Copied to clipboard",
-          detail: textToCopy,
-          life: 3000,
-        });
-      }).catch((error) => {
-        this.toast.add({
-          severity: "error",
-          summary: "Error copying text:",
-          detail: error,
-          life: 3000,
-        });
-      });
-    },
+    onCopyToClipboard(text: string) {
+      this.helper.copyToClipboard(text);
+    }
   },
 };
 </script>
