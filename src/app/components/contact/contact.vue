@@ -73,6 +73,7 @@ export default {
     color: var(--button-color-01);
     background-color: var(--button-color-02);
     border-radius: 5px;
+    padding: 2px 5px;
   }
 
   .links-container {

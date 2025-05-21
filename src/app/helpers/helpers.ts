@@ -14,7 +14,7 @@ export default class Helper {
     if (!navigator.clipboard) {
       this.toastError(
         'Clipboard API not supported',
-        'Your browser does not support the Clipboard API.',
+        'Your browser does not support the Clipboard API.'
       )
       return
     } else {
@@ -27,7 +27,7 @@ export default class Helper {
         .catch((error) => {
           this.toastError(
             'Failed to copy',
-            'An error occurred while copying to clipboard: ' + error,
+            'An error occurred while copying to clipboard: ' + error
           )
         })
     }
