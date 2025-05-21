@@ -51,4 +51,26 @@ import Contact from "@/app/components/contact/contact.vue"
   padding: 10px;
   margin: 20px 0px;
 }
+
+@media screen and (max-width: 600px) {
+  .links-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    .link {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+}
+
 </style>

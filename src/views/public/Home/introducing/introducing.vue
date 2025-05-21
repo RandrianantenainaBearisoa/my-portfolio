@@ -10,8 +10,8 @@ import _profile from '@/assets/img/profilepic/picpro.jpg';
       </div>
       <div class="intro-container">
         <h2 class="regular-font">
-          HELLO, <br>
-          I'm RANDRIANANTENAINA Bearisoa
+          HELLO,
+          I'm <strong>RANDRIANANTENAINA Bearisoa</strong>
         </h2>
         <h3>
           A Full Stack Web Developer
@@ -76,5 +76,52 @@ import _profile from '@/assets/img/profilepic/picpro.jpg';
       font-size: 1.2em;
     }
   }
+}
+
+
+@media screen and (max-width: 600px) {
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .title {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .pic-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        img {
+          height: 150px;
+          padding: 5px;
+          border-radius: calc(infinity * 1px);
+        }
+      }
+
+      .intro-container {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+      }
+    }
+
+    .description {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0px 10px;
+
+      h3 {
+        text-align: center;
+        font-size: 1.2em;
+      }
+    }
+  }
+
 }
 </style>

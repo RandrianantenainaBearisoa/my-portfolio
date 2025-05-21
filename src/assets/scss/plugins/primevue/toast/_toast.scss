@@ -5,4 +5,8 @@
   --p-toast-warn-background: var(--warning-color) !important;
   --p-toast-contrast-background: var(--contrast-color) !important;
   --p-toast-secondary-background: var(--secondary-color) !important;
+
+  @media screen and (max-width: 600px) {
+    --p-toast-width: 90% !important;
+  }
 }
