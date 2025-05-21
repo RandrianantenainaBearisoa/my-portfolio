@@ -7,7 +7,6 @@ import WhatsappIcon from '@/app/components/icons/whatsapp-icon.vue';
 </script>
 
 <template>
-  
   <div class="contact-page">
     <div class="contacts-container">
       <ButtonLink buttonType="copy" :toCopy="contacts.gmail.link" :iconMode="3">
@@ -64,10 +63,13 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin: 20px 0px;
+  gap: 20px;
 
   .contact-label {
     font-size: 12px;
-    padding: 5px;
     color: var(--button-color-01);
     background-color: var(--button-color-02);
     border-radius: 5px;
@@ -80,7 +82,6 @@ export default {
     gap: 20px;
     width: 100%;
     height: 100%;
-    padding: 10px;
   }
 
   .contacts-container {
@@ -89,7 +90,6 @@ export default {
     align-items: center;
     width: 100%;
     height: 100%;
-    padding: 10px;
     gap: 5px;
   }
 

@@ -49,6 +49,6 @@ import Contact from "@/app/components/contact/contact.vue"
   width: 100%;
   height: 100%;
   padding: 10px;
-  margin: 20px;
+  margin: 20px 0px;
 }
 </style>
