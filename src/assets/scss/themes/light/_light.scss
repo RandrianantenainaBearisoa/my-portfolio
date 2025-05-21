@@ -10,9 +10,18 @@
   --gradient-button-01: #36bfb1;
   --gradient-button-02: #81adf3;
   --gradient-button-03: #c2fcf3a4;
+
   // Button color
   --button-color-01: #130225;
   --button-color-02: #ffffff;
+
+  // severty color
+  --success-color: #36bfb1;
+  --info-color: #94bbe9;
+  --warning-color: #f9c74f;
+  --danger-color: #f3722c;
+  --secondary-color: #4e4e4ea2;
+  --contrast-color: #161212bd;
 
   background: var(--primary-color);
   background: radial-gradient(

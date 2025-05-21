@@ -24,8 +24,7 @@ export default {
   left: 0;
   position: fixed;
   z-index: 99999;
-  backdrop-filter: var(--
-  -filter);
+  backdrop-filter: var(--backdrop-filter);
   background: #0000003d;
 
   div {

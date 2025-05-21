@@ -1,4 +1,3 @@
-
 <template>
   <template v-if="buttonType === 'internal'">
     <router-link :to="to">
@@ -72,7 +71,7 @@ export default {
 
   data() {
     return {
-      // 
+      //
     };
   },
 
@@ -89,11 +88,11 @@ export default {
   },
 
   watch: {
-    // 
+    //
   },
 
   mounted() {
-    // 
+    //
   },
 
   methods: {
@@ -107,7 +106,12 @@ export default {
           life: 3000,
         });
       }).catch((error) => {
-        console.error("Error copying text: ", error);
+        this.toast.add({
+          severity: "error",
+          summary: "Error copying text:",
+          detail: error,
+          life: 3000,
+        });
       });
     },
   },
@@ -121,7 +125,6 @@ a {
   align-items: center;
 }
 
-/* CSS */
 .button-01 {
   align-items: center;
   background-image: linear-gradient(144deg, var(--gradient-button-01), var(--gradient-button-02) 50%, var(--gradient-button-03));
