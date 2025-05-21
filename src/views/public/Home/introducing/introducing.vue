@@ -122,6 +122,29 @@ import _profile from '@/assets/img/profilepic/picpro.jpg';
       }
     }
   }
+}
 
+@media screen and (max-width: 900px) {
+  .header-container {
+    .title {
+      display: flex;
+      .pic-container {
+        width: 30%;
+        display: flex;
+        justify-content: center;
+
+        img {
+          height: 150px;
+          padding: 5px;
+          border-radius: calc(infinity * 1px);
+        }
+      }
+      .intro-container {
+        width: 70%;
+        padding: 10px;
+        text-align: center;
+      }
+    }
+  }
 }
 </style>
