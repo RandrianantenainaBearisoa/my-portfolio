@@ -11,7 +11,7 @@ import Contact from "@/app/components/contact/contact.vue"
       </div>
       <div class="links-container">
         <div class="link">
-          <ButtonLink to="#" text="About me" />
+          <ButtonLink to="/about-me" text="About me" />
         </div>
         <div class="link">
           <ButtonLink to="#" text="My Skills" />

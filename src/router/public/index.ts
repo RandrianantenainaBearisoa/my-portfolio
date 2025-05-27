@@ -11,5 +11,15 @@ const publicRoutes: any[] = [
     name: 'about',
     component: Public.About,
   },
+  {
+    path: '/skills',
+    name: 'skills',
+    component: Public.Skills,
+  },
+  {
+    path: '/projects',
+    name: 'projects',
+    component: Public.Projects,
+  },
 ]
 export default publicRoutes;

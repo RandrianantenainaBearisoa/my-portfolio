@@ -4,6 +4,7 @@ import Loader from '@/app/components/loader/loader.vue';
 import ButtonLink from '@/app/components/buttons/button-link.vue';
 import App from './App.vue';
 import router from './router';
+import layout from './layouts';
 import '@/assets/scss/main.scss';
 
 import primevue from '@/app/plugins/primevue';
@@ -11,7 +12,7 @@ import primevue from '@/app/plugins/primevue';
 const app = createApp(App)
 
 primevue(app);
-
+layout(app);
 app.use(router)
 app.component('Loader', Loader);
 app.component('ButtonLink', ButtonLink);
