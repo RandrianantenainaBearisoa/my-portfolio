@@ -29,5 +29,5 @@ coverage
 
 *.tsbuildinfo
 
-# Dependency lock
-package-lock.json
+test-results/
+playwright-report/
