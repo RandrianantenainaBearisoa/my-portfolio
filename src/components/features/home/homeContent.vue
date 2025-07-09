@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import _profilePic from "@/assets/images/profile/small-removebg.png";
+import _profilePic from "@/assets/images/profile/small-nobg.png";
 import { lightButton } from "@/components/ui/buttons";
 import { downloadIcon, linkedinIcon, eMailIcon, whatsappIcon, githubIcon } from "@/components/ui/icons";
 </script>

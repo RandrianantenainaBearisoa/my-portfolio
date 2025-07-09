@@ -1,6 +1,7 @@
 <script lang="ts" setup>;
 import { homeIcon, userIcon, appIcon, experienceIcon, brainIcon, contactsIcon } from "@/components/ui/icons";
 import { homeContent } from '@/components/features/home';
+import { personalInfo, personalJourney } from "@/components/features/about-me";
 import '@/assets/styles/views/homePage.scss';
 </script>
 
@@ -61,19 +62,21 @@ import '@/assets/styles/views/homePage.scss';
     <div class="home section" id="home-section">
       <home-content />
     </div>
-    <div class="section" id="about-section">
+    <div class="section hidden" id="about-section">
       <div class="section-part-left">
+        <personal-info />
       </div>
       <div class="section-part-right">
+        <personal-journey />
       </div>
     </div>
-    <div class="section" id="projects-section">
+    <div class="section hidden" id="projects-section">
       <div class="section-part-right">
       </div>
       <div class="section-part-left">
       </div>
     </div>
-    <div class="section" id="experiences-section">
+    <div class="section hidden" id="experiences-section">
       <div class="section-part-left-1">
       </div>
       <div class="section-part-left-2">
@@ -81,13 +84,13 @@ import '@/assets/styles/views/homePage.scss';
       <div class="section-part-left-3">
       </div>
     </div>
-    <div class="section" id="skills-section">
+    <div class="section hidden" id="skills-section">
       <div class="section-part-top">
       </div>
       <div class="section-part-bottom">
       </div>
     </div>
-    <div class="section" id="contacts-section">
+    <div class="section hidden" id="contacts-section">
       <div class="section-part-bottom">
       </div>
       <div class="section-part-top">

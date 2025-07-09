@@ -146,9 +146,7 @@
 
     .section-part-left {
       position: relative;
-      border: solid red 10px;
-      width: 200px;
-      height: 200px;
+      width: 50%;
       animation: fromTheLeft 1s;
 
       &-1 {
@@ -179,8 +177,7 @@
     .section-part-right {
       position: relative;
       border: solid red 10px;
-      width: 200px;
-      height: 200px;
+      width: 50%;
       animation: fromTheRight 1s;
     }
 
