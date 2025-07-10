@@ -92,108 +92,106 @@
     flex-direction: column;
   }
 
+  @keyframes fromTheLeft {
+    from {
+      left: -150px;
+      opacity: 0;
+    }
+
+    to {
+      left: 0px;
+      opacity: 1;
+    }
+  }
+
+  @keyframes fromTheRight {
+    from {
+      right: -150px;
+      opacity: 0;
+    }
+
+    to {
+      right: 0px;
+      opacity: 1;
+    }
+  }
+
+  @keyframes fromTheTop {
+    from {
+      top: -150px;
+      opacity: 0;
+    }
+
+    to {
+      top: 0px;
+      opacity: 1;
+    }
+  }
+
+  @keyframes fromTheBottom {
+    from {
+      bottom: -150px;
+      opacity: 0;
+    }
+
+    to {
+      bottom: 0px;
+      opacity: 1;
+    }
+  }
+
+  .section-part-left,
+  .section-part-left-1,
+  .section-part-left-2,
+  .section-part-left-3,
+  .section-part-right,
+  .section-part-bottom,
+  .section-part-top {
+    position: relative;
+    // border: solid red 10px;
+    width: 400px;
+    height: 400px;
+    display: flex;
+
+    &.large {
+      width: 600px;
+      height: 600px;
+    }
+
+    @media (max-width: 600px) {
+      width: 100% !important;
+    }
+  }
+
   &.shown {
     opacity: 1;
     transition: 1s;
 
-    @keyframes fromTheLeft {
-      from {
-        left: -150px;
-        opacity: 0;
-      }
-
-      to {
-        left: 0px;
-        opacity: 1;
-      }
-    }
-
-    @keyframes fromTheRight {
-      from {
-        right: -150px;
-        opacity: 0;
-      }
-
-      to {
-        right: 0px;
-        opacity: 1;
-      }
-    }
-
-    @keyframes fromTheTop {
-      from {
-        top: -150px;
-        opacity: 0;
-      }
-
-      to {
-        top: 0px;
-        opacity: 1;
-      }
-    }
-
-    @keyframes fromTheBottom {
-      from {
-        bottom: -150px;
-        opacity: 0;
-      }
-
-      to {
-        bottom: 0px;
-        opacity: 1;
-      }
-    }
-
     .section-part-left {
-      position: relative;
-      width: 50%;
       animation: fromTheLeft 1s;
 
       &-1 {
-        position: relative;
-        border: solid red 10px;
-        width: 200px;
-        height: 200px;
         animation: fromTheLeft 1s;
       }
 
       &-2 {
-        position: relative;
-        border: solid red 10px;
-        width: 200px;
-        height: 200px;
         animation: fromTheLeft 1500ms;
       }
 
       &-3 {
-        position: relative;
-        border: solid red 10px;
-        width: 200px;
-        height: 200px;
         animation: fromTheLeft 2000ms;
       }
     }
 
     .section-part-right {
-      position: relative;
-      border: solid red 10px;
-      width: 50%;
       animation: fromTheRight 1s;
     }
 
     .section-part-top {
-      position: relative;
-      border: solid red 10px;
-      width: 200px;
-      height: 200px;
       animation: fromTheTop 1s;
     }
 
     .section-part-bottom {
-      position: relative;
-      border: solid red 10px;
-      width: 200px;
-      height: 200px;
       animation: fromTheBottom 1s;
     }
   }

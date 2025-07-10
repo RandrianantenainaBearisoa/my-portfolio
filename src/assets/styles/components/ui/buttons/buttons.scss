@@ -27,6 +27,11 @@ a {
     transition: 0.5s;
   }
 
+  &.reverted {
+    background-color: #383838;
+    // box-shadow: 0px 0px 15px 5px #383838;
+  }
+
   &.whatsapp {
     &:hover {
       background-color: #128c7e;

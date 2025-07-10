@@ -1,4 +1,4 @@
-import GraduatedIcon from './graduatedIcon.vue';
+import graduatedIcon from './graduatedIcon.vue';
 import eMailIcon from './eMailIcon.vue';
 import whatsappIcon from './whatsappIcon.vue';
 import downloadIcon from './downloadIcon.vue';
@@ -10,9 +10,11 @@ import appIcon from './appIcon.vue';
 import experienceIcon from './experienceIcon.vue';
 import brainIcon from './brainIcon.vue';
 import contactsIcon from './contactsIcon.vue';
+import siteIcon from './siteIcon.vue';
+import placeIcon from './placeIcon.vue';
 
 export {
-  GraduatedIcon,
+  graduatedIcon,
   eMailIcon,
   whatsappIcon,
   downloadIcon,
@@ -23,5 +25,7 @@ export {
   appIcon,
   experienceIcon,
   brainIcon,
-  contactsIcon
+  contactsIcon,
+  siteIcon,
+  placeIcon,
 };

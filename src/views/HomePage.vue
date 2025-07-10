@@ -66,7 +66,7 @@ import '@/assets/styles/views/homePage.scss';
       <div class="section-part-left">
         <personal-info />
       </div>
-      <div class="section-part-right">
+      <div class="section-part-right large">
         <personal-journey />
       </div>
     </div>

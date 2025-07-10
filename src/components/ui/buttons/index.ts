@@ -1,5 +1,7 @@
-import lightButton from "@/components/ui/buttons/enlightenedButton.vue";
+import lightButton from "./enlightenedButton.vue";
+import typeTwoButton from "./typeTwoButton.vue";
 
 export {
   lightButton,
+  typeTwoButton,
 };

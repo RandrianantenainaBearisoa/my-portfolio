@@ -54,7 +54,9 @@ import { downloadIcon, linkedinIcon, eMailIcon, whatsappIcon, githubIcon } from 
     </div>
   </div>
   <div class="pic">
-    <img :src="_profilePic" alt="profile picture" />
+    <div class="picture-container">
+      <img :src="_profilePic" alt="profile picture" />
+    </div>
   </div>
 </template>
 
@@ -135,6 +137,38 @@ export default {
     justify-content: center;
     align-items: center;
     width: 120px;
+  }
+}
+
+.picture-container {
+  border: solid 2px gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 160px;
+  overflow: hidden;
+  width: 300px;
+  height: 300px;
+  animation: pulse 1s infinite;
+  animation-direction: alternate;
+
+  @keyframes pulse {
+    from {
+      background-color: none;
+      box-shadow: 0 0 0 0px #ffffff2d;
+      // box-shadow: 0 0 0 0px #00000033;
+    }
+
+    to {
+      background-color: #ffffff2d;
+      box-shadow: 0 0 0 5px #ffffff2d;
+      // box-shadow: 0 0 0 20px #00000000;
+    }
+  }
+
+  img {
+    width: 100% !important;
+    transform: scale(1.1);
   }
 }
 </style>

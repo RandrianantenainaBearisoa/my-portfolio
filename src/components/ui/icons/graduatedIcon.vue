@@ -25,7 +25,7 @@ export default {
     },
     fill: {
       type: String,
-      default: "#231f23",
+      default: "currentColor",
     },
     stroke: {
       type: String,

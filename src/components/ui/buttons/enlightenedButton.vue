@@ -24,11 +24,6 @@ export default {
       default: false,
     }
   },
-  computed: {
-    isOnNewTab() {
-      return this.newTab ? '_blank' : null;
-    },
-  },
 };
 </script>
 
