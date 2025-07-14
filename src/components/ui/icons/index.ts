@@ -1,17 +1,17 @@
-import graduatedIcon from './graduatedIcon.vue';
-import eMailIcon from './eMailIcon.vue';
-import whatsappIcon from './whatsappIcon.vue';
-import downloadIcon from './downloadIcon.vue';
-import linkedinIcon from './linkedinIcon.vue';
-import githubIcon from './githubIcon.vue';
-import homeIcon from './homeIcon.vue';
-import userIcon from './userIcon.vue';
-import appIcon from './appIcon.vue';
-import experienceIcon from './experienceIcon.vue';
-import brainIcon from './brainIcon.vue';
-import contactsIcon from './contactsIcon.vue';
-import siteIcon from './siteIcon.vue';
-import placeIcon from './placeIcon.vue';
+import graduatedIcon from './compos/graduatedIcon.vue';
+import eMailIcon from './compos/eMailIcon.vue';
+import whatsappIcon from './compos/whatsappIcon.vue';
+import downloadIcon from './compos/downloadIcon.vue';
+import linkedinIcon from './compos/linkedinIcon.vue';
+import githubIcon from './compos/githubIcon.vue';
+import homeIcon from './compos/homeIcon.vue';
+import userIcon from './compos/userIcon.vue';
+import appIcon from './compos/appIcon.vue';
+import experienceIcon from './compos/experienceIcon.vue';
+import brainIcon from './compos/brainIcon.vue';
+import contactsIcon from './compos/contactsIcon.vue';
+import siteIcon from './compos/siteIcon.vue';
+import placeIcon from './compos/placeIcon.vue';
 
 export {
   graduatedIcon,
