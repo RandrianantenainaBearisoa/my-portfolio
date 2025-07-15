@@ -54,7 +54,7 @@ export default {
   background-color: #e0e8ef;
   border-style: solid;
   border-width: 2px 2px 2px 2px;
-  border-color: rgba(255, 255, 255, 0.333);
+  border-color: #ffffff55;
   border-radius: 10px;
   padding: 16px 10px;
 

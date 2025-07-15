@@ -16,7 +16,7 @@ import { downloadIcon, linkedinIcon, eMailIcon, whatsappIcon, githubIcon } from 
     </p>
     <div class="home-contact">
       <div class="direct-contact">
-        <light-button usedClass="whatsapp" url="whatsapp://send?abid=+261349491040">
+        <light-button usedClass="whatsapp" url="https://wa.me/+261349491040">
           <whatsapp-icon />
           <span>
             +261 34 94 910 40
@@ -156,13 +156,11 @@ export default {
     from {
       background-color: none;
       box-shadow: 0 0 0 0px #ffffff2d;
-      // box-shadow: 0 0 0 0px #00000033;
     }
 
     to {
       background-color: #ffffff2d;
       box-shadow: 0 0 0 5px #ffffff2d;
-      // box-shadow: 0 0 0 20px #00000000;
     }
   }
 

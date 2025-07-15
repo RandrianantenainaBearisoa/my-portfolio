@@ -2,6 +2,7 @@
 import { homeIcon, userIcon, appIcon, experienceIcon, brainIcon, contactsIcon } from "@/components/ui/icons";
 import { homeContent } from '@/components/features/home';
 import { personalInfo, personalJourney } from "@/components/features/about-me";
+import { projectList } from "@/components/features/projects";
 import '@/assets/styles/views/homePage.scss';
 </script>
 
@@ -71,10 +72,12 @@ import '@/assets/styles/views/homePage.scss';
       </div>
     </div>
     <div class="section hidden" id="projects-section">
-      <div class="section-part-right">
+      <div class="section-part-right large">
+        <project-list listLabel="web" />
       </div>
-      <div class="section-part-left">
-      </div>
+      <!-- <div class="section-part-left large">
+        <project-list listLabel="data_science" />
+      </div> -->
     </div>
     <div class="section hidden" id="experiences-section">
       <div class="section-part-left-1">

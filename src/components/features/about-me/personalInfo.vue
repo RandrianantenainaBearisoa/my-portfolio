@@ -1,7 +1,7 @@
 <template>
   <div class="gradiented">
     <div class="info-card">
-      <div class="part-one">
+      <div>
         <dl>
           <dt>
             Full name :
@@ -27,43 +27,45 @@
           </dd>
         </dl>
       </div>
-      <table class="part-two">
-        <thead>
-          <th>
-            Hobbies :
-          </th>
-          <th>
-            Interests :
-          </th>
-        </thead>
-        <tr>
-          <td>
-            <ul>
-              <li>
-                Playing guitare
-              </li>
-              <li>
-                Reading
-              </li>
-            </ul>
-          </td>
-          <td>
-            <ul>
-              <li>
-                AI
-              </li>
-              <li>
-                GIS
-              </li>
-              <li>
-                Data Science
-              </li>
-              <li>
-                Music
-              </li>
-            </ul>
-          </td>
-        </tr>
+      <table>
+        <tbody>
+          <tr>
+            <th>
+              Hobbies :
+            </th>
+            <th>
+              Interests :
+            </th>
+          </tr>
+          <tr>
+            <td>
+              <ul>
+                <li>
+                  Playing guitare
+                </li>
+                <li>
+                  Reading
+                </li>
+              </ul>
+            </td>
+            <td>
+              <ul>
+                <li>
+                  AI
+                </li>
+                <li>
+                  GIS
+                </li>
+                <li>
+                  Data Science
+                </li>
+                <li>
+                  Music
+                </li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
       </table>
     </div>
   </div>

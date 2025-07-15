@@ -12,6 +12,13 @@ import brainIcon from './compos/brainIcon.vue';
 import contactsIcon from './compos/contactsIcon.vue';
 import siteIcon from './compos/siteIcon.vue';
 import placeIcon from './compos/placeIcon.vue';
+import bootstrapIcon from './compos/bootstrapIcon.vue';
+import laravelIcon from './compos/laravelIcon.vue';
+import livewireIcon from './compos/livewireIcon.vue';
+import mysqlIcon from './compos/mysqlIcon.vue';
+import simcyIcon from './compos/simcyIcon.vue';
+import tailwindIcon from './compos/tailwindIcon.vue';
+import vuejsIcon from './compos/vuejsIcon.vue';
 
 export {
   graduatedIcon,
@@ -28,4 +35,11 @@ export {
   contactsIcon,
   siteIcon,
   placeIcon,
+  bootstrapIcon,
+  laravelIcon,
+  livewireIcon,
+  mysqlIcon,
+  simcyIcon,
+  tailwindIcon,
+  vuejsIcon
 };

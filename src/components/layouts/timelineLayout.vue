@@ -52,7 +52,7 @@ export default {
 <style lang="scss" scoped>
 .timeline-structure {
   width: 100%;
-  height: 100%;
+  height: 600px;
   overflow: auto;
   scrollbar-width: thin;
   scrollbar-color: #add8e67c #add8e600;

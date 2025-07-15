@@ -46,13 +46,13 @@ a, div {
   margin: 10px 2px;
   transform: translate(0px, 0px) rotate(0deg);
   transition: 0.2s;
-  box-shadow: -4px -2px 16px 0px #ffffff, 4px 2px 16px 0px rgb(95 157 231 / 48%);
+  box-shadow: -4px -2px 16px 0px #ffffff, 4px 2px 16px 0px #5f9de77a;
 }
 
 button:hover {
   color: #516d91;
   background-color: #E5EDF5;
-  box-shadow: -2px -1px 8px 0px #ffffff, 2px 1px 8px 0px rgb(95 157 231 / 48%);
+  box-shadow: -2px -1px 8px 0px #ffffff, 2px 1px 8px 0px #5f9de77a;
 }
 
 button:active {

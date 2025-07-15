@@ -2,7 +2,8 @@ import PrimeVue from 'primevue/config';
 import { definePreset } from '@primeuix/themes';
 import Aura from '@primeuix/themes/aura';
 
-import Timeline from 'primevue/timeline';
+import Dialog from 'primevue/dialog';
+
 
 export default function setupPrimevue(app: any) {
   const MyPreset = definePreset(Aura, {
@@ -29,5 +30,5 @@ export default function setupPrimevue(app: any) {
     },
   });
 
-  app.component('PrimevueTimeline', Timeline);
+  app.component('PrimevueDialog', Dialog);
 }
