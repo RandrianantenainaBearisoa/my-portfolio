@@ -19,6 +19,8 @@ import mysqlIcon from './compos/mysqlIcon.vue';
 import simcyIcon from './compos/simcyIcon.vue';
 import tailwindIcon from './compos/tailwindIcon.vue';
 import vuejsIcon from './compos/vuejsIcon.vue';
+import gitIcon from './compos/gitIcon.vue';
+import gitlabIcon from './compos/gitlabIcon.vue';
 
 export {
   graduatedIcon,
@@ -41,5 +43,7 @@ export {
   mysqlIcon,
   simcyIcon,
   tailwindIcon,
-  vuejsIcon
+  vuejsIcon,
+  gitIcon,
+  gitlabIcon,
 };

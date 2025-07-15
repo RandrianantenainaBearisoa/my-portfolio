@@ -39,7 +39,11 @@
             }
           ]
         },
-        "key_concepts": []
+        "key_concepts": [],
+        "relevant_links": {
+          "github_repo": "",
+          "live_demo_link": ""
+        }
       },
       {
         "project_title": "Garage Management",
@@ -70,7 +74,11 @@
             }
           ]
         },
-        "key_concepts": []
+        "key_concepts": [],
+        "relevant_links": {
+          "github_repo": "",
+          "live_demo_link": ""
+        }
       },
       {
         "project_title": "Real Time chat app, Data management",
@@ -109,7 +117,11 @@
             }
           ]
         },
-        "key_concepts": ["Web Socket", "real-time communication"]
+        "key_concepts": ["Web Socket", "real-time communication"],
+        "relevant_links": {
+          "github_repo": "",
+          "live_demo_link": ""
+        }
       },
       {
         "project_title": "Human Resources Management App",
@@ -148,7 +160,11 @@
             }
           ]
         },
-        "key_concepts": ["Database", "MVC Architecture"]
+        "key_concepts": ["Database", "MVC Architecture"],
+        "relevant_links": {
+          "github_repo": "",
+          "live_demo_link": ""
+        }
       }
     ]
   },

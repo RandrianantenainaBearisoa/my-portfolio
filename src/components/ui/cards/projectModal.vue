@@ -119,6 +119,35 @@ import { typeTwoButton } from '../buttons';
         </template>
       </div>
     </fieldset>
+
+    <!-- Demos -->
+    <fieldset>
+      <legend>
+        Demo
+      </legend>
+      <div class="part-4">
+        <template v-if="project.relevant_links.github_repo === '' && project.relevant_links.live_demo_link === ''">
+          Sorry , there is no code or demo version available.
+        </template>
+        <template v-else>
+          <template v-if="project.relevant_links.github_repo !== ''">
+            <type-two-button :url="project.relevant_links.github_repo">
+              <div class="pseudo-button">
+                Github repository
+              </div>
+            </type-two-button>
+          </template>
+          <template v-if="project.relevant_links.live_demo_link !== ''">
+            <type-two-button :url="project.relevant_links.live_demo_link">
+              <div class="pseudo-button">
+                Live demo
+              </div>
+            </type-two-button>
+          </template>
+        </template>
+      </div>
+    </fieldset>
+
   </div>
 </template>
 
@@ -167,7 +196,8 @@ fieldset {
 }
 
 .part-1,
-.part-3 {
+.part-3,
+.part-4 {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -220,6 +250,11 @@ fieldset {
   }
 }
 
+.part-3,
+.part-4 {
+  justify-content: start !important;
+}
+
 .part-2 {
   dt {
     font-size: small;
@@ -227,5 +262,4 @@ fieldset {
     text-decoration: underline;
   }
 }
-
 </style>

@@ -76,15 +76,21 @@ import '@/assets/styles/views/homePage.scss';
         <project-list listLabel="web" />
       </div>
       <!-- <div class="section-part-left large">
+        <project-list listLabel="gis" />
+      </div> -->
+      <!-- <div class="section-part-left large">
         <project-list listLabel="data_science" />
       </div> -->
     </div>
     <div class="section hidden" id="experiences-section">
       <div class="section-part-left-1">
+        hello
       </div>
       <div class="section-part-left-2">
+        hello
       </div>
       <div class="section-part-left-3">
+        hello
       </div>
     </div>
     <div class="section hidden" id="skills-section">
