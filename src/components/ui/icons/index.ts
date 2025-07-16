@@ -21,6 +21,18 @@ import tailwindIcon from './compos/tailwindIcon.vue';
 import vuejsIcon from './compos/vuejsIcon.vue';
 import gitIcon from './compos/gitIcon.vue';
 import gitlabIcon from './compos/gitlabIcon.vue';
+import cssIcon from './compos/cssIcon.vue';
+import htmlIcon from './compos/htmlIcon.vue';
+import javascriptIcon from './compos/javascriptIcon.vue';
+import npmIcon from './compos/npmIcon.vue';
+import phpIcon from './compos/phpIcon.vue';
+import postmanIcon from './compos/postmanIcon.vue';
+import sassIcon from './compos/sassIcon.vue';
+import sqliteIcon from './compos/sqliteIcon.vue';
+import typescriptIcon from './compos/typescriptIcon.vue';
+import viteIcon from './compos/viteIcon.vue';
+import vscodeIcon from './compos/vscodeIcon.vue';
+import sqlIcon from './compos/sqlIcon.vue';
 
 export {
   graduatedIcon,
@@ -46,4 +58,17 @@ export {
   vuejsIcon,
   gitIcon,
   gitlabIcon,
+  cssIcon,
+  htmlIcon,
+  javascriptIcon,
+  npmIcon,
+  phpIcon,
+  postmanIcon,
+  sassIcon,
+  sqliteIcon,
+  typescriptIcon,
+  viteIcon,
+  vscodeIcon,
+  sqlIcon,
+  
 };

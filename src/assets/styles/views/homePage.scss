@@ -153,6 +153,10 @@
     height: 400px;
     display: flex;
 
+    &.row-disposed {
+      flex-direction: column;
+    }
+
     &.large {
       width: 600px;
       height: 600px;

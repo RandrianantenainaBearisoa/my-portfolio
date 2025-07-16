@@ -4,6 +4,7 @@ import { homeContent } from '@/components/features/home';
 import { personalInfo, personalJourney } from "@/components/features/about-me";
 import { projectList } from "@/components/features/projects";
 import { expeItem } from "@/components/features/experiences";
+import { hardSkills, softSkills, languageSkills } from "@/components/features/skills";
 import '@/assets/styles/views/homePage.scss';
 </script>
 
@@ -95,9 +96,12 @@ import '@/assets/styles/views/homePage.scss';
       </div>
     </div>
     <div class="section hidden" id="skills-section">
-      <div class="section-part-top">
+      <div class="section-part-top semi-large">
+        <hard-skills />
       </div>
-      <div class="section-part-bottom">
+      <div class="section-part-bottom row-disposed large">
+        <soft-skills />
+        <language-skills />
       </div>
     </div>
     <div class="section hidden" id="contacts-section">
