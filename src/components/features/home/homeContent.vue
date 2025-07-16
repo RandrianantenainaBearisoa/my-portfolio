@@ -48,7 +48,7 @@ import { downloadIcon, linkedinIcon, eMailIcon, whatsappIcon, githubIcon } from 
           <linkedin-icon />
         </light-button>
         <light-button usedClass="icon-only github" url="https://github.com/RandrianantenainaBearisoa" :newTab="true">
-          <github-icon />
+          <github-icon fill="currentColor" />
         </light-button>
       </div>
     </div>

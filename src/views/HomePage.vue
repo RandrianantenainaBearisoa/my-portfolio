@@ -3,6 +3,7 @@ import { homeIcon, userIcon, appIcon, experienceIcon, brainIcon, contactsIcon } 
 import { homeContent } from '@/components/features/home';
 import { personalInfo, personalJourney } from "@/components/features/about-me";
 import { projectList } from "@/components/features/projects";
+import { expeItem } from "@/components/features/experiences";
 import '@/assets/styles/views/homePage.scss';
 </script>
 
@@ -83,14 +84,14 @@ import '@/assets/styles/views/homePage.scss';
       </div> -->
     </div>
     <div class="section hidden" id="experiences-section">
-      <div class="section-part-left-1">
-        hello
+      <div class="section-part-left-1 semi-large">
+        <expe-item hostName="godigital" index="1" />
       </div>
-      <div class="section-part-left-2">
-        hello
+      <div class="section-part-left-2 semi-large">
+        <expe-item hostName="mtp" index="2" />
       </div>
-      <div class="section-part-left-3">
-        hello
+      <div class="section-part-left-3 semi-large">
+        <expe-item hostName="dsp" index="3" />
       </div>
     </div>
     <div class="section hidden" id="skills-section">
@@ -147,7 +148,7 @@ export default {
       let currentSection = null;
 
       for (let i = 0; i < sections.length; i++) {
-        const section = sections[i];
+        const section = sections[i] as HTMLElement;
         if (section.offsetTop <= (window.pageYOffset) * 1.2 && (section.offsetTop + section.offsetHeight) > (window.pageYOffset) * 1.2) {
           currentSection = section;
           break;

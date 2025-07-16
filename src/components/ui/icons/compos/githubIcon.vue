@@ -6,6 +6,7 @@
   </svg>
 </template>
 
+
 <script lang="ts">
 export default {
   props: {
@@ -15,7 +16,7 @@ export default {
     },
     fill: {
       type: String,
-      default: "currentColor",
+      default: "#181616",
     },
   },
 };
