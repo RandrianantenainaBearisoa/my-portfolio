@@ -84,7 +84,7 @@ import '@/assets/styles/views/homePage.scss';
         <project-list listLabel="data_science" />
       </div> -->
     </div>
-    <div class="section hidden" id="experiences-section">
+    <div class="section hidden large" id="experiences-section">
       <div class="section-part-left-1 semi-large">
         <expe-item hostName="godigital" index="1" />
       </div>
@@ -96,10 +96,10 @@ import '@/assets/styles/views/homePage.scss';
       </div>
     </div>
     <div class="section hidden" id="skills-section">
-      <div class="section-part-top semi-large">
+      <div class="section-part-top semi-large centered-y">
         <hard-skills />
       </div>
-      <div class="section-part-bottom row-disposed large">
+      <div class="section-part-bottom row-disposed large centered-y">
         <soft-skills />
         <language-skills />
       </div>
@@ -172,12 +172,6 @@ export default {
     },
 
     showActiveSection() {
-      const sections = document.querySelectorAll('.section');
-      for (let i = 0; i < sections.length; i++) {
-        const section = sections[i];
-        section.classList.remove('shown');
-        section.classList.add('hidden');
-      }
       const activeSection = document.querySelector(`#${this.activeSection}`);
       if (activeSection !== null) {
         activeSection.classList.remove('hidden');

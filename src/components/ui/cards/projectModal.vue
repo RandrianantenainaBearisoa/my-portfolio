@@ -188,7 +188,7 @@ fieldset {
   border-radius: 20px;
 
   &>legend {
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
     padding: 0px 10px;
     font-size: small;
     font-weight: bold;

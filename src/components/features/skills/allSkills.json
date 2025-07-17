@@ -2,16 +2,16 @@
   "languages": [
     {
       "lang": "English",
-      "listen": "40",
-      "read": "50",
-      "write": "20",
+      "listen": 40,
+      "read": 50,
+      "write": 20,
       "icon": "eng"
     },
     {
       "lang": "French",
-      "listen": "75",
-      "read": "80",
-      "write": "50",
+      "listen": 75,
+      "read": 80,
+      "write": 50,
       "icon": "fr"
     }
   ],

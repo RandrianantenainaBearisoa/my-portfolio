@@ -3,6 +3,8 @@ import { definePreset } from '@primeuix/themes';
 import Aura from '@primeuix/themes/aura';
 
 import Dialog from 'primevue/dialog';
+import ProgressBar from 'primevue/progressbar';
+
 
 
 export default function setupPrimevue(app: any) {
@@ -31,4 +33,5 @@ export default function setupPrimevue(app: any) {
   });
 
   app.component('PrimevueDialog', Dialog);
+  app.component('PrimevueProgressBar', ProgressBar);
 }
