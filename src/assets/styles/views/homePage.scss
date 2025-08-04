@@ -85,11 +85,39 @@
   align-items: center;
   min-height: 700px;
   max-width: 2000px;
+  width: 95vw;
   overflow-x: auto;
+
+  &#experiences-section {
+    align-items: start;
+  }
 
   @media (max-width: 768px) {
     margin-top: 50px;
     flex-direction: column;
+  }
+
+  @media (max-width: 890px) {
+    &#about-section,
+    &#experiences-section {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    &#experiences-section {
+      align-items: center;
+
+      .semi-large {
+        width: 100%;
+      }
+    }
+
+    &#skills-section {
+      .semi-large {
+        width: 100%;
+        height: fit-content;
+      }
+    }
   }
 
   @keyframes fromTheLeft {
@@ -140,6 +168,16 @@
     }
   }
 
+  @media (max-width: 600px) {
+    &#experiences-section {
+      .section-part-left-1,
+      .section-part-left-2,
+      .section-part-left-3 {
+        height: fit-content !important;
+      }
+    }
+  }
+
   .section-part-left,
   .section-part-left-1,
   .section-part-left-2,
@@ -169,6 +207,14 @@
 
     @media (max-width: 600px) {
       width: 100% !important;
+    }
+
+    @media (min-width: 601px) and (max-width: 768px) {
+      width: 80% !important;
+      height: fit-content !important;
+    }
+
+    @media (min-width: 768px) {
       height: fit-content !important;
     }
   }

@@ -33,18 +33,11 @@ export default {
   width: 100%;
   display: flex;
   justify-content: space-around;
+  flex-direction: column;
 
   .card {
-    width: 50%;
-  }
-
-  @media (max-width: 550px) {
-    flex-direction: column;
-
-    .card {
-      width: 100%;
-      margin: auto;
-    }
+    width: 100%;
+    margin: auto;
   }
 }
 </style>
