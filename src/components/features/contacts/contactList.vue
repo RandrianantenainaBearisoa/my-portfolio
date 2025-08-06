@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 import { lightButton } from "@/components/ui/buttons";
 import { linkedinIcon, eMailIcon, whatsappIcon, githubIcon } from "@/components/ui/icons";
+import { personalData } from "../personal-data";
 </script>
 
 <template>
@@ -12,16 +13,16 @@ import { linkedinIcon, eMailIcon, whatsappIcon, githubIcon } from "@/components/
         </p>
       </div>
       <div class="direct-contact">
-        <light-button usedClass="whatsapp" url="https://wa.me/+261349491040">
+        <light-button usedClass="whatsapp" :url="personalData.whatsapp.link">
           <whatsapp-icon />
           <span>
-            +261 34 94 910 40
+            {{ personalData.whatsapp.label }}
           </span>
         </light-button>
-        <light-button usedClass="mail" url="mailto:rabearisoabex@gmail.com">
+        <light-button usedClass="mail" :url="personalData.gmail.link">
           <e-mail-icon />
           <span>
-            rabearisoabex@gmail.com
+            {{ personalData.gmail.label }}
           </span>
         </light-button>
       </div>
@@ -32,10 +33,10 @@ import { linkedinIcon, eMailIcon, whatsappIcon, githubIcon } from "@/components/
       </p>
       <div class="social-media">
         <light-button usedClass="icon-only linkedin"
-          url="https://www.linkedin.com/in/bearisoa-randrianantenaina-892a5a225" :newTab="true">
+          :url="personalData.linkedin.link" :newTab="true">
           <linkedin-icon />
         </light-button>
-        <light-button usedClass="icon-only github" url="https://github.com/RandrianantenainaBearisoa" :newTab="true">
+        <light-button usedClass="icon-only github" :url="personalData.github.link" :newTab="true">
           <github-icon fill="currentColor" />
         </light-button>
       </div>
