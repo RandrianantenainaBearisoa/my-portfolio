@@ -2,18 +2,17 @@
 import _profilePic from "@/assets/images/profile/small-nobg.png";
 import { lightButton } from "@/components/ui/buttons";
 import { downloadIcon, linkedinIcon, eMailIcon, whatsappIcon, githubIcon } from "@/components/ui/icons";
-import { personalData } from "../personal-data";
+import { personalData } from "../data";
+import i18n from "@/plugins/i18n";
 </script>
 
 <template>
   <div class="descri">
     <h3>
-      Hello, my name is <strong>RANDRIANANTENAINA Bearisoa</strong>.
+      {{ i18n.global.t("labels.home.greeting") }} <strong>RANDRIANANTENAINA Bearisoa</strong>.
     </h3>
     <p>
-      I'm a fullstack web developper and this is my portfolio, feel free to browse through it and if you are
-      interersted
-      in my services, send me an email or contact me via whatsapp.
+      {{ i18n.global.t("labels.home.intro") }}
     </p>
     <div class="home-contact">
       <div class="direct-contact">
@@ -34,18 +33,17 @@ import { personalData } from "../personal-data";
         <light-button usedClass="cv" @click.prevent="onDownloadCV">
           <download-icon />
           <span>
-            My Curriculum Vitae
+            {{ i18n.global.t("labels.home.cv") }}
           </span>
         </light-button>
       </div>
     </div>
     <div class="social-media-container">
       <p>
-        Let's get in touch and work together.
+        {{ i18n.global.t("labels.home.intro2") }}
       </p>
       <div class="social-media">
-        <light-button usedClass="icon-only linkedin"
-          :url="personalData.linkedin.link" :newTab="true">
+        <light-button usedClass="icon-only linkedin" :url="personalData.linkedin.link" :newTab="true">
           <linkedin-icon />
         </light-button>
         <light-button usedClass="icon-only github" :url="personalData.github.link" :newTab="true">

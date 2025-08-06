@@ -1,10 +1,14 @@
+<script lang="ts" setup>
+import i18n from "@/plugins/i18n";
+</script>
+
 <template>
   <div class="gradiented">
     <div class="info-card">
       <div>
         <dl>
           <dt>
-            Full name :
+            {{ i18n.global.t("labels.about.full_name") }} :
           </dt>
           <dd>
             RANDRIANANTENAINA Bearisoa
@@ -12,18 +16,18 @@
         </dl>
         <dl>
           <dt>
-            Age :
+            {{ i18n.global.t("labels.about.age") }} :
           </dt>
           <dd>
-            23 years old
+            23 {{ i18n.global.t("labels.about.yo") }}
           </dd>
         </dl>
         <dl>
           <dt>
-            Job-title :
+            {{ i18n.global.t("labels.about.job_title.label") }} :
           </dt>
           <dd>
-            fullstack web developper
+            {{ i18n.global.t("labels.about.job_title.title") }}
           </dd>
         </dl>
       </div>
@@ -31,10 +35,10 @@
         <tbody>
           <tr>
             <th>
-              Hobbies :
+              {{ i18n.global.t("labels.about.hobbies") }} :
             </th>
             <th>
-              Interests :
+              {{ i18n.global.t("labels.about.interests") }} :
             </th>
           </tr>
           <tr>

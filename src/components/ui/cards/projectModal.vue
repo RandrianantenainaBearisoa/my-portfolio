@@ -2,6 +2,7 @@
 import { markRaw } from 'vue';
 import { userIcon, simcyIcon, livewireIcon, tailwindIcon, laravelIcon, mysqlIcon, vuejsIcon, bootstrapIcon } from '../icons';
 import { typeTwoButton } from '../buttons';
+import i18n from "@/plugins/i18n";
 </script>
 
 <template>
@@ -9,22 +10,22 @@ import { typeTwoButton } from '../buttons';
     <!-- Actors and Functions -->
     <fieldset>
       <legend>
-        Actors and Functions
+        {{ i18n.global.t("labels.project.actors_and_functions") }}
       </legend>
       <div class="part-1">
         <type-two-button :url="project.entity.link">
           <div class="pseudo-button">
-            Host: <span class="upper-size">{{ project.entity.name }}</span>
+            {{ i18n.global.t("labels.project.host") }}: <span class="upper-size">{{ project.entity.name }}</span>
           </div>
         </type-two-button>
         <type-two-button>
           <div class="pseudo-button">
-            Team members: <span class="upper-size">{{ project.team }}</span>
+            {{ i18n.global.t("labels.project.team") }}: <span class="upper-size">{{ project.team }}</span>
           </div>
         </type-two-button>
         <type-two-button>
           <div class="pseudo-button">
-            Roles:
+            {{ i18n.global.t("labels.project.role") }}:
             <div class="content-wrapper">
               <template v-for="(role, index) in project.role_and_responsibilities.roles" :key="`role_${index}`">
                 <span class="list-enum">{{ role }}</span>
@@ -34,7 +35,7 @@ import { typeTwoButton } from '../buttons';
         </type-two-button>
         <type-two-button>
           <div class="pseudo-button">
-            Tasks:
+            {{ i18n.global.t("labels.project.task") }}:
             <div class="content-wrapper">
               <template v-for="(task, index) in project.role_and_responsibilities.key_tasks" :key="`task_${index}`">
                 <span class="list-enum">{{ task }}</span>
@@ -48,16 +49,16 @@ import { typeTwoButton } from '../buttons';
     <!-- project context -->
     <fieldset>
       <legend>
-        Project context
+        {{ i18n.global.t("labels.project.project_context") }}
       </legend>
       <div class="part-2">
         <dl>
-          <dt>Project type</dt>
+          <dt>{{ i18n.global.t("labels.project.project_type") }}</dt>
           <dd>{{ project.project_context.project_type }}</dd>
         </dl>
         <template v-if="project.project_context.overall_objective !== ''">
           <dl>
-            <dt>Overall objective</dt>
+            <dt>{{ i18n.global.t("labels.project.overall_objective") }}</dt>
             <dd>
               {{ project.project_context.overall_objective }}
             </dd>
@@ -65,7 +66,7 @@ import { typeTwoButton } from '../buttons';
         </template>
         <template v-if="project.initial_problem_challenge !== ''">
           <dl>
-            <dt>Initial problem challenge</dt>
+            <dt>{{ i18n.global.t("labels.project.initial_problem_challenge") }}</dt>
             <dd>{{ project.initial_problem_challenge }}</dd>
           </dl>
         </template>
@@ -74,12 +75,12 @@ import { typeTwoButton } from '../buttons';
 
     <!-- approach and process -->
     <fieldset>
-      <legend>Approach and process</legend>
+      <legend>{{ i18n.global.t("labels.project.approach_and_process") }}</legend>
       <div class="part-3">
         <template v-if="[...project.approach_and_process.methodology].length > 0">
           <type-two-button>
             <div class="pseudo-button">
-              Methodology:
+              {{ i18n.global.t("labels.project.methodology") }}:
               <div class="content-wrapper">
                 <template v-for="(method, index) in project.approach_and_process.methodology" :key="`method_${index}`">
                   <span class="list-enum">{{ method }}</span>
@@ -90,7 +91,7 @@ import { typeTwoButton } from '../buttons';
         </template>
         <type-two-button>
           <div class="pseudo-button">
-            Tech stack:
+            {{ i18n.global.t("labels.project.tech_stack") }}:
             <div class="content-wrapper">
               <template v-for="(stack, index) in project.approach_and_process.technos" :key="`stack_${index}`">
                 <span class="list-enum">
@@ -108,7 +109,7 @@ import { typeTwoButton } from '../buttons';
         <template v-if="[...project.key_concepts].length > 0">
           <type-two-button>
             <div class="pseudo-button">
-              Key concepts:
+              {{ i18n.global.t("labels.project.key_concepts") }}:
               <div class="content-wrapper">
                 <template v-for="(concept, index) in project.key_concepts" :key="`concept_${index}`">
                   <span class="list-enum">{{ concept }}</span>
@@ -123,24 +124,24 @@ import { typeTwoButton } from '../buttons';
     <!-- Demos -->
     <fieldset>
       <legend>
-        Demo
+        {{ i18n.global.t("labels.project.demo.title") }}
       </legend>
       <div class="part-4">
         <template v-if="project.relevant_links.github_repo === '' && project.relevant_links.live_demo_link === ''">
-          Sorry , there is no code or demo version available.
+          {{ i18n.global.t("labels.project.demo.no_demo") }}
         </template>
         <template v-else>
           <template v-if="project.relevant_links.github_repo !== ''">
             <type-two-button :url="project.relevant_links.github_repo">
               <div class="pseudo-button">
-                Github repository
+                {{ i18n.global.t("labels.project.demo.github") }}
               </div>
             </type-two-button>
           </template>
           <template v-if="project.relevant_links.live_demo_link !== ''">
             <type-two-button :url="project.relevant_links.live_demo_link">
               <div class="pseudo-button">
-                Live demo
+                {{ i18n.global.t("labels.project.demo.live") }}
               </div>
             </type-two-button>
           </template>

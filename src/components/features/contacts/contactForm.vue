@@ -1,22 +1,23 @@
 <script lang="ts" setup>
 import Toast from 'primevue/toast';
+import i18n from "@/plugins/i18n";
 </script>
 
 <template>
   <toast />
   <form ref="form" @submit.prevent="sendEmail" class="contact-form">
-    <PrimevueFieldset legend="Send me a message here">
+    <PrimevueFieldset :legend="i18n.global.t('labels.contact.message_me')">
       <div class="input-field">
         <PrimevueFloatLabel variant="in">
           <PrimevueInputText id="in_label_name" name="name" :value="name" />
-          <label for="in_label_name">Name</label>
+          <label for="in_label_name">{{ i18n.global.t("labels.contact.name") }}</label>
         </PrimevueFloatLabel>
       </div>
 
       <div class="input-field">
         <PrimevueFloatLabel variant="in">
           <PrimevueInputText id="in_label_email" name="email" :value="email" />
-          <label for="in_label_email">Email</label>
+          <label for="in_label_email">{{ i18n.global.t("labels.contact.email") }}</label>
         </PrimevueFloatLabel>
       </div>
 
@@ -24,12 +25,12 @@ import Toast from 'primevue/toast';
         <PrimevueFloatLabel variant="in">
           <PrimevueTextarea id="in_label_mess" rows="5" cols="40" style="resize: none" name="message"
             :value="message" />
-          <label for="in_label_mess">Message</label>
+          <label for="in_label_mess">{{ i18n.global.t("labels.contact.message") }}</label>
         </PrimevueFloatLabel>
       </div>
 
       <div class="input-field">
-        <PrimevueButton label="Send" type="submit" />
+        <PrimevueButton :label="i18n.global.t('labels.contact.send')" type="submit" />
       </div>
     </PrimevueFieldset>
   </form>
@@ -65,15 +66,15 @@ export default {
           })
           .then(
             () => {
-              this.toast.add({ severity: 'success', summary: 'Thanks for your feedback!', detail: 'Message sent successfully!', life: 3000 });
+              this.toast.add({ severity: 'success', summary: i18n.global.t("labels.message.contact.success.summary"), detail: i18n.global.t("labels.message.contact.success.detail"), life: 3000 });
             },
             (error) => {
               console.log('FAILED...', error.text);
-              this.toast.add({ severity: 'error', summary: 'Message unsent', detail: 'Please try again!', life: 3000 });
+              this.toast.add({ severity: 'error', summary: i18n.global.t("labels.message.contact.error.summary"), detail: i18n.global.t("labels.message.contact.error.detail"), life: 3000 });
             },
           );
       } else {
-        this.toast.add({ severity: 'warn', summary: 'Cannot send the message', detail: 'Please fill all field!', life: 3000 });
+        this.toast.add({ severity: 'warn', summary: i18n.global.t("labels.message.contact.fill_all.summary"), detail: i18n.global.t("labels.message.contact.fill_all.detail"), life: 3000 });
       }
     },
   },

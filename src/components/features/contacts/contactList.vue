@@ -1,7 +1,8 @@
 <script lang="ts" setup>
 import { lightButton } from "@/components/ui/buttons";
 import { linkedinIcon, eMailIcon, whatsappIcon, githubIcon } from "@/components/ui/icons";
-import { personalData } from "../personal-data";
+import { personalData } from "../data";
+import i18n from "@/plugins/i18n";
 </script>
 
 <template>
@@ -9,7 +10,7 @@ import { personalData } from "../personal-data";
     <div class="home-contact">
       <div>
         <p>
-          You can contact me with Whatsapp or Gmail.
+          {{ i18n.global.t("labels.contact.contact_me") }}
         </p>
       </div>
       <div class="direct-contact">
@@ -29,11 +30,10 @@ import { personalData } from "../personal-data";
     </div>
     <div class="social-media-container">
       <p>
-        Join me on Github and Linkedin.
+        {{ i18n.global.t("labels.contact.join_me") }}
       </p>
       <div class="social-media">
-        <light-button usedClass="icon-only linkedin"
-          :url="personalData.linkedin.link" :newTab="true">
+        <light-button usedClass="icon-only linkedin" :url="personalData.linkedin.link" :newTab="true">
           <linkedin-icon />
         </light-button>
         <light-button usedClass="icon-only github" :url="personalData.github.link" :newTab="true">
@@ -73,7 +73,7 @@ import { personalData } from "../personal-data";
       }
     }
 
-    @media (min-width: 700px ) and (max-width: 768px) {
+    @media (min-width: 700px) and (max-width: 768px) {
       flex-direction: row;
 
       .link-container {
@@ -82,7 +82,7 @@ import { personalData } from "../personal-data";
       }
     }
 
-    @media (min-width: 769px ) and (max-width: 950px) {
+    @media (min-width: 769px) and (max-width: 950px) {
       flex-direction: column;
 
       .link-container {

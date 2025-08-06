@@ -2,11 +2,12 @@
 import allSkills from './allSkills.json';
 import { skillsLayout } from '@/components/layouts';
 import { languageCard } from '@/components/ui/cards';
+import i18n from "@/plugins/i18n";
 </script>
 
 <template>
   <div class="lang-skill-container">
-    <skills-layout legend="Languages">
+    <skills-layout :legend="i18n.global.t('labels.skill.languages')">
       <div class="cards-container">
         <template v-for="(lang, index) in allSkills.languages" :key="`lang_${index}`">
           <div class="card">

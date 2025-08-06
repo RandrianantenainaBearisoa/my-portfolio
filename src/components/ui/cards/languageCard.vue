@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import progessBarCustom from '../progessbar/progessBarCustom.vue';
+import i18n from "@/plugins/i18n";
 </script>
 
 <template>
@@ -9,21 +10,21 @@ import progessBarCustom from '../progessbar/progessBarCustom.vue';
     </div>
     <hr>
     <div class="progessbar-container">
-      <div class="label">Listening</div>
+      <div class="label">{{ i18n.global.t('labels.skill.listening') }}</div>
       <div class="progress-bar">
         <progess-bar-custom :progress="language.listen" color="#4b749fed"></progess-bar-custom>
       </div>
     </div>
     <hr>
     <div class="progessbar-container">
-      <div class="label">Reading</div>
+      <div class="label">{{ i18n.global.t('labels.skill.reading') }}</div>
       <div class="progress-bar">
         <progess-bar-custom :progress="language.read" color="#4b749fed"></progess-bar-custom>
       </div>
     </div>
     <hr>
     <div class="progessbar-container">
-      <div class="label">Writing</div>
+      <div class="label">{{ i18n.global.t('labels.skill.writing') }}</div>
       <div class="progress-bar">
         <progess-bar-custom :progress="language.write" color="#4b749fed"></progess-bar-custom>
       </div>

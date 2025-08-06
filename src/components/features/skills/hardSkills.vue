@@ -4,11 +4,12 @@ import allSkills from './allSkills.json';
 import { skillsLayout } from '@/components/layouts';
 import type { HardSkillsCategory } from '@/static/interfaces/hardSkillType';
 import { htmlIcon, cssIcon, javascriptIcon, typescriptIcon, vuejsIcon, bootstrapIcon, tailwindIcon, sassIcon, phpIcon, laravelIcon, simcyIcon, sqlIcon, mysqlIcon, sqliteIcon, gitIcon, githubIcon, gitlabIcon, npmIcon, viteIcon, postmanIcon, vscodeIcon } from '@/components/ui/icons';
+import i18n from "@/plugins/i18n";
 </script>
 
 <template>
   <div>
-    <skills-layout legend="Hard skills">
+    <skills-layout :legend="i18n.global.t('labels.skill.hard')">
       <template v-for="(cle, index) in keys" :key="index">
         <dl>
           <dt>

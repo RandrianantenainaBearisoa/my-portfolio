@@ -5,6 +5,7 @@ import experiences from './experiences.json';
 import type { experienceHost } from '@/static/interfaces/experienceHost';
 import type { ExperienceData } from '@/static/interfaces/experienceData';
 import { typeTwoButton } from '@/components/ui/buttons';
+import i18n from "@/plugins/i18n";
 </script>
 
 <template>
@@ -16,31 +17,31 @@ import { typeTwoButton } from '@/components/ui/buttons';
     </div>
     <fieldset>
       <legend>
-        Experience Detail
+        {{ i18n.global.t("labels.experience.experience_detail") }}
       </legend>
       <div class="part-1">
         <div>
           <type-two-button>
             <div class="pseudo-button">
-              Experience type: <span class="upper-size">{{ experience.experience_type }}</span>
+              {{ i18n.global.t("labels.experience.experience_type") }}: <span class="upper-size">{{ experience.experience_type }}</span>
             </div>
           </type-two-button>
           <type-two-button>
             <div class="pseudo-button">
-              Role: <span class="upper-size">{{ experience.role }}</span>
+              {{ i18n.global.t("labels.experience.role") }}: <span class="upper-size">{{ experience.role }}</span>
             </div>
           </type-two-button>
         </div>
         <type-two-button>
           <div class="pseudo-button in-column">
             <span class="upper-size">{{ experience.start_date }}</span>
-            to <span class="upper-size">{{ experience.end_date }}</span>
+            {{ i18n.global.t("labels.experience.to") }} <span class="upper-size">{{ experience.end_date }}</span>
           </div>
         </type-two-button>
         <template v-if="experience.entity">
           <type-two-button :url="experience.entity.link">
             <div class="pseudo-button">
-              Host: <span class="upper-size">{{ experience.entity.name }}</span>
+              {{ i18n.global.t("labels.experience.host") }}: <span class="upper-size">{{ experience.entity.name }}</span>
             </div>
           </type-two-button>
         </template>
@@ -48,10 +49,10 @@ import { typeTwoButton } from '@/components/ui/buttons';
     </fieldset>
 
     <fieldset>
-      <legend>Enhanced Skills</legend>
+      <legend>{{ i18n.global.t("labels.experience.enhanced_skills") }}</legend>
       <div class="part-3">
         <div class="sub-title">
-          Soft skills
+          {{ i18n.global.t("labels.experience.soft") }}
         </div>
         <template v-if="experience.enhanced_skills && [...experience.enhanced_skills.soft].length > 0">
           <div class="pseudo-button">
@@ -63,7 +64,7 @@ import { typeTwoButton } from '@/components/ui/buttons';
           </div>
         </template>
         <div class="sub-title">
-          Hard skills
+          {{ i18n.global.t("labels.experience.hard") }}
         </div>
         <template v-if="experience.enhanced_skills && [...experience.enhanced_skills.hard].length > 0">
           <div class="pseudo-button">
@@ -95,18 +96,18 @@ import { typeTwoButton } from '@/components/ui/buttons';
 
     <fieldset>
       <legend>
-        Accomplishments
+        {{ i18n.global.t("labels.experience.accomplishments") }}
       </legend>
       <div class="part-2">
         <template v-if="experience.contribution">
           <dl>
-            <dt>Contribution</dt>
+            <dt>{{ i18n.global.t("labels.experience.contribution") }}</dt>
             <dd>{{ experience.contribution }}</dd>
           </dl>
         </template>
         <template v-if="experience.notable_achievements">
           <dl>
-            <dt>Notable achievements</dt>
+            <dt>{{ i18n.global.t("labels.experience.achievements") }}</dt>
             <dd>
               <ul>
                 <template v-for="(ach, index) in experience.notable_achievements" :key="`ach_${index}`">

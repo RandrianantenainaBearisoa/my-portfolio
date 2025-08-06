@@ -1,12 +1,12 @@
 <script lang="ts" setup>
 import allSkills from './allSkills.json';
 import { skillsLayout } from '@/components/layouts';
-
+import i18n from "@/plugins/i18n";
 </script>
 
 <template>
   <div>
-    <skills-layout legend="Soft skills">
+    <skills-layout :legend="i18n.global.t('labels.skill.soft')">
       <div class="simple-list">
         <template v-for="(skill, index) in allSkills.soft_skills" :key="`softskill_${index}`">
           <span>

@@ -1,4 +1,4 @@
-<script lang="ts" setup>;
+<script lang="ts" setup>
 import { homeIcon, userIcon, appIcon, experienceIcon, brainIcon, contactsIcon } from "@/components/ui/icons";
 import { homeContent } from '@/components/features/home';
 import { personalInfo, personalJourney } from "@/components/features/about-me";
@@ -6,7 +6,9 @@ import { projectList } from "@/components/features/projects";
 import { expeItem } from "@/components/features/experiences";
 import { hardSkills, softSkills, languageSkills } from "@/components/features/skills";
 import { contactForm, contactList } from "@/components/features/contacts";
+import langToggle from "@/components/features/lang-toggle/langToggle.vue";
 import '@/assets/styles/views/homePage.scss';
+import i18n from "@/plugins/i18n";
 </script>
 
 <template>
@@ -15,7 +17,7 @@ import '@/assets/styles/views/homePage.scss';
       <div class="menu-group">
         <a href="#home-section" class="menu active" @click.self.prevent="scrollToSection($event)">
           <span class="menu-title">
-            Home
+            {{ i18n.global.t("labels.menu.home") }}
           </span>
           <span class="menu-icon">
             <home-icon />
@@ -23,7 +25,7 @@ import '@/assets/styles/views/homePage.scss';
         </a>
         <a href="#about-section" class="menu" @click.self.prevent="scrollToSection($event)">
           <span class="menu-title">
-            About me
+            {{ i18n.global.t("labels.menu.about") }}
           </span>
           <span class="menu-icon">
             <user-icon />
@@ -31,7 +33,7 @@ import '@/assets/styles/views/homePage.scss';
         </a>
         <a href="#projects-section" class="menu" @click.self.prevent="scrollToSection($event)">
           <span class="menu-title">
-            My Projects
+            {{ i18n.global.t("labels.menu.project") }}
           </span>
           <span class="menu-icon">
             <app-icon />
@@ -39,7 +41,7 @@ import '@/assets/styles/views/homePage.scss';
         </a>
         <a href="#experiences-section" class="menu" @click.self.prevent="scrollToSection($event)">
           <span class="menu-title">
-            My experiences
+            {{ i18n.global.t("labels.menu.experience") }}
           </span>
           <span class="menu-icon">
             <experience-icon />
@@ -47,7 +49,7 @@ import '@/assets/styles/views/homePage.scss';
         </a>
         <a href="#skills-section" class="menu" @click.self.prevent="scrollToSection($event)">
           <span class="menu-title">
-            My Skills
+            {{ i18n.global.t("labels.menu.skill") }}
           </span>
           <span class="menu-icon">
             <brain-icon />
@@ -55,7 +57,7 @@ import '@/assets/styles/views/homePage.scss';
         </a>
         <a href="#contacts-section" class="menu" @click.self.prevent="scrollToSection($event)">
           <span class="menu-title">
-            Contacts
+            {{ i18n.global.t("labels.menu.contact") }}
           </span>
           <span class="menu-icon">
             <contacts-icon />
@@ -114,8 +116,10 @@ import '@/assets/styles/views/homePage.scss';
       </div>
     </div>
 
+    <lang-toggle />
+
     <div class="copyright">
-      &copy; 2025 Randrianantenaina Bearisoa. Tous droits réservés.
+      &copy; 2025 Randrianantenaina Bearisoa. {{ i18n.global.t("labels.copyright") }}
     </div>
   </div>
 </template>
@@ -125,7 +129,7 @@ export default {
   name: "Home-page",
   data() {
     return {
-      activeSection: "home-section"
+      activeSection: "home-section",
     };
   },
 
@@ -184,7 +188,7 @@ export default {
         activeSection.classList.remove('hidden');
         activeSection.classList.add('shown');
       }
-    }
+    },
   },
 };
 </script>
