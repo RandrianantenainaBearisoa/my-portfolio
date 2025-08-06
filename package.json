@@ -13,6 +13,7 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@fontsource/koho": "^5.2.6",
     "@primeuix/themes": "^1.2.1",
     "primevue": "^4.3.6",

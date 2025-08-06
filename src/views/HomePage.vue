@@ -5,6 +5,7 @@ import { personalInfo, personalJourney } from "@/components/features/about-me";
 import { projectList } from "@/components/features/projects";
 import { expeItem } from "@/components/features/experiences";
 import { hardSkills, softSkills, languageSkills } from "@/components/features/skills";
+import { contactForm, contactList } from "@/components/features/contacts";
 import '@/assets/styles/views/homePage.scss';
 </script>
 
@@ -106,9 +107,15 @@ import '@/assets/styles/views/homePage.scss';
     </div>
     <div class="section hidden" id="contacts-section">
       <div class="section-part-bottom">
+        <contact-form />
       </div>
-      <div class="section-part-top">
+      <div class="section-part-top small-container">
+        <contact-list />
       </div>
+    </div>
+
+    <div class="copyright">
+      &copy; 2025 Randrianantenaina Bearisoa. Tous droits réservés.
     </div>
   </div>
 </template>

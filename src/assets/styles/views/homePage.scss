@@ -205,8 +205,17 @@
       height: 600px;
     }
 
+    &.small-container {
+      width: 600px !important;
+      height: fit-content !important;
+    }
+
     @media (max-width: 600px) {
       width: 100% !important;
+
+      &.small-container {
+        width: 100% !important;
+      }
     }
 
     @media (min-width: 601px) and (max-width: 768px) {
@@ -344,4 +353,9 @@
       width: 60%;
     }
   }
+}
+
+.copyright {
+  width: 100%;
+  text-align: center;
 }

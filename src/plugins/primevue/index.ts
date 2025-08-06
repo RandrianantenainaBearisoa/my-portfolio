@@ -4,8 +4,12 @@ import Aura from '@primeuix/themes/aura';
 
 import Dialog from 'primevue/dialog';
 import ProgressBar from 'primevue/progressbar';
-
-
+import ToastService from 'primevue/toastservice';
+import InputText from 'primevue/inputtext';
+import FloatLabel from 'primevue/floatlabel';
+import Textarea from 'primevue/textarea';
+import Button from 'primevue/button';
+import Fieldset from 'primevue/fieldset';
 
 export default function setupPrimevue(app: any) {
   const MyPreset = definePreset(Aura, {
@@ -31,7 +35,13 @@ export default function setupPrimevue(app: any) {
       preset: MyPreset,
     },
   });
+  app.use(ToastService);
 
   app.component('PrimevueDialog', Dialog);
   app.component('PrimevueProgressBar', ProgressBar);
+  app.component('PrimevueInputText', InputText);
+  app.component('PrimevueTextarea', Textarea);
+  app.component('PrimevueFloatLabel', FloatLabel);
+  app.component('PrimevueButton', Button);
+  app.component('PrimevueFieldset', Fieldset);
 }
