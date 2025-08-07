@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import allSkills from './allSkills.json';
 import { skillsLayout } from '@/components/layouts';
 import i18n from "@/plugins/i18n";
 </script>
@@ -8,9 +7,9 @@ import i18n from "@/plugins/i18n";
   <div>
     <skills-layout :legend="i18n.global.t('labels.skill.soft')">
       <div class="simple-list">
-        <template v-for="(skill, index) in allSkills.soft_skills" :key="`softskill_${index}`">
+        <template v-for="(skill, index) in softSkills" :key="`softskill_${index}`">
           <span>
-            #{{ skill.replace(/ /g, '_') }}
+            #{{ skill.replace(/[ ']/g, '_') }}
           </span>
         </template>
       </div>
@@ -21,6 +20,13 @@ import i18n from "@/plugins/i18n";
 <script lang="ts">
 export default {
   name: "soft-skills",
+  computed: {
+    softSkills() {
+      if (i18n.global.locale === "fr")
+        return i18n.global.messages.fr.skills.soft_skills;
+      return i18n.global.messages.en.skills.soft_skills;
+    },
+  }
 };
 </script>
 

@@ -1,6 +1,5 @@
 <script lang="ts" setup>
 import { markRaw } from 'vue';
-import allSkills from './allSkills.json';
 import { skillsLayout } from '@/components/layouts';
 import type { HardSkillsCategory } from '@/static/interfaces/hardSkillType';
 import { htmlIcon, cssIcon, javascriptIcon, typescriptIcon, vuejsIcon, bootstrapIcon, tailwindIcon, sassIcon, phpIcon, laravelIcon, simcyIcon, sqlIcon, mysqlIcon, sqliteIcon, gitIcon, githubIcon, gitlabIcon, npmIcon, viteIcon, postmanIcon, vscodeIcon } from '@/components/ui/icons';
@@ -13,7 +12,7 @@ import i18n from "@/plugins/i18n";
       <template v-for="(cle, index) in keys" :key="index">
         <dl>
           <dt>
-            {{ cle }}:
+            {{ cle.replace(/_/g, " ") }}:
           </dt>
           <dd>
             <template v-for="(item, index) in getSkillsByCategory(cle)" :key="`item_${index}`">
@@ -38,8 +37,6 @@ export default {
   name: "hard-skills",
   data() {
     return {
-      hardSkills: allSkills.hard_skills as HardSkillsCategory,
-      keys: [] as string[],
       iconComponents: {
         html: markRaw(htmlIcon),
         css: markRaw(cssIcon),
@@ -73,9 +70,16 @@ export default {
       return this.iconComponents[icon_name as keyof typeof this.iconComponents];
     },
   },
-  mounted() {
-    this.keys = Object.keys(this.hardSkills);
-  },
+  computed: {
+    hardSkills() {
+      if (i18n.global.locale === "fr")
+        return i18n.global.messages.fr.skills.hard_skills as HardSkillsCategory;
+      return i18n.global.messages.en.skills.hard_skills as HardSkillsCategory;
+    },
+    keys() {
+      return Object.keys(this.hardSkills);
+    },
+  }
 };
 </script>
 
@@ -85,6 +89,7 @@ dt {
   font-weight: 500;
   text-decoration: underline;
 }
+
 dd {
   font-size: smaller;
   display: flex;

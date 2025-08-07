@@ -1,9 +1,7 @@
 <script setup lang="ts">
 import { markRaw } from 'vue';
 import { userIcon, simcyIcon, livewireIcon, tailwindIcon, laravelIcon, mysqlIcon, vuejsIcon, bootstrapIcon, gitIcon, githubIcon, gitlabIcon } from '@/components/ui/icons';
-// import experiences from './experiences.json';
 import type { experienceHost } from '@/static/interfaces/experienceHost';
-// import type { ExperienceData } from '@/static/interfaces/experienceData';
 import { typeTwoButton } from '@/components/ui/buttons';
 import i18n from "@/plugins/i18n";
 </script>

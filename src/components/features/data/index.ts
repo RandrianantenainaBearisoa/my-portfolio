@@ -9,6 +9,8 @@ import enProject from './projectList/projectListEn.json';
 import frProject from './projectList/projectListFr.json';
 import enExpe from './experiences/experiencesEn.json';
 import frExpe from './experiences/experiencesFr.json';
+import enSkills from './skills/allSkillsEn.json';
+import frSkills from './skills/allSkillsFr.json';
 
 export {
   personalData,
@@ -21,5 +23,7 @@ export {
   enProject,
   frProject,
   enExpe,
-  frExpe
+  frExpe,
+  enSkills,
+  frSkills
 };

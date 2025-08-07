@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import allSkills from './allSkills.json';
 import { skillsLayout } from '@/components/layouts';
 import { languageCard } from '@/components/ui/cards';
 import i18n from "@/plugins/i18n";
@@ -9,7 +8,7 @@ import i18n from "@/plugins/i18n";
   <div class="lang-skill-container">
     <skills-layout :legend="i18n.global.t('labels.skill.languages')">
       <div class="cards-container">
-        <template v-for="(lang, index) in allSkills.languages" :key="`lang_${index}`">
+        <template v-for="(lang, index) in languages" :key="`lang_${index}`">
           <div class="card">
             <language-card :language="lang" />
           </div>
@@ -22,6 +21,13 @@ import i18n from "@/plugins/i18n";
 <script lang="ts">
 export default {
   name: "language-skills",
+  computed: {
+    languages() {
+      if (i18n.global.locale === "fr")
+        return i18n.global.messages.fr.skills.languages;
+      return i18n.global.messages.en.skills.languages;
+    },
+  }
 };
 </script>
 
