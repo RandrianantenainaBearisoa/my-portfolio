@@ -1,0 +1,133 @@
+{
+  "godigital": {
+    "experience_type": "Internship",
+    "entity": {
+      "name": "GoDigital",
+      "link": "https://godigital.mu/"
+    },
+    "start_date": "February 2025",
+    "end_date": "May 2025",
+    "role": "FullStack Developer",
+    "contribution": "As a FullStack Developer at the Digital Agency, I was involved in the full development lifecycle of client projects. My work focused on building robust and efficient web applications, ensuring client requirements were met and delivering tangible improvements to their operations.",
+    "technos": [
+      {
+        "name": "Livewire",
+        "icon": "livewire"
+      },
+      {
+        "name": "Vue.js",
+        "icon": "vue"
+      },
+      {
+        "name": "Tailwind.css",
+        "icon": "tailwind"
+      },
+      {
+        "name": "Laravel",
+        "icon": "laravel"
+      },
+      {
+        "name": "MySQL",
+        "icon": "mysql"
+      },
+      {
+        "name": "SimcyCreative",
+        "icon": "simcy"
+      },
+      {
+        "name": "Git",
+        "icon": "git"
+      },
+      {
+        "name": "Github",
+        "icon": "github"
+      },
+      {
+        "name": "Gitlab",
+        "icon": "gitlab"
+      }
+    ],
+    "enhanced_skills": {
+      "hard": ["version control systems"],
+      "soft": ["Teamwork & Collaboration", "Stress Management", "Time Management & Organization"]
+    },
+    "notable_achievements": [
+      "Developed an inventory management system to manage incoming and outgoing products of the warehouse and the stores.",
+      "Contributed significantly to a garage management application that digitized operations, reducing manual processes and enhancing service record management."
+    ]
+  },
+  "mtp": {
+    "experience_type": "Internship",
+    "entity": {
+      "name": "Ministry of Public Works",
+      "link": "http://www.mtp.gov.mg/"
+    },
+    "start_date": "August 2024",
+    "end_date": "November 2024",
+    "role": "FullStack Developer",
+    "contribution": "During this university internship, I led the development of a critical internal application aimed at modernizing communication and data management processes. My focus was on transforming outdated, paper-based systems into efficient, real-time digital solutions.",
+    "technos": [
+      {
+        "name": "Livewire",
+        "icon": "livewire"
+      },
+      {
+        "name": "Tailwind.css",
+        "icon": "tailwind"
+      },
+      {
+        "name": "Laravel",
+        "icon": "laravel"
+      },
+      {
+        "name": "MySQL",
+        "icon": "mysql"
+      }
+    ],
+    "enhanced_skills": {
+      "hard": [],
+      "soft": ["Autonomy & Initiative", "Professionalism & Work Ethic", "Continuous Learning", "Communication"]
+    },
+    "notable_achievements": [
+      "Developed a real-time chat application and a data management system that revolutionized communication during parliamentary sessions, enabling instant information exchange.",
+      "Successfully centralized critical parliamentary data, reducing manual search times from minutes to seconds by overcoming the challenge of disparate paper/MS Word data."
+    ]
+  },
+  "dsp": {
+    "experience_type": "Internship",
+    "entity": {
+      "name": "DSP Ambotsirohitra",
+      "link": ""
+    },
+    "start_date": "September 2023",
+    "end_date": "November 2023",
+    "role": "Laravel Developer",
+    "contribution": "In this university internship, I played a key role in the digitalization of the Human Resources department. My work focused on designing and implementing a comprehensive HR management application to streamline file processing and improve data accessibility.",
+    "technos": [
+      {
+        "name": "Vue.js",
+        "icon": "vue"
+      },
+      {
+        "name": "Bootstrap.css",
+        "icon": "bootstrap"
+      },
+      {
+        "name": "Laravel",
+        "icon": "laravel"
+      },
+      {
+        "name": "MySQL",
+        "icon": "mysql"
+      }
+    ],
+    "enhanced_skills": {
+      "hard": [],
+      "soft": ["Curiosity", "Teamwork", "Adaptability & Flexibility", "Autonomy"]
+    },
+    "notable_achievements": [
+      "Digitized 100% of HR file processing, eliminating paper-based workflows and significantly reducing administrative burden.",
+      "Improved data accessibility and retrieval for the HR department, cutting down search times by over 70% through a centralized database."
+    ]
+  }
+}

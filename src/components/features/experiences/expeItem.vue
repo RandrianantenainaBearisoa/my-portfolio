@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { markRaw } from 'vue';
 import { userIcon, simcyIcon, livewireIcon, tailwindIcon, laravelIcon, mysqlIcon, vuejsIcon, bootstrapIcon, gitIcon, githubIcon, gitlabIcon } from '@/components/ui/icons';
-import experiences from './experiences.json';
+// import experiences from './experiences.json';
 import type { experienceHost } from '@/static/interfaces/experienceHost';
-import type { ExperienceData } from '@/static/interfaces/experienceData';
+// import type { ExperienceData } from '@/static/interfaces/experienceData';
 import { typeTwoButton } from '@/components/ui/buttons';
 import i18n from "@/plugins/i18n";
 </script>
@@ -23,7 +23,8 @@ import i18n from "@/plugins/i18n";
         <div>
           <type-two-button>
             <div class="pseudo-button">
-              {{ i18n.global.t("labels.experience.experience_type") }}: <span class="upper-size">{{ experience.experience_type }}</span>
+              {{ i18n.global.t("labels.experience.experience_type") }}: <span class="upper-size">{{
+                experience.experience_type }}</span>
             </div>
           </type-two-button>
           <type-two-button>
@@ -41,7 +42,8 @@ import i18n from "@/plugins/i18n";
         <template v-if="experience.entity">
           <type-two-button :url="experience.entity.link">
             <div class="pseudo-button">
-              {{ i18n.global.t("labels.experience.host") }}: <span class="upper-size">{{ experience.entity.name }}</span>
+              {{ i18n.global.t("labels.experience.host") }}: <span class="upper-size">{{ experience.entity.name
+              }}</span>
             </div>
           </type-two-button>
         </template>
@@ -138,7 +140,7 @@ export default {
   },
   data() {
     return {
-      experience: {} as ExperienceData,
+      // experience: {} as ExperienceData,
       iconComponents: {
         user: markRaw(userIcon),
         simcy: markRaw(simcyIcon),
@@ -160,8 +162,17 @@ export default {
     },
   },
   mounted() {
-    const cle = this.hostName as keyof experienceHost;
-    this.experience = { ...experiences[cle] };
+    // const cle = this.hostName as keyof experienceHost;
+    // this.experience = { ...experiences[cle] };
+  },
+  computed: {
+    experience() {
+      const cle = this.hostName as keyof experienceHost;
+      let experiences = i18n.global.messages.en.expe;
+      if (i18n.global.locale === "fr")
+        experiences = i18n.global.messages.fr.expe;
+      return { ...experiences[cle] };
+    },
   },
 };
 </script>

@@ -7,6 +7,8 @@ import enHobs from './hobbies-interests/en.json';
 import frHobs from './hobbies-interests/fr.json';
 import enProject from './projectList/projectListEn.json';
 import frProject from './projectList/projectListFr.json';
+import enExpe from './experiences/experiencesEn.json';
+import frExpe from './experiences/experiencesFr.json';
 
 export {
   personalData,
@@ -17,5 +19,7 @@ export {
   enHobs,
   frHobs,
   enProject,
-  frProject
+  frProject,
+  enExpe,
+  frExpe
 };
