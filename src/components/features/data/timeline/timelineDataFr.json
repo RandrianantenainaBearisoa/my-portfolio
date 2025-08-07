@@ -1,0 +1,94 @@
+[
+  {
+    "badge": "experience",
+    "isTable": false,
+    "step": "Stage",
+    "topics": "Applications web de Gestion",
+    "date": "Février 2025 - Mai 2025",
+    "place": {
+      "name": "GoDigital",
+      "link": "https://godigital.mu/"
+    }
+  },
+  {
+    "badge": "graduation",
+    "isTable": false,
+    "step": "Diplôme de Licence",
+    "topics": "Génie logiciel et Bases de données",
+    "date": "Janvier 2025",
+    "place": {
+      "name": "Ecole Nationale d'Informatique Fianarantsoa",
+      "link": "https://eni.mg/"
+    }
+  },
+  {
+    "badge": "study",
+    "isTable": true,
+    "table": [
+      {
+        "step": "3e année de Licence",
+        "topics": "Génie logiciel et Bases de données",
+        "date": "2023-2024",
+        "place": {
+          "name": "Ecole Nationale d'Informatique Fianarantsoa",
+          "link": "https://eni.mg/"
+        }
+      },
+      {
+        "step": "Stage",
+        "topics": "Application de chat en temps réel, gestion des données",
+        "date": "Août 2024 - Novembre 2024",
+        "place": {
+          "name": "Ministère des Travaux Publics",
+          "link": "http://www.mtp.gov.mg/"
+        }
+      }
+    ]
+  },
+  {
+    "badge": "study",
+    "isTable": true,
+    "table": [
+      {
+        "step": "2e année de Licence",
+        "topics": "Génie logiciel et Bases de données",
+        "date": "2022-2023",
+        "place": {
+          "name": "Ecole Nationale d'Informatique Fianarantsoa",
+          "link": "https://eni.mg/"
+        }
+      },
+      {
+        "step": "Stage",
+        "topics": "Application de gestion des ressources humaines",
+        "date": "Septembre 2023 - Novembre 2023",
+        "place": {
+          "name": "DSP Ambotsirohitra",
+          "link": ""
+        }
+      }
+    ]
+  },
+  {
+    "badge": "study",
+    "isTable": false,
+    "step": "1re année de Licence",
+    "topics": "Génie logiciel et Bases de données",
+    "date": "2021-2022",
+    "place": {
+      "name": "Ecole Nationale d'Informatique Fianarantsoa",
+      "link": "https://eni.mg/"
+    }
+  },
+  {
+    "badge": "graduation",
+    "isTable": false,
+    "step": "Baccalauréat",
+    "topics": "Orienté maths et physique",
+    "date": "2020",
+    "place": {
+      "name": "Lycée Notre Dame de Fatima Ambohimirary",
+      "link": ""
+    }
+  }
+]

@@ -1,15 +1,19 @@
 import { createI18n } from 'vue-i18n';
 
-import { enLabel, frLabel } from '@/components/features/data';
+import { enLabel, frLabel, enTimeline, frTimeline, enHobs, frHobs } from '@/components/features/data';
 
 
 const loadLocaleMessages = () => {
     return {
         en: {
-          labels: enLabel
+          labels: enLabel,
+          timelineData: enTimeline,
+          hobs: enHobs
         },
         fr: {
-          labels: frLabel
+          labels: frLabel,
+          timelineData: frTimeline,
+          hobs: frHobs
         },
     };
 };

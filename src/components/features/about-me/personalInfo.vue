@@ -44,28 +44,18 @@ import i18n from "@/plugins/i18n";
           <tr>
             <td>
               <ul>
-                <li>
-                  Playing guitare
-                </li>
-                <li>
-                  Reading
-                </li>
+                <template v-for="(hob, index) in hobbiesList" :key="`hob_${index}`">
+                  <li v-text="hob">
+                  </li>
+                </template>
               </ul>
             </td>
             <td>
               <ul>
-                <li>
-                  AI
-                </li>
-                <li>
-                  GIS
-                </li>
-                <li>
-                  Data Science
-                </li>
-                <li>
-                  Music
-                </li>
+                <template v-for="(interest, index) in interestsList" :key="`interest_${index}`">
+                  <li v-text="interest">
+                  </li>
+                </template>
               </ul>
             </td>
           </tr>
@@ -79,6 +69,18 @@ import i18n from "@/plugins/i18n";
 <script lang="ts">
 export default {
   name: "personal-info",
+  computed: {
+    hobbiesList() {
+      if (i18n.global.locale === "en")
+        return i18n.global.messages.en.hobs.hobbies;
+      return i18n.global.messages.fr.hobs.hobbies;
+    },
+    interestsList() {
+      if (i18n.global.locale === "en")
+        return i18n.global.messages.en.hobs.interests;
+      return i18n.global.messages.fr.hobs.interests;
+    },
+  },
 };
 </script>
 

@@ -1,17 +1,27 @@
 <script setup lang="ts">
-import timelineData from "./timelineData.json";
+import i18n from "@/plugins/i18n";
 import { timelineLayout } from "@/components/layouts";
 </script>
 
 <template>
   <div class="timeline-container">
-    <timeline-layout :events="timelineData" />
+    <timeline-layout :events="timelineDatas" />
   </div>
 </template>
 
 <script lang="ts">
 export default {
   name: "personal-journey",
+  mounted() {
+    console.log("");
+  },
+  computed: {
+    timelineDatas() {
+      if (i18n.global.locale === "en")
+        return i18n.global.messages.en.timelineData;
+      return i18n.global.messages.fr.timelineData;
+    },
+  },
 };
 </script>
 
