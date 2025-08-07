@@ -1,0 +1,264 @@
+{
+  "web": {
+    "title": "Application Web",
+    "list": [
+      {
+        "project_title": "Gestion de Stock",
+        "entity": {
+          "name": "GoDigital",
+          "link": "https://godigital.mu/"
+        },
+        "team": "2",
+        "role_and_responsibilities": {
+          "roles": ["Développeur FullStack"],
+          "key_tasks": ["Implémentation", "Maintenance"]
+        },
+        "project_context": {
+          "overall_objective": "Développer une application pour la gestion des produits en stock et des produits distribués dans les magasins",
+          "project_type": "Projet professionnel"
+        },
+        "initial_problem_challenge": "",
+        "approach_and_process": {
+          "methodology": [],
+          "technos": [
+            {
+              "name": "Livewire",
+              "icon": "livewire"
+            },
+            {
+              "name": "Tailwind.css",
+              "icon": "tailwind"
+            },
+            {
+              "name": "Laravel",
+              "icon": "laravel"
+            },
+            {
+              "name": "MySQL",
+              "icon": "mysql"
+            }
+          ]
+        },
+        "key_concepts": [],
+        "relevant_links": {
+          "github_repo": "",
+          "live_demo_link": ""
+        }
+      },
+      {
+        "project_title": "Gestion de Garage",
+        "entity": {
+          "name": "GoDigital",
+          "link": "https://godigital.mu/"
+        },
+        "team": "3",
+        "role_and_responsibilities": {
+          "roles": ["Développeur FullStack"],
+          "key_tasks": ["Implémentation", "Maintenance"]
+        },
+        "project_context": {
+          "overall_objective": "Développer une application pour la gestion des activités d'un garage",
+          "project_type": "Projet professionnel"
+        },
+        "initial_problem_challenge": "",
+        "approach_and_process": {
+          "methodology": [],
+          "technos": [
+            {
+              "name": "SimcyCreative",
+              "icon": "simcy"
+            },
+            {
+              "name": "MySQL",
+              "icon": "mysql"
+            }
+          ]
+        },
+        "key_concepts": [],
+        "relevant_links": {
+          "github_repo": "",
+          "live_demo_link": ""
+        }
+      },
+      {
+        "project_title": "Discussion en temps réel, gestion de données",
+        "entity": {
+          "name": "Ministère des Travaux Publics",
+          "link": "http://www.mtp.gov.mg/"
+        },
+        "team": "1",
+        "role_and_responsibilities": {
+          "roles": ["Développeur FullStack"],
+          "key_tasks": ["Analyse", "Conception", "Implémentation"]
+        },
+        "project_context": {
+          "overall_objective": "Optimiser la communication en temps réel et le choix des réponses données lors des sessions parlementaires",
+          "project_type": "Projet professionnel"
+        },
+        "initial_problem_challenge": "Pas de système informatique, pas de base de données centralisée, données stockées sur papier et MS Word",
+        "approach_and_process": {
+          "methodology": ["2TUP"],
+          "technos": [
+            {
+              "name": "Livewire",
+              "icon": "livewire"
+            },
+            {
+              "name": "Tailwind.css",
+              "icon": "tailwind"
+            },
+            {
+              "name": "Laravel",
+              "icon": "laravel"
+            },
+            {
+              "name": "MySQL",
+              "icon": "mysql"
+            }
+          ]
+        },
+        "key_concepts": ["Web Socket", "communication en temps réel"],
+        "relevant_links": {
+          "github_repo": "",
+          "live_demo_link": ""
+        }
+      },
+      {
+        "project_title": "Gestion des ressources humaines",
+        "entity": {
+          "name": "DSP Ambotsirohitra",
+          "link": ""
+        },
+        "team": "2",
+        "role_and_responsibilities": {
+          "roles": ["Développeur Laravel"],
+          "key_tasks": ["Analyse", "Conception", "Implémentation"]
+        },
+        "project_context": {
+          "overall_objective": "Numériser et optimiser le processus de traitement des dossiers au sein du service des ressources humaines",
+          "project_type": "Projet professionnel"
+        },
+        "initial_problem_challenge": "Pas de système informatique, pas de base de données centralisée, données stockées sur papier",
+        "approach_and_process": {
+          "methodology": ["Merise"],
+          "technos": [
+            {
+              "name": "Vue.js",
+              "icon": "vue"
+            },
+            {
+              "name": "Bootstrap.css",
+              "icon": "bootstrap"
+            },
+            {
+              "name": "Laravel",
+              "icon": "laravel"
+            },
+            {
+              "name": "MySQL",
+              "icon": "mysql"
+            }
+          ]
+        },
+        "key_concepts": ["Base de données", "Architecture MVC"],
+        "relevant_links": {
+          "github_repo": "",
+          "live_demo_link": ""
+        }
+      }
+    ]
+  },
+  "data_science": {
+    "title": "Projets en science des données",
+    "list": [
+      {
+        "project_title": "",
+        "role_and_responsibilities": {
+          "roles": [],
+          "key_tasks": [
+            "Collecte et acquisition de données",
+            "Nettoyage et prétraitement des données",
+            "Analyse exploratoire des données (AED)",
+            "Ingénierie des fonctionnalités",
+            "Sélection et développement de modèles",
+            "Entraînement et optimisation de modèles",
+            "Évaluation et validation de modèles",
+            "Déploiement (si applicable)",
+            "Interprétation et rapport"
+          ]
+        },
+        "project_context": {
+          "overall_objective": "",
+          "client_company": "",
+          "project_type": ""
+        },
+        "initial_problem_challenge": {
+          "business_problem": "",
+          "technical_challenge": ""
+        },
+        "approach_and_process": {
+          "methodology": [
+            "CRISP-DM",
+            "Agile (Scrum/Kanban)",
+            "Lean Startup",
+            "Custom Workflow"
+          ],
+          "key_steps": [],
+          "data_sources": [],
+          "technos": {
+            "programming_languages": [],
+            "libraries_frameworks": [],
+            "databases": [],
+            "cloud_platforms": [],
+            "visualization_tools": [],
+            "ml_platforms_mle_tools": []
+          }
+        },
+        "data_details": {
+          "data_volume": "",
+          "data_types": [],
+          "data_characteristics": []
+        },
+        "model_details": {
+          "model_type": "",
+          "algorithms_used": [],
+          "key_features_used": [],
+          "hyperparameters_tuned": [],
+          "architecture_details": ""
+        },
+        "solutions_and_deliverables": {
+          "produced": [
+            "Modèle entraîné",
+            "Notebooks Jupyter",
+            "Point de terminaison API",
+            "Tableau de bord",
+            "Document de recherche/Rapport",
+            "Preuve de concept"
+          ],
+          "visual_elements": {
+            "data_visualizations": [],
+            "model_performance_charts": [],
+            "architecture_diagrams": [],
+            "code_snippets": [],
+            "demo_screenshots_gifs": []
+          }
+        },
+        "results_and_impact": {
+          "key_metrics": [],
+          "quantitative_results": [],
+          "qualitative_impact": [],
+          "learnings": []
+        },
+        "challenges_encountered_and_solutions_provided": [],
+        "future_work_and_improvements": [],
+        "relevant_links": {
+          "github_repo": "",
+          "live_demo_link": "",
+          "article_blog_post": "",
+          "presentation_slides": ""
+        },
+        "testimonials": []
+      }
+    ]
+  }
+}

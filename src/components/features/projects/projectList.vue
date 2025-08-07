@@ -1,14 +1,14 @@
 <script lang="ts" setup>
-import List from './projectList.json';
 import type { projectType } from '@/static/interfaces/projectType';
 import { projectCard } from '@/components/ui/cards';
+import i18n from '@/plugins/i18n';
 </script>
 
 <template>
   <div class="project-list-container">
-    <h1 v-text="project_list.title"></h1>
+    <h1 v-text="projectList.title"></h1>
     <div class="project-list">
-      <template v-for="(projet, index) in project_list.list" :key="`project_card_'${index}`">
+      <template v-for="(projet, index) in projectList.list" :key="`project_card_'${index}`">
         <project-card :project="projet" />
       </template>
     </div>
@@ -24,17 +24,14 @@ export default {
       required: true,
     },
   },
-  data() {
-    return {
-      project_list: {
-        title: "",
-        list: [] as object[]
-      },
-    };
-  },
-  mounted() {
-    const cle = this.listLabel as keyof projectType;
-    this.project_list = List[cle];
+  computed: {
+    projectList() {
+      const cle = this.listLabel as keyof projectType;
+      let List = i18n.global.messages.en.projects;
+      if (i18n.global.locale === "fr")
+        List = i18n.global.messages.fr.projects;
+      return List[cle];
+    },
   },
 };
 </script>

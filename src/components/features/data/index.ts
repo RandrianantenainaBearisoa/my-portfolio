@@ -5,6 +5,8 @@ import enTimeline from './timeline/timelineDataEn.json';
 import frTimeline from './timeline/timelineDataFr.json';
 import enHobs from './hobbies-interests/en.json';
 import frHobs from './hobbies-interests/fr.json';
+import enProject from './projectList/projectListEn.json';
+import frProject from './projectList/projectListFr.json';
 
 export {
   personalData,
@@ -13,5 +15,7 @@ export {
   enTimeline,
   frTimeline,
   enHobs,
-  frHobs
+  frHobs,
+  enProject,
+  frProject
 };

@@ -1,6 +1,6 @@
 import { createI18n } from 'vue-i18n';
 
-import { enLabel, frLabel, enTimeline, frTimeline, enHobs, frHobs } from '@/components/features/data';
+import { enLabel, frLabel, enTimeline, frTimeline, enHobs, frHobs, enProject, frProject } from '@/components/features/data';
 
 
 const loadLocaleMessages = () => {
@@ -8,12 +8,14 @@ const loadLocaleMessages = () => {
         en: {
           labels: enLabel,
           timelineData: enTimeline,
-          hobs: enHobs
+          hobs: enHobs,
+          projects: enProject
         },
         fr: {
           labels: frLabel,
           timelineData: frTimeline,
-          hobs: frHobs
+          hobs: frHobs,
+          projects: frProject
         },
     };
 };
