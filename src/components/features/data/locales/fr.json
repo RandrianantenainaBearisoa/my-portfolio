@@ -1,0 +1,95 @@
+{
+  "menu": {
+    "home": "Accueil",
+    "about": "À propos",
+    "project": "Mes projets",
+    "experience": "Mes expériences",
+    "skill": "Mes compétences",
+    "contact": "Contacts"
+  },
+  "message": {
+    "contact": {
+      "success": {
+        "summary": "Merci pour votre message !",
+        "detail": "Message envoyé avec succès !"
+      },
+      "error": {
+        "summary": "Message non envoyé",
+        "detail": "Veuillez réessayer !"
+      },
+      "fill_all": {
+        "summary": "Le message ne peut être envoyé",
+        "detail": "Veuillez remplir tous les champs !"
+      }
+    }
+  },
+  "home": {
+    "greeting": "Bonjour, je m'appelle",
+    "intro": "Je suis développeur web full-stack. Ceci est mon portfolio, n'hésitez pas à le parcourir. Si mes services vous intéressent, vous pouvez me contacter par e-mail ou via WhatsApp.",
+    "cv": "Mon CV",
+    "intro2": "Collaborons et travaillons ensemble."
+  },
+  "about": {
+    "full_name": "Nom complet",
+    "age": "Âge",
+    "yo": "ans",
+    "job_title": {
+      "title": "Développeur web full-stack",
+      "label": "Titre du poste"
+    },
+    "hobbies": "Loisirs",
+    "interests": "Intérêts"
+  },
+  "project": {
+    "actors_and_functions": "Acteurs et fonctions",
+    "host": "Hôte",
+    "team": "Membres de l'équipe",
+    "role": "Rôles",
+    "task": "Tâches",
+    "project_context": "Contexte du projet",
+    "project_type": "Type de projet",
+    "initial_problem_challenge": "Problème initial & Défi",
+    "overall_objective": "Objectif général",
+    "approach_and_process": "Approche et processus",
+    "methodology": "Méthodologie",
+    "tech_stack": "Technologies utilisées",
+    "key_concepts": "Concepts clés",
+    "demo": {
+      "title": "Démo",
+      "no_demo": "Désolé, aucun code ni version de démonstration n'est disponible.",
+      "github": "Dépôt GitHub",
+      "live": "Démo en direct"
+    }
+  },
+  "experience": {
+    "experience_detail": "Détail de l'expérience",
+    "experience_type": "Type d'expérience",
+    "role": "Rôles",
+    "host": "Hôte",
+    "to": "à",
+    "enhanced_skills": "Compétences renforcées",
+    "soft": "Compétences transversales",
+    "hard": "Compétences techniques",
+    "accomplishments": "Réalisations",
+    "contribution": "Contribution",
+    "achievements": "Réalisations notables"
+  },
+  "skill": {
+    "hard": "Compétences techniques",
+    "soft": "Compétences transversales",
+    "languages": "Langues",
+    "listening": "Écoute",
+    "reading": "Lecture",
+    "writing": "Écriture"
+  },
+  "contact": {
+    "message_me": "Envoyez-moi un message ici",
+    "name": "Nom",
+    "email": "E-mail",
+    "message": "Message",
+    "send": "Envoyer",
+    "contact_me": "Vous pouvez me contacter via WhatsApp ou Gmail.",
+    "join_me": "Retrouvez-moi sur Github et Linkedin."
+  },
+  "copyright": "Tous droits réservés"
+}

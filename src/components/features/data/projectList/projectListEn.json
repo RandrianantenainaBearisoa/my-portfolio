@@ -1,0 +1,259 @@
+{
+  "web": {
+    "title": "Web App",
+    "list": [
+      {
+        "project_title": "Stock Management",
+        "entity": {
+          "name": "GoDigital",
+          "link": "https://godigital.mu/"
+        },
+        "team": "2",
+        "role_and_responsibilities": {
+          "roles": ["FullStack Developper"],
+          "key_tasks": ["Implementation", "Maintenance"]
+        },
+        "project_context": {
+          "overall_objective": "Develop an application for management of products in stock and products dispatched in stores",
+          "project_type": "Professional Project"
+        },
+        "initial_problem_challenge": "",
+        "approach_and_process": {
+          "methodology": [],
+          "technos": [
+            {
+              "name": "Livewire",
+              "icon": "livewire"
+            },
+            {
+              "name": "Tailwind.css",
+              "icon": "tailwind"
+            },
+            {
+              "name": "Laravel",
+              "icon": "laravel"
+            },
+            {
+              "name": "MySQL",
+              "icon": "mysql"
+            }
+          ]
+        },
+        "key_concepts": [],
+        "relevant_links": {
+          "github_repo": "",
+          "live_demo_link": ""
+        }
+      },
+      {
+        "project_title": "Garage Management",
+        "entity": {
+          "name": "GoDigital",
+          "link": "https://godigital.mu/"
+        },
+        "team": "3",
+        "role_and_responsibilities": {
+          "roles": ["FullStack Developper"],
+          "key_tasks": ["Implementation", "Maintenance"]
+        },
+        "project_context": {
+          "overall_objective": "Develop an application for managing garage activities",
+          "project_type": "Professional Project"
+        },
+        "initial_problem_challenge": "",
+        "approach_and_process": {
+          "methodology": [],
+          "technos": [
+            {
+              "name": "SimcyCreative",
+              "icon": "simcy"
+            },
+            {
+              "name": "MySQL",
+              "icon": "mysql"
+            }
+          ]
+        },
+        "key_concepts": [],
+        "relevant_links": {
+          "github_repo": "",
+          "live_demo_link": ""
+        }
+      },
+      {
+        "project_title": "Real Time chat app, Data management",
+        "entity": {
+          "name": "Ministry of Public Works",
+          "link": "http://www.mtp.gov.mg/"
+        },
+        "team": "1",
+        "role_and_responsibilities": {
+          "roles": ["FullStack Developper"],
+          "key_tasks": ["Analysis", "Design", "Implementation"]
+        },
+        "project_context": {
+          "overall_objective": "Optimize real-time communication and the choice of responses given during parliamentary sessions",
+          "project_type": "Professional Project"
+        },
+        "initial_problem_challenge": "No computer system, no centralized database, data stored on paper and MS Word",
+        "approach_and_process": {
+          "methodology": ["2TUP"],
+          "technos": [
+            {
+              "name": "Livewire",
+              "icon": "livewire"
+            },
+            {
+              "name": "Tailwind.css",
+              "icon": "tailwind"
+            },
+            {
+              "name": "Laravel",
+              "icon": "laravel"
+            },
+            {
+              "name": "MySQL",
+              "icon": "mysql"
+            }
+          ]
+        },
+        "key_concepts": ["Web Socket", "real-time communication"],
+        "relevant_links": {
+          "github_repo": "",
+          "live_demo_link": ""
+        }
+      },
+      {
+        "project_title": "Human Resources Management App",
+        "entity": {
+          "name": "DSP Ambotsirohitra",
+          "link": ""
+        },
+        "team": "2",
+        "role_and_responsibilities": {
+          "roles": ["Laravel Developper"],
+          "key_tasks": ["Analysis", "Design", "Implementation"]
+        },
+        "project_context": {
+          "overall_objective": "Digitize and optimize the file processing process in the Human Resources department",
+          "project_type": "Professional Project"
+        },
+        "initial_problem_challenge": "No computer system, no centralized database, data stored on paper",
+        "approach_and_process": {
+          "methodology": ["Merise"],
+          "technos": [
+            {
+              "name": "Vue.js",
+              "icon": "vue"
+            },
+            {
+              "name": "Bootstrap.css",
+              "icon": "bootstrap"
+            },
+            {
+              "name": "Laravel",
+              "icon": "laravel"
+            },
+            {
+              "name": "MySQL",
+              "icon": "mysql"
+            }
+          ]
+        },
+        "key_concepts": ["Database", "MVC Architecture"],
+        "relevant_links": {
+          "github_repo": "",
+          "live_demo_link": ""
+        }
+      }
+    ]
+  },
+  "data_science": {
+    "title": "Data Science Projects",
+    "list": [
+      {
+        "project_title": "",
+        "role_and_responsibilities": {
+          "roles": [],
+          "key_tasks": [
+            "Data Collection & Acquisition",
+            "Data Cleaning & Preprocessing",
+            "Exploratory Data Analysis (EDA)",
+            "Feature Engineering",
+            "Model Selection & Development",
+            "Model Training & Optimization",
+            "Model Evaluation & Validation",
+            "Deployment (if applicable)",
+            "Interpretation & Reporting"
+          ]
+        },
+        "project_context": {
+          "overall_objective": "",
+          "client_company": "",
+          "project_type": ""
+        },
+        "initial_problem_challenge": {
+          "business_problem": "",
+          "technical_challenge": ""
+        },
+        "approach_and_process": {
+          "methodology": ["CRISP-DM", "Agile (Scrum/Kanban)", "Lean Startup", "Custom Workflow"],
+          "key_steps": [],
+          "data_sources": [],
+          "technos": {
+            "programming_languages": [],
+            "libraries_frameworks": [],
+            "databases": [],
+            "cloud_platforms": [],
+            "visualization_tools": [],
+            "ml_platforms_mle_tools": []
+          }
+        },
+        "data_details": {
+          "data_volume": "",
+          "data_types": [],
+          "data_characteristics": []
+        },
+        "model_details": {
+          "model_type": "",
+          "algorithms_used": [],
+          "key_features_used": [],
+          "hyperparameters_tuned": [],
+          "architecture_details": ""
+        },
+        "solutions_and_deliverables": {
+          "produced": [
+            "Trained Model",
+            "Jupyter Notebooks",
+            "API Endpoint",
+            "Dashboard",
+            "Research Paper/Report",
+            "Proof of Concept"
+          ],
+          "visual_elements": {
+            "data_visualizations": [],
+            "model_performance_charts": [],
+            "architecture_diagrams": [],
+            "code_snippets": [],
+            "demo_screenshots_gifs": []
+          }
+        },
+        "results_and_impact": {
+          "key_metrics": [],
+          "quantitative_results": [],
+          "qualitative_impact": [],
+          "learnings": []
+        },
+        "challenges_encountered_and_solutions_provided": [],
+        "future_work_and_improvements": [],
+        "relevant_links": {
+          "github_repo": "",
+          "live_demo_link": "",
+          "article_blog_post": "",
+          "presentation_slides": ""
+        },
+        "testimonials": []
+      }
+    ]
+  }
+}

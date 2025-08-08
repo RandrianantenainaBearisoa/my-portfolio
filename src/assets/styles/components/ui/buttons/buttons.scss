@@ -1,0 +1,79 @@
+.link-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+
+  @media (min-width: 561px) {
+    justify-content: start;
+  }
+}
+
+a {
+  width: fit-content;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 5px;
+  color: #ffffff;
+  border-bottom: solid 1px #ffffff;
+  border-radius: 20px;
+  padding: 5px 10px;
+  transition: 0.5s;
+
+  &:hover {
+    background-color: #383838;
+    box-shadow: 0px 0px 15px 5px #383838;
+    transition: 0.5s;
+  }
+
+  &.reverted {
+    background-color: #383838;
+    // box-shadow: 0px 0px 15px 5px #383838;
+  }
+
+  &.whatsapp {
+    &:hover {
+      background-color: #128c7e;
+      box-shadow: 0px 0px 15px 5px #128c7e;
+      transition: 0.5s;
+    }
+  }
+
+  &.mail {
+    &:hover {
+      background-color: #808080;
+      box-shadow: 0px 0px 15px 5px #80808094;
+      transition: 0.5s;
+    }
+  }
+
+  &.cv {
+    &:hover {
+      background-color: #ffc10777;
+      box-shadow: 0px 0px 15px 5px #ffc10777;
+      transition: 0.5s;
+    }
+  }
+
+  &.linkedin {
+    &:hover {
+      background-color: #0e76a8;
+      box-shadow: 0px 0px 15px 5px #0e76a8;
+      transition: 0.5s;
+    }
+  }
+
+  &.github {
+    &:hover {
+      background-color: #104c35;
+      box-shadow: 0px 0px 15px 5px #104c35;
+      transition: 0.5s;
+    }
+  }
+
+  &.icon-only {
+    width: 40px;
+    height: 40px;
+  }
+}

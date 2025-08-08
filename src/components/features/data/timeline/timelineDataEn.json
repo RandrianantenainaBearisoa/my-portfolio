@@ -1,0 +1,94 @@
+[
+  {
+    "badge": "experience",
+    "isTable": false,
+    "step": "Internship",
+    "topics": "Management web applications",
+    "date": "February 2025 - May 2025",
+    "place": {
+      "name": "GoDigital",
+      "link": "https://godigital.mu/"
+    }
+  },
+  {
+    "badge": "graduation",
+    "isTable": false,
+    "step": "Bachelor's Degree",
+    "topics": "Software Engineering and Database Administration",
+    "date": "January 2025",
+    "place": {
+      "name": "Ecole Nationale d'Informatique Fianarantsoa",
+      "link": "https://eni.mg/"
+    }
+  },
+  {
+    "badge": "study",
+    "isTable": true,
+    "table": [
+      {
+        "step": "3dr year student",
+        "topics": "Software Engineering and Database Administration",
+        "date": "2023-2024",
+        "place": {
+          "name": "Ecole Nationale d'Informatique Fianarantsoa",
+          "link": "https://eni.mg/"
+        }
+      },
+      {
+        "step": "Internship",
+        "topics": "Real Time chat app, Data management",
+        "date": "August 2024 - November 2024",
+        "place": {
+          "name": "Ministry of Public Works",
+          "link": "http://www.mtp.gov.mg/"
+        }
+      }
+    ]
+  },
+  {
+    "badge": "study",
+    "isTable": true,
+    "table": [
+      {
+        "step": "2nd year student",
+        "topics": "Software Engineering and Database Administration",
+        "date": "2022-2023",
+        "place": {
+          "name": "Ecole Nationale d'Informatique Fianarantsoa",
+          "link": "https://eni.mg/"
+        }
+      },
+      {
+        "step": "Internship",
+        "topics": "Human Resources Management App",
+        "date": "September 2023 - November 2023",
+        "place": {
+          "name": "DSP Ambotsirohitra",
+          "link": ""
+        }
+      }
+    ]
+  },
+  {
+    "badge": "study",
+    "isTable": false,
+    "step": "1st year student",
+    "topics": "Software Engineering and Database Administration",
+    "date": "2021-2022",
+    "place": {
+      "name": "Ecole Nationale d'Informatique Fianarantsoa",
+      "link": "https://eni.mg/"
+    }
+  },
+  {
+    "badge": "graduation",
+    "isTable": false,
+    "step": "Hight School Degree",
+    "topics": "Maths and physics oriented",
+    "date": "2020",
+    "place": {
+      "name": "Lycée Notre Dame de Fatima Ambohimirary",
+      "link": ""
+    }
+  }
+]

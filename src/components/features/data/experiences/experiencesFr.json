@@ -1,0 +1,142 @@
+{
+  "godigital": {
+    "experience_type": "Stage",
+    "entity": {
+      "name": "GoDigital",
+      "link": "https://godigital.mu/"
+    },
+    "start_date": "Février 2025",
+    "end_date": "Mai 2025",
+    "role": "Développeur FullStack",
+    "contribution": "En tant que développeur FullStack au sein de l'agence numérique, j'ai été impliqué dans le cycle de vie complet du développement des projets clients. Mon travail a consisté à créer des applications web robustes et efficaces, en m'assurant de répondre aux exigences des clients et d'apporter des améliorations concrètes à leurs opérations.",
+    "technos": [
+      {
+        "name": "Livewire",
+        "icon": "livewire"
+      },
+      {
+        "name": "Vue.js",
+        "icon": "vue"
+      },
+      {
+        "name": "Tailwind.css",
+        "icon": "tailwind"
+      },
+      {
+        "name": "Laravel",
+        "icon": "laravel"
+      },
+      {
+        "name": "MySQL",
+        "icon": "mysql"
+      },
+      {
+        "name": "SimcyCreative",
+        "icon": "simcy"
+      },
+      {
+        "name": "Git",
+        "icon": "git"
+      },
+      {
+        "name": "Github",
+        "icon": "github"
+      },
+      {
+        "name": "Gitlab",
+        "icon": "gitlab"
+      }
+    ],
+    "enhanced_skills": {
+      "hard": ["systèmes de gestion de versions"],
+      "soft": [
+        "Travail d'équipe et collaboration",
+        "Gestion du stress",
+        "Gestion du temps et organisation"
+      ]
+    },
+    "notable_achievements": [
+      "Développement d'un système de gestion de stock pour gérer les produits entrants et sortants de l'entrepôt et des magasins.",
+      "Contribution significative à une application de gestion de garage qui a numérisé les opérations, réduisant les processus manuels et améliorant la gestion des dossiers de service."
+    ]
+  },
+  "mtp": {
+    "experience_type": "Stage",
+    "entity": {
+      "name": "Ministère des Travaux Publics",
+      "link": "http://www.mtp.gov.mg/"
+    },
+    "start_date": "Août 2024",
+    "end_date": "Novembre 2024",
+    "role": "Développeur FullStack",
+    "contribution": "Durant ce stage universitaire, j'ai dirigé le développement d'une application interne cruciale visant à moderniser les processus de communication et de gestion des données. Mon objectif principal était de transformer des systèmes obsolètes basés sur le papier en solutions numériques efficaces et en temps réel.",
+    "technos": [
+      {
+        "name": "Livewire",
+        "icon": "livewire"
+      },
+      {
+        "name": "Tailwind.css",
+        "icon": "tailwind"
+      },
+      {
+        "name": "Laravel",
+        "icon": "laravel"
+      },
+      {
+        "name": "MySQL",
+        "icon": "mysql"
+      }
+    ],
+    "enhanced_skills": {
+      "hard": [],
+      "soft": [
+        "Autonomie et initiative",
+        "Professionnalisme et éthique de travail",
+        "Apprentissage continu",
+        "Communication"
+      ]
+    },
+    "notable_achievements": [
+      "Développement d'une application de chat en temps réel et d'un système de gestion de données qui ont révolutionné la communication lors des sessions parlementaires, permettant un échange d'informations instantané.",
+      "Centralisation réussie des données parlementaires critiques, réduisant le temps de recherche manuelle de plusieurs minutes à quelques secondes, en surmontant le défi des données disparates sur papier et MS Word."
+    ]
+  },
+  "dsp": {
+    "experience_type": "Stage",
+    "entity": {
+      "name": "DSP Ambotsirohitra",
+      "link": ""
+    },
+    "start_date": "Septembre 2023",
+    "end_date": "Novembre 2023",
+    "role": "Développeur Laravel",
+    "contribution": "Lors de ce stage universitaire, j'ai joué un rôle clé dans la numérisation du service des ressources humaines. Mon travail a consisté à concevoir et à implémenter une application complète de gestion RH pour rationaliser le traitement des dossiers et améliorer l'accessibilité des données.",
+    "technos": [
+      {
+        "name": "Vue.js",
+        "icon": "vue"
+      },
+      {
+        "name": "Bootstrap.css",
+        "icon": "bootstrap"
+      },
+      {
+        "name": "Laravel",
+        "icon": "laravel"
+      },
+      {
+        "name": "MySQL",
+        "icon": "mysql"
+      }
+    ],
+    "enhanced_skills": {
+      "hard": [],
+      "soft": ["Curiosité", "Travail d'équipe", "Adaptabilité et flexibilité", "Autonomie"]
+    },
+    "notable_achievements": [
+      "Numérisation de 100% du traitement des dossiers RH, éliminant les flux de travail sur papier et réduisant considérablement la charge administrative.",
+      "Amélioration de l'accessibilité et de la récupération des données pour le service RH, réduisant les temps de recherche de plus de 70% grâce à une base de données centralisée."
+    ]
+  }
+}

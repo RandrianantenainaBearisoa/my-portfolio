@@ -1,0 +1,29 @@
+import personalData from './personal-data.json';
+import enLabel from './locales/en.json';
+import frLabel from './locales/fr.json';
+import enTimeline from './timeline/timelineDataEn.json';
+import frTimeline from './timeline/timelineDataFr.json';
+import enHobs from './hobbies-interests/en.json';
+import frHobs from './hobbies-interests/fr.json';
+import enProject from './projectList/projectListEn.json';
+import frProject from './projectList/projectListFr.json';
+import enExpe from './experiences/experiencesEn.json';
+import frExpe from './experiences/experiencesFr.json';
+import enSkills from './skills/allSkillsEn.json';
+import frSkills from './skills/allSkillsFr.json';
+
+export {
+  personalData,
+  enLabel,
+  frLabel,
+  enTimeline,
+  frTimeline,
+  enHobs,
+  frHobs,
+  enProject,
+  frProject,
+  enExpe,
+  frExpe,
+  enSkills,
+  frSkills
+};

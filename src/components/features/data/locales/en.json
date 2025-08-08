@@ -1,0 +1,95 @@
+{
+  "menu": {
+    "home": "Home",
+    "about": "About me",
+    "project": "My Projects",
+    "experience": "My experiences",
+    "skill": "My skills",
+    "contact": "Contacts"
+  },
+  "message": {
+    "contact": {
+      "success": {
+        "summary": "Thanks for your feedback!",
+        "detail": "Message sent successfully!"
+      },
+      "error": {
+        "summary": "Message unsent",
+        "detail": "Please try again!"
+      },
+      "fill_all": {
+        "summary": "Cannot send the message",
+        "detail": "Please fill all field!"
+      }
+    }
+  },
+  "home": {
+    "greeting": "Hello, my name is",
+    "intro": "I'm a fullstack web developper and this is my portfolio, feel free to browse through it and if you are interersted in my services, send me an email or contact me via whatsapp.",
+    "cv": "My Resume",
+    "intro2": "Let's get in touch and work together."
+  },
+  "about": {
+    "full_name": "Full name",
+    "age": "Age",
+    "yo": "years old",
+    "job_title": {
+        "title": "Fullstack web developper",
+        "label": "Job title"
+    },
+    "hobbies": "Hobbies",
+    "interests": "Interests"
+  },
+  "project": {
+    "actors_and_functions": "Actors and Functions",
+    "host": "Host",
+    "team": "Team members",
+    "role": "Roles",
+    "task": "Tasks",
+    "project_context": "Project context",
+    "project_type": "Project type",
+    "initial_problem_challenge": "Initial problem challenge",
+    "overall_objective": "Overall objective",
+    "approach_and_process": "Approach and process",
+    "methodology": "Methodology",
+    "tech_stack": "Tech stack",
+    "key_concepts": "Key concepts",
+    "demo": {
+        "title": "Demo",
+        "no_demo": "Sorry , there is no code or demo version available.",
+        "github": "Github repository",
+        "live": "Live demo"
+    }
+  },
+  "experience": {
+    "experience_detail": "Experience Detail",
+    "experience_type": "Experience type",
+    "role": "Roles",
+    "host": "Host",
+    "to": "to",
+    "enhanced_skills": "Enhanced Skills",
+    "soft": "Soft Skills",
+    "hard": "Hard Skills",
+    "accomplishments": "Accomplishments",
+    "contribution": "Contribution",
+    "achievements": "Notable achievements"
+  },
+  "skill": {
+    "hard": "Hard skills",
+    "soft": "Soft Skills",
+    "languages": "Languages",
+    "listening": "Listening",
+    "reading": "Reading",
+    "writing": "Writing"
+  },
+  "contact": {
+    "message_me": "Send me a message here",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send",
+    "contact_me": "You can contact me with Whatsapp or Gmail.",
+    "join_me": "Join me on Github and Linkedin."
+  },
+  "copyright": "All right reserved"
+}

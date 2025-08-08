@@ -1,0 +1,123 @@
+{
+  "languages": [
+    {
+      "lang": "Anglais",
+      "listen": 40,
+      "read": 50,
+      "write": 20,
+      "icon": "eng"
+    },
+    {
+      "lang": "Français",
+      "listen": 75,
+      "read": 80,
+      "write": 50,
+      "icon": "fr"
+    }
+  ],
+  "soft_skills": [
+    "Communication",
+    "Travail d'équipe",
+    "Adaptabilité",
+    "Gestion du temps",
+    "Résolution de problèmes",
+    "Autonomie",
+    "Professionnalisme",
+    "Apprentissage continu",
+    "Gestion du stress"
+  ],
+  "hard_skills": {
+    "Frontend": [
+      {
+        "name": "HTML",
+        "icon": "html"
+      },
+      {
+        "name": "CSS",
+        "icon": "css"
+      },
+      {
+        "name": "JavaScript",
+        "icon": "javascript"
+      },
+      {
+        "name": "TypeScript",
+        "icon": "typescript"
+      },
+      {
+        "name": "Vue",
+        "icon": "vue"
+      },
+      {
+        "name": "Bootstrap",
+        "icon": "bootstrap"
+      },
+      {
+        "name": "Tailwind",
+        "icon": "tailwind"
+      },
+      {
+        "name": "SCSS",
+        "icon": "scss"
+      }
+    ],
+    "Backend": [
+      {
+        "name": "PHP",
+        "icon": "php"
+      },
+      {
+        "name": "Laravel",
+        "icon": "laravel"
+      },
+      {
+        "name": "SimcyCreative",
+        "icon": "simcy"
+      }
+    ],
+    "Base_de_Données": [
+      {
+        "name": "SQL",
+        "icon": "sql"
+      },
+      {
+        "name": "MySQL",
+        "icon": "mysql"
+      },
+      {
+        "name": "SQLite",
+        "icon": "sqlite"
+      }
+    ],
+    "Outils": [
+      {
+        "name": "Git",
+        "icon": "git"
+      },
+      {
+        "name": "Github",
+        "icon": "github"
+      },
+      {
+        "name": "Gitlab",
+        "icon": "gitlab"
+      },
+      {
+        "name": "npm",
+        "icon": "npm"
+      },
+      {
+        "name": "Vite",
+        "icon": "vite"
+      },
+      {
+        "name": "Postman",
+        "icon": "postman"
+      },
+      {
+        "name": "VSCode",
+        "icon": "vscode"
+      }
+    ]
+  }
+}

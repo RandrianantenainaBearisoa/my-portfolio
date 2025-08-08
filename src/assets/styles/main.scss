@@ -1,0 +1,16 @@
+body {
+  width: 100vw;
+  background: #243748;
+  background: linear-gradient(180deg, #243748e6 0%, #4b749fed 100%);
+
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  font-family: 'KoHo', sans-serif;
+
+  a {
+    text-decoration-line: none;
+  }
+}
