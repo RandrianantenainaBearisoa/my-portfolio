@@ -25,7 +25,7 @@ const loadLocaleMessages = () => {
 };
 
 const i18n = createI18n({
-    locale: localStorage.getItem("lang") || 'en',
+    locale: localStorage.getItem("lang") || 'fr',
     fallbackLocale: 'en',
     messages: loadLocaleMessages()
 });

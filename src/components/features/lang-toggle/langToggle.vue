@@ -8,11 +8,12 @@
 
 <script lang="ts">
 import { useI18n } from 'vue-i18n';
+import i18n from '@/plugins/i18n';
 
 export default {
   data() {
     return {
-      currentLang: "En"
+      current_lang: i18n.global.locale.charAt(0).toUpperCase() + i18n.global.locale.slice(1),
     };
   },
   setup() {
@@ -22,15 +23,21 @@ export default {
       locale
     };
   },
+  computed: {
+    currentLang() {
+      return this.current_lang;
+    },
+  },
   methods: {
     toggleLang() {
       if ((this.currentLang === "Fr")) {
-        this.currentLang = "En";
+        this.current_lang = "En";
         this.locale = "en";
       } else {
-        this.currentLang = "Fr";
+        this.current_lang = "Fr";
         this.locale = "fr";
       }
+      localStorage.setItem('lang', this.current_lang.toLowerCase());
     },
   }
 };

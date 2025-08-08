@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import _profilePic from "@/assets/images/profile/small-nobg.png";
 import { lightButton } from "@/components/ui/buttons";
-import { downloadIcon, linkedinIcon, eMailIcon, whatsappIcon, githubIcon } from "@/components/ui/icons";
+import { linkedinIcon, eMailIcon, whatsappIcon, githubIcon } from "@/components/ui/icons";
 import { personalData } from "../data";
 import i18n from "@/plugins/i18n";
 </script>
@@ -29,14 +29,14 @@ import i18n from "@/plugins/i18n";
           </span>
         </light-button>
       </div>
-      <div class="get-cv">
+      <!-- <div class="get-cv">
         <light-button usedClass="cv" @click.prevent="onDownloadCV">
           <download-icon />
           <span>
             {{ i18n.global.t("labels.home.cv") }}
           </span>
         </light-button>
-      </div>
+      </div> -->
     </div>
     <div class="social-media-container">
       <p>
