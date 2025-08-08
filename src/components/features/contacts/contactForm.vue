@@ -61,8 +61,8 @@ export default {
       const send_msg_form = event.target;
       if (this.formValidate()) {
         emailjs
-          .sendForm('', '', send_msg_form, {
-            publicKey: '',
+          .sendForm('service_p9253u4', 'template_ji5mx08', send_msg_form, {
+            publicKey: 'xQetr35FKQxK4GsrW',
           })
           .then(
             () => {
