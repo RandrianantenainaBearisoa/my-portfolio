@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 import Toast from 'primevue/toast';
 import i18n from "@/plugins/i18n";
+import { EMAIL_JS_PUBLIC_KEY, EMAIL_JS_SERVICE_ID, EMAIL_JS_TEMPLATE_ID } from '@/static/constants/constants';
 </script>
 
 <template>
@@ -9,14 +10,14 @@ import i18n from "@/plugins/i18n";
     <PrimevueFieldset :legend="i18n.global.t('labels.contact.message_me')">
       <div class="input-field">
         <PrimevueFloatLabel variant="in">
-          <PrimevueInputText id="in_label_name" name="name" :value="name" />
+          <PrimevueInputText id="in_label_name" name="name" v-model="name" />
           <label for="in_label_name">{{ i18n.global.t("labels.contact.name") }}</label>
         </PrimevueFloatLabel>
       </div>
 
       <div class="input-field">
         <PrimevueFloatLabel variant="in">
-          <PrimevueInputText id="in_label_email" name="email" :value="email" />
+          <PrimevueInputText id="in_label_email" name="email" v-model="email" />
           <label for="in_label_email">{{ i18n.global.t("labels.contact.email") }}</label>
         </PrimevueFloatLabel>
       </div>
@@ -24,7 +25,7 @@ import i18n from "@/plugins/i18n";
       <div class="input-field">
         <PrimevueFloatLabel variant="in">
           <PrimevueTextarea id="in_label_mess" rows="5" cols="40" style="resize: none" name="message"
-            :value="message" />
+            v-model="message" />
           <label for="in_label_mess">{{ i18n.global.t("labels.contact.message") }}</label>
         </PrimevueFloatLabel>
       </div>
@@ -61,12 +62,15 @@ export default {
       const send_msg_form = event.target;
       if (this.formValidate()) {
         emailjs
-          .sendForm('service_p9253u4', 'template_ji5mx08', send_msg_form, {
-            publicKey: 'xQetr35FKQxK4GsrW',
+          .sendForm(EMAIL_JS_SERVICE_ID, EMAIL_JS_TEMPLATE_ID, send_msg_form, {
+            publicKey: EMAIL_JS_PUBLIC_KEY,
           })
           .then(
             () => {
               this.toast.add({ severity: 'success', summary: i18n.global.t("labels.message.contact.success.summary"), detail: i18n.global.t("labels.message.contact.success.detail"), life: 3000 });
+              this.name = '';
+              this.email = '';
+              this.message = '';
             },
             (error) => {
               console.log('FAILED...', error.text);
