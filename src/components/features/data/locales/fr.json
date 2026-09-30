@@ -25,16 +25,16 @@
   },
   "home": {
     "greeting": "Bonjour, je m'appelle",
-    "intro": "Je suis développeur web full-stack. Ceci est mon portfolio, n'hésitez pas à le parcourir. Si mes services vous intéressent, vous pouvez me contacter par e-mail ou via WhatsApp.",
+    "intro": "Ceci est mon portfolio, n'hésitez pas à le parcourir. Si mes services vous intéressent, vous pouvez me contacter par e-mail ou via WhatsApp.",
     "cv": "Mon CV",
-    "intro2": "Collaborons et travaillons ensemble."
+    "intro2": "Prenons contact et travaillons ensemble."
   },
   "about": {
     "full_name": "Nom complet",
     "age": "Âge",
     "yo": "ans",
     "job_title": {
-      "title": "Développeur web full-stack",
+      "title": "Développeur Python orienté IA et data",
       "label": "Titre du poste"
     },
     "hobbies": "Loisirs",

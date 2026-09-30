@@ -1,18 +1,24 @@
 <script lang="ts" setup>
-import _profilePic from "@/assets/images/profile/small-nobg.png";
-import { lightButton } from "@/components/ui/buttons";
-import { linkedinIcon, eMailIcon, whatsappIcon, githubIcon } from "@/components/ui/icons";
-import { personalData } from "../data";
-import i18n from "@/plugins/i18n";
+import _profilePic from '@/assets/images/profile/small-nobg.png'
+import { lightButton } from '@/components/ui/buttons'
+import { linkedinIcon, eMailIcon, whatsappIcon, githubIcon } from '@/components/ui/icons'
+import { personalData } from '../data'
+import i18n from '@/plugins/i18n'
 </script>
 
 <template>
   <div class="descri">
     <h3>
-      {{ i18n.global.t("labels.home.greeting") }} <strong>RANDRIANANTENAINA Bearisoa</strong>.
+      {{ i18n.global.t('labels.home.greeting') }} <strong>RANDRIANANTENAINA Bearisoa</strong>.
+      <br />
+      <span>
+        {{ i18n.global.t('labels.about.job_title.title') }}
+      </span>
     </h3>
     <p>
-      {{ i18n.global.t("labels.home.intro") }}
+      <i>
+        {{ i18n.global.t('labels.home.intro') }}
+      </i>
     </p>
     <div class="home-contact">
       <div class="direct-contact">
@@ -40,10 +46,14 @@ import i18n from "@/plugins/i18n";
     </div>
     <div class="social-media-container">
       <p>
-        {{ i18n.global.t("labels.home.intro2") }}
+        {{ i18n.global.t('labels.home.intro2') }}
       </p>
       <div class="social-media">
-        <light-button usedClass="icon-only linkedin" :url="personalData.linkedin.link" :newTab="true">
+        <light-button
+          usedClass="icon-only linkedin"
+          :url="personalData.linkedin.link"
+          :newTab="true"
+        >
           <linkedin-icon />
         </light-button>
         <light-button usedClass="icon-only github" :url="personalData.github.link" :newTab="true">
@@ -64,22 +74,37 @@ export default {
   data() {
     return {
       //
-    };
+    }
   },
   methods: {
     onDownloadCV() {
-      const link = document.createElement('a');
-      link.href = '/pdfs/cv.pdf';
-      link.download = 'RANDRIANANTENAINA Bearisoa - CV.pdf';
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-    }
-  }
-};
+      const link = document.createElement('a')
+      link.href = '/pdfs/cv.pdf'
+      link.download = 'RANDRIANANTENAINA Bearisoa - CV.pdf'
+      document.body.appendChild(link)
+      link.click()
+      document.body.removeChild(link)
+    },
+  },
+}
 </script>
 
 <style scoped lang="scss">
+.descri {
+  h3 {
+    margin: 5px 0px;
+
+    span {
+      color: #ffffff94;
+      text-decoration-line: underline;
+    }
+  }
+
+  p {
+    font-weight: 100;
+  }
+}
+
 .home-contact {
   display: flex;
   justify-content: space-around;
