@@ -11,7 +11,7 @@ import {
 import { personalData } from '../data'
 import i18n from '@/plugins/i18n'
 
-const status_bool = true; // true when I'm open to opportunities
+const status_bool = true // true when I'm open to opportunities
 </script>
 
 <template>
@@ -228,11 +228,11 @@ export default {
     bottom: 20px;
     color: #0000008b;
     text-align: center;
-    
+
     &.disponible {
       background-color: var(--open-to-work-color);
     }
-    
+
     &.not-dispo {
       background-color: var(--not-available-color);
     }
