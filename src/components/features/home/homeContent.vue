@@ -1,9 +1,17 @@
 <script lang="ts" setup>
 import _profilePic from '@/assets/images/profile/small-nobg.png'
 import { lightButton } from '@/components/ui/buttons'
-import { linkedinIcon, eMailIcon, whatsappIcon, githubIcon, gitlabIcon2 } from '@/components/ui/icons'
+import {
+  linkedinIcon,
+  eMailIcon,
+  whatsappIcon,
+  githubIcon,
+  gitlabIcon2,
+} from '@/components/ui/icons'
 import { personalData } from '../data'
 import i18n from '@/plugins/i18n'
+
+const status_bool = true; // true when I'm open to opportunities
 </script>
 
 <template>
@@ -66,8 +74,15 @@ import i18n from '@/plugins/i18n'
     </div>
   </div>
   <div class="pic">
-    <div class="picture-container">
+    <div :class="`picture-container ${status_bool ? 'disponible' : 'not-dispo'}`">
       <img :src="_profilePic" alt="profile picture" />
+      <div :class="`status-container ${status_bool ? 'disponible' : 'not-dispo'}`">
+        {{
+          status_bool
+            ? i18n.global.t('labels.home.status.available')
+            : i18n.global.t('labels.home.status.unavailable')
+        }}
+      </div>
     </div>
   </div>
 </template>
@@ -168,7 +183,6 @@ export default {
 }
 
 .picture-container {
-  border: solid 2px gray;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -176,24 +190,52 @@ export default {
   overflow: hidden;
   width: 300px;
   height: 300px;
-  animation: pulse 1s infinite;
-  animation-direction: alternate;
+  position: relative;
+
+  --open-to-work-color: #90ee90;
+  --not-available-color: #808080;
+
+  &.disponible {
+    border: solid 2px var(--open-to-work-color);
+    animation: pulse 1s infinite;
+    animation-direction: alternate;
+  }
+
+  &.not-dispo {
+    border: solid 2px var(--not-available-color);
+  }
 
   @keyframes pulse {
     from {
       background-color: none;
-      box-shadow: 0 0 0 0px #ffffff2d;
+      box-shadow: 0 0 0 0px #90ee902d;
     }
 
     to {
-      background-color: #ffffff2d;
-      box-shadow: 0 0 0 5px #ffffff2d;
+      background-color: #90ee902d;
+      box-shadow: 0 0 0 5px #90ee902d;
     }
   }
 
   img {
     width: 100% !important;
     transform: scale(1.1);
+  }
+
+  .status-container {
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+    color: #0000008b;
+    text-align: center;
+    
+    &.disponible {
+      background-color: var(--open-to-work-color);
+    }
+    
+    &.not-dispo {
+      background-color: var(--not-available-color);
+    }
   }
 }
 </style>

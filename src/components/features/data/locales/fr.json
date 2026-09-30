@@ -27,7 +27,11 @@
     "greeting": "Bonjour, je m'appelle",
     "intro": "Ceci est mon portfolio, n'hésitez pas à le parcourir. Si mes services vous intéressent, vous pouvez me contacter par e-mail ou via WhatsApp.",
     "cv": "Mon CV",
-    "intro2": "Prenons contact et travaillons ensemble."
+    "intro2": "Prenons contact et travaillons ensemble.",
+    "status": {
+      "available": "Disponible",
+      "unavailable": ""
+    }
   },
   "about": {
     "full_name": "Nom complet",
