@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { lightButton } from "@/components/ui/buttons";
-import { linkedinIcon, eMailIcon, whatsappIcon, githubIcon } from "@/components/ui/icons";
+import { linkedinIcon, eMailIcon, whatsappIcon, githubIcon, gitlabIcon2 } from "@/components/ui/icons";
 import { personalData } from "../data";
 import i18n from "@/plugins/i18n";
 </script>
@@ -38,6 +38,9 @@ import i18n from "@/plugins/i18n";
         </light-button>
         <light-button usedClass="icon-only github" :url="personalData.github.link" :newTab="true">
           <github-icon fill="currentColor" />
+        </light-button>
+        <light-button usedClass="icon-only gitlab" :url="personalData.gitlab.link" :newTab="true">
+          <gitlab-icon2 fill="currentColor" />
         </light-button>
       </div>
     </div>
