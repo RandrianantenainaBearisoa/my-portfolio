@@ -1,5 +1,11 @@
 <script lang="ts" setup>
-import i18n from "@/plugins/i18n";
+import i18n from '@/plugins/i18n'
+import { computed } from 'vue'
+
+const current_age = computed(() => {
+  const currentYear: number = new Date().getFullYear()
+  return currentYear - 2002
+})
 </script>
 
 <template>
@@ -7,54 +13,38 @@ import i18n from "@/plugins/i18n";
     <div class="info-card">
       <div>
         <dl>
-          <dt>
-            {{ i18n.global.t("labels.about.full_name") }} :
-          </dt>
-          <dd>
-            RANDRIANANTENAINA Bearisoa
-          </dd>
+          <dt>{{ i18n.global.t('labels.about.full_name') }} :</dt>
+          <dd>RANDRIANANTENAINA Bearisoa</dd>
         </dl>
         <dl>
-          <dt>
-            {{ i18n.global.t("labels.about.age") }} :
-          </dt>
-          <dd>
-            23 {{ i18n.global.t("labels.about.yo") }}
-          </dd>
+          <dt>{{ i18n.global.t('labels.about.age') }} :</dt>
+          <dd>{{ current_age }} {{ i18n.global.t('labels.about.yo') }}</dd>
         </dl>
         <dl>
-          <dt>
-            {{ i18n.global.t("labels.about.job_title.label") }} :
-          </dt>
+          <dt>{{ i18n.global.t('labels.about.job_title.label') }} :</dt>
           <dd>
-            {{ i18n.global.t("labels.about.job_title.title") }}
+            {{ i18n.global.t('labels.about.job_title.title') }}
           </dd>
         </dl>
       </div>
       <table>
         <tbody>
           <tr>
-            <th>
-              {{ i18n.global.t("labels.about.hobbies") }} :
-            </th>
-            <th>
-              {{ i18n.global.t("labels.about.interests") }} :
-            </th>
+            <th>{{ i18n.global.t('labels.about.hobbies') }} :</th>
+            <th>{{ i18n.global.t('labels.about.interests') }} :</th>
           </tr>
           <tr>
             <td>
               <ul>
                 <template v-for="(hob, index) in hobbiesList" :key="`hob_${index}`">
-                  <li v-text="hob">
-                  </li>
+                  <li v-text="hob"></li>
                 </template>
               </ul>
             </td>
             <td>
               <ul>
                 <template v-for="(interest, index) in interestsList" :key="`interest_${index}`">
-                  <li v-text="interest">
-                  </li>
+                  <li v-text="interest"></li>
                 </template>
               </ul>
             </td>
@@ -63,25 +53,22 @@ import i18n from "@/plugins/i18n";
       </table>
     </div>
   </div>
-
 </template>
 
 <script lang="ts">
 export default {
-  name: "personal-info",
+  name: 'personal-info',
   computed: {
     hobbiesList() {
-      if (i18n.global.locale === "en")
-        return i18n.global.messages.en.hobs.hobbies;
-      return i18n.global.messages.fr.hobs.hobbies;
+      if (i18n.global.locale === 'en') return i18n.global.messages.en.hobs.hobbies
+      return i18n.global.messages.fr.hobs.hobbies
     },
     interestsList() {
-      if (i18n.global.locale === "en")
-        return i18n.global.messages.en.hobs.interests;
-      return i18n.global.messages.fr.hobs.interests;
+      if (i18n.global.locale === 'en') return i18n.global.messages.en.hobs.interests
+      return i18n.global.messages.fr.hobs.interests
     },
   },
-};
+}
 </script>
 
 <style lang="scss">
@@ -137,6 +124,5 @@ export default {
       }
     }
   }
-
 }
 </style>
