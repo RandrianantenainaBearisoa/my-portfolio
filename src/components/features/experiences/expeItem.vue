@@ -1,9 +1,23 @@
 <script setup lang="ts">
-import { markRaw } from 'vue';
-import { userIcon, simcyIcon, livewireIcon, tailwindIcon, laravelIcon, mysqlIcon, vuejsIcon, bootstrapIcon, gitIcon, githubIcon, gitlabIcon } from '@/components/ui/icons';
-import type { experienceHost } from '@/static/interfaces/experienceHost';
-import { typeTwoButton } from '@/components/ui/buttons';
-import i18n from "@/plugins/i18n";
+import { markRaw } from 'vue'
+import {
+  userIcon,
+  simcyIcon,
+  livewireIcon,
+  tailwindIcon,
+  laravelIcon,
+  mysqlIcon,
+  vuejsIcon,
+  bootstrapIcon,
+  gitIcon,
+  githubIcon,
+  gitlabIcon,
+  experienceIcon,
+  homeIcon,
+} from '@/components/ui/icons'
+import type { experienceHost } from '@/static/interfaces/experienceHost'
+import { typeTwoButton } from '@/components/ui/buttons'
+import i18n from '@/plugins/i18n'
 </script>
 
 <template>
@@ -15,61 +29,81 @@ import i18n from "@/plugins/i18n";
     </div>
     <fieldset>
       <legend>
-        {{ i18n.global.t("labels.experience.experience_detail") }}
+        {{ i18n.global.t('labels.experience.experience_detail') }}
       </legend>
       <div class="part-1">
         <div>
           <type-two-button>
             <div class="pseudo-button">
-              {{ i18n.global.t("labels.experience.experience_type") }}: <span class="upper-size">{{
-                experience.experience_type }}</span>
+              <!-- {{ i18n.global.t("labels.experience.experience_type") }} -->
+              <experience-icon size="15" />:<span class="upper-size">{{
+                experience.experience_type
+              }}</span>
             </div>
           </type-two-button>
-          <type-two-button>
-            <div class="pseudo-button">
-              {{ i18n.global.t("labels.experience.role") }}: <span class="upper-size">{{ experience.role }}</span>
-            </div>
-          </type-two-button>
+
+          <template v-if="experience.entity">
+            <type-two-button :url="experience.entity.link">
+              <div class="pseudo-button">
+                <!-- {{ i18n.global.t('labels.experience.host') }} -->
+                <home-icon size="15" />:
+                <span
+                  :class="`upper-size ${experience.entity.name.length <= 16 ? 'more-height' : ''}`"
+                  >{{ experience.entity.name }}</span
+                >
+              </div>
+            </type-two-button>
+          </template>
         </div>
         <type-two-button>
           <div class="pseudo-button in-column">
             <span class="upper-size">{{ experience.start_date }}</span>
-            {{ i18n.global.t("labels.experience.to") }} <span class="upper-size">{{ experience.end_date }}</span>
+            {{ i18n.global.t('labels.experience.to') }}
+            <span class="upper-size">{{ experience.end_date }}</span>
           </div>
         </type-two-button>
-        <template v-if="experience.entity">
-          <type-two-button :url="experience.entity.link">
-            <div class="pseudo-button">
-              {{ i18n.global.t("labels.experience.host") }}: <span class="upper-size">{{ experience.entity.name
-              }}</span>
-            </div>
-          </type-two-button>
-        </template>
+        <type-two-button>
+          <div class="pseudo-button">
+            <!-- {{ i18n.global.t('labels.experience.role') }} -->
+            <user-icon size="15" />:
+            <span class="upper-size more-width">{{ experience.role }}</span>
+          </div>
+        </type-two-button>
       </div>
     </fieldset>
 
     <fieldset>
-      <legend>{{ i18n.global.t("labels.experience.enhanced_skills") }}</legend>
+      <legend>{{ i18n.global.t('labels.experience.enhanced_skills') }}</legend>
       <div class="part-3">
         <div class="sub-title">
-          {{ i18n.global.t("labels.experience.soft") }}
+          {{ i18n.global.t('labels.experience.soft') }}
         </div>
-        <template v-if="experience.enhanced_skills && [...experience.enhanced_skills.soft].length > 0">
+        <template
+          v-if="experience.enhanced_skills && [...experience.enhanced_skills.soft].length > 0"
+        >
           <div class="pseudo-button">
             <div class="content-wrapper">
-              <template v-for="(softS, index) in experience.enhanced_skills.soft" :key="`softS_${index}`">
+              <template
+                v-for="(softS, index) in experience.enhanced_skills.soft"
+                :key="`softS_${index}`"
+              >
                 <span class="list-enum">{{ softS }}</span>
               </template>
             </div>
           </div>
         </template>
         <div class="sub-title">
-          {{ i18n.global.t("labels.experience.hard") }}
+          {{ i18n.global.t('labels.experience.hard') }}
         </div>
-        <template v-if="experience.enhanced_skills && [...experience.enhanced_skills.hard].length > 0">
+        <template
+          v-if="experience.enhanced_skills && [...experience.enhanced_skills.hard].length > 0"
+        >
           <div class="pseudo-button">
             <div class="content-wrapper">
-              <template v-for="(hardS, index) in experience.enhanced_skills.hard" :key="`hardS_${index}`">
+              <template
+                v-for="(hardS, index) in experience.enhanced_skills.hard"
+                :key="`hardS_${index}`"
+              >
                 <span class="list-enum">{{ hardS }}</span>
               </template>
             </div>
@@ -83,8 +117,7 @@ import i18n from "@/plugins/i18n";
                   <span class="stack-icon">
                     <component :is="getIcon(stack.icon)" size="15px" />
                   </span>
-                  <span class="placeholder">
-                  </span>
+                  <span class="placeholder"> </span>
                   {{ stack.name }}
                 </span>
               </template>
@@ -96,21 +129,24 @@ import i18n from "@/plugins/i18n";
 
     <fieldset>
       <legend>
-        {{ i18n.global.t("labels.experience.accomplishments") }}
+        {{ i18n.global.t('labels.experience.accomplishments') }}
       </legend>
       <div class="part-2">
         <template v-if="experience.contribution">
           <dl>
-            <dt>{{ i18n.global.t("labels.experience.contribution") }}</dt>
+            <dt>{{ i18n.global.t('labels.experience.contribution') }}</dt>
             <dd>{{ experience.contribution }}</dd>
           </dl>
         </template>
         <template v-if="experience.notable_achievements">
           <dl>
-            <dt>{{ i18n.global.t("labels.experience.achievements") }}</dt>
+            <dt>{{ i18n.global.t('labels.experience.achievements') }}</dt>
             <dd>
               <ul>
-                <template v-for="(ach, index) in experience.notable_achievements" :key="`ach_${index}`">
+                <template
+                  v-for="(ach, index) in experience.notable_achievements"
+                  :key="`ach_${index}`"
+                >
                   <li>{{ ach }}</li>
                 </template>
               </ul>
@@ -119,22 +155,21 @@ import i18n from "@/plugins/i18n";
         </template>
       </div>
     </fieldset>
-
   </div>
 </template>
 
 <script lang="ts">
 export default {
-  name: "expe-item",
+  name: 'expe-item',
   props: {
     hostName: {
       type: String,
-      required: true
+      required: true,
     },
     index: {
       type: String,
-      required: true
-    }
+      required: true,
+    },
   },
   data() {
     return {
@@ -152,11 +187,11 @@ export default {
         github: markRaw(githubIcon),
         gitlab: markRaw(gitlabIcon),
       },
-    };
+    }
   },
   methods: {
     getIcon(icon_name: string) {
-      return this.iconComponents[icon_name as keyof typeof this.iconComponents];
+      return this.iconComponents[icon_name as keyof typeof this.iconComponents]
     },
   },
   mounted() {
@@ -165,14 +200,13 @@ export default {
   },
   computed: {
     experience() {
-      const cle = this.hostName as keyof experienceHost;
-      let experiences = i18n.global.messages.en.expe;
-      if (i18n.global.locale === "fr")
-        experiences = i18n.global.messages.fr.expe;
-      return { ...experiences[cle] };
+      const cle = this.hostName as keyof experienceHost
+      let experiences = i18n.global.messages.en.expe
+      if (i18n.global.locale === 'fr') experiences = i18n.global.messages.fr.expe
+      return { ...experiences[cle] }
     },
   },
-};
+}
 </script>
 
 <style scoped>
@@ -216,8 +250,21 @@ export default {
     }
 
     .upper-size {
-      font-size: small;
+      width: 90px;
+      text-align: center;
+      font-size: 10px;
       font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &.more-width {
+        width: 120px;
+      }
+
+      &.more-height {
+        height: 26px;
+      }
     }
 
     .list-enum {
@@ -245,7 +292,6 @@ export default {
         position: absolute;
         left: -5%;
       }
-
     }
   }
 }
