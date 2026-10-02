@@ -37,6 +37,22 @@ import sqlIcon from './compos/sqlIcon.vue'
 import fastapiIcon from './compos/fastapiIcon.vue'
 import piniaIcon from './compos/piniaIcon.vue'
 import postgreIcon from './compos/postgreIcon.vue'
+import pythonIcon from './compos/pythonIcon.vue'
+import langchainIcon from './compos/langchainIcon.vue'
+import langgraphIcon from './compos/langgraphIcon.vue'
+import ollamaIcon from './compos/ollamaIcon.vue'
+import primevueIcon from './compos/primevueIcon.vue'
+import geminiIcon from './compos/geminiIcon.vue'
+import tavilyIcon from './compos/tavilyIcon.vue'
+import dockerIcon from './compos/dockerIcon.vue'
+import githubActionIcon from './compos/githubActionIcon.vue'
+import prometheusIcon from './compos/prometheusIcon.vue'
+import scikitLearnIcon from './compos/scikitLearnIcon.vue'
+import hugginFaceIcon from './compos/hugginFaceIcon.vue'
+import jupyterIcon from './compos/jupyterIcon.vue'
+import mlflowIcon from './compos/mlflowIcon.vue'
+import pandasIcon from './compos/pandasIcon.vue'
+import numpyIcon from './compos/numpyIcon.vue'
 
 export {
   graduatedIcon,
@@ -77,5 +93,21 @@ export {
   sqlIcon,
   fastapiIcon,
   piniaIcon,
-  postgreIcon
+  postgreIcon,
+  pythonIcon,
+  langchainIcon,
+  langgraphIcon,
+  ollamaIcon,
+  primevueIcon,
+  geminiIcon,
+  tavilyIcon,
+  dockerIcon,
+  githubActionIcon,
+  prometheusIcon,
+  scikitLearnIcon,
+  hugginFaceIcon,
+  jupyterIcon,
+  mlflowIcon,
+  pandasIcon,
+  numpyIcon,
 }
