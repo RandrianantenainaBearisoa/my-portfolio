@@ -1,6 +1,8 @@
 <script setup lang="ts">
-import progessBarCustom from '../progessbar/progessBarCustom.vue';
-import i18n from "@/plugins/i18n";
+import progessBarCustom from '../progessbar/progessBarCustom.vue'
+import i18n from '@/plugins/i18n'
+
+const progress_bar_height = 5
 </script>
 
 <template>
@@ -8,25 +10,37 @@ import i18n from "@/plugins/i18n";
     <div class="title">
       {{ language.lang }}
     </div>
-    <hr>
+    <hr />
     <div class="progessbar-container">
       <div class="label">{{ i18n.global.t('labels.skill.listening') }}</div>
       <div class="progress-bar">
-        <progess-bar-custom :progress="language.listen" color="#4b749fed"></progess-bar-custom>
+        <progess-bar-custom
+          :progress="language.listen"
+          color="#4b749fed"
+          :height="progress_bar_height"
+        ></progess-bar-custom>
       </div>
     </div>
-    <hr>
+    <hr />
     <div class="progessbar-container">
       <div class="label">{{ i18n.global.t('labels.skill.reading') }}</div>
       <div class="progress-bar">
-        <progess-bar-custom :progress="language.read" color="#4b749fed"></progess-bar-custom>
+        <progess-bar-custom
+          :progress="language.read"
+          color="#4b749fed"
+          :height="progress_bar_height"
+        ></progess-bar-custom>
       </div>
     </div>
-    <hr>
+    <hr />
     <div class="progessbar-container">
       <div class="label">{{ i18n.global.t('labels.skill.writing') }}</div>
       <div class="progress-bar">
-        <progess-bar-custom :progress="language.write" color="#4b749fed"></progess-bar-custom>
+        <progess-bar-custom
+          :progress="language.write"
+          color="#4b749fed"
+          :height="progress_bar_height"
+        ></progess-bar-custom>
       </div>
     </div>
   </div>
@@ -34,7 +48,7 @@ import i18n from "@/plugins/i18n";
 
 <script lang="ts">
 export default {
-  name: "language-card",
+  name: 'language-card',
   props: {
     language: {
       type: {
@@ -42,17 +56,17 @@ export default {
         listen: String,
         read: String,
         write: String,
-        icon: String
+        icon: String,
       },
-      required: true
-    }
-  }
-};
+      required: true,
+    },
+  },
+}
 </script>
 
 <style scoped lang="scss">
 .lang-container {
-  height: 180px;
+  height: 130px;
   width: 100%;
   margin: auto;
   padding: 5px;
@@ -64,11 +78,14 @@ export default {
   .title {
     width: 100%;
     text-align: center;
-    font-size: large;
+    font-size: medium;
   }
 
   hr {
     width: 80%;
+    margin: 3px auto;
+    border: none;
+    border-top: 1px solid #4b749fed;
   }
 
   .progessbar-container {
@@ -78,11 +95,12 @@ export default {
     height: 21px;
 
     .label {
-      width: 30%;
+      width: 20%;
+      font-size: smaller;
     }
 
     .progress-bar {
-      width: 70%;
+      width: 75%;
     }
   }
 }

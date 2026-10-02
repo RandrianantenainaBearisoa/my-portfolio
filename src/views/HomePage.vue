@@ -106,10 +106,10 @@ import i18n from '@/plugins/i18n'
       </div>
     </div>
     <div class="section hidden" id="skills-section">
-      <div class="section-part-top semi-large centered-y">
+      <div class="section-part-top large centered-y">
         <hard-skills />
       </div>
-      <div class="section-part-bottom row-disposed large centered-y">
+      <div class="section-part-bottom row-disposed semi-large centered-y">
         <soft-skills />
         <language-skills />
       </div>
