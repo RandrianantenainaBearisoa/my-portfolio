@@ -59,7 +59,7 @@
     "tech_stack": "Tech stack",
     "key_concepts": "Key concepts",
     "demo": {
-        "title": "Demo",
+        "title": "Demo & Code",
         "no_demo": "Sorry , there is no code or demo version available.",
         "github": "Github repository",
         "live": "Live demo"
