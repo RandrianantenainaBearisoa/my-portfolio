@@ -21,16 +21,16 @@ import i18n from '@/plugins/i18n'
 </script>
 
 <template>
-  <div>
+  <div class="expe-container">
     <div class="expe-index">
       <h1>
         {{ index }}
       </h1>
     </div>
-    <fieldset>
-      <legend>
+    <PrimevueFieldset :legend="i18n.global.t('labels.experience.experience_detail')">
+      <!-- <legend>
         {{ i18n.global.t('labels.experience.experience_detail') }}
-      </legend>
+      </legend> -->
       <div class="part-1">
         <div>
           <type-two-button>
@@ -70,10 +70,10 @@ import i18n from '@/plugins/i18n'
           </div>
         </type-two-button>
       </div>
-    </fieldset>
+    </PrimevueFieldset>
 
-    <fieldset>
-      <legend>{{ i18n.global.t('labels.experience.enhanced_skills') }}</legend>
+    <PrimevueFieldset :legend="i18n.global.t('labels.experience.enhanced_skills')" :toggleable="true" :collapsed="true">
+      <!-- <legend>{{ i18n.global.t('labels.experience.enhanced_skills') }}</legend> -->
       <div class="part-3">
         <div class="sub-title">
           {{ i18n.global.t('labels.experience.soft') }}
@@ -125,12 +125,12 @@ import i18n from '@/plugins/i18n'
           </div>
         </template>
       </div>
-    </fieldset>
+    </PrimevueFieldset>
 
-    <fieldset>
-      <legend>
+    <PrimevueFieldset :legend="i18n.global.t('labels.experience.accomplishments')" :toggleable="true" :collapsed="true">
+      <!-- <legend>
         {{ i18n.global.t('labels.experience.accomplishments') }}
-      </legend>
+      </legend> -->
       <div class="part-2">
         <template v-if="experience.contribution">
           <dl>
@@ -154,7 +154,7 @@ import i18n from '@/plugins/i18n'
           </dl>
         </template>
       </div>
-    </fieldset>
+    </PrimevueFieldset>
   </div>
 </template>
 
@@ -210,6 +210,13 @@ export default {
 </script>
 
 <style scoped>
+.expe-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 5px;
+}
+
 .expe-index {
   text-align: center;
   display: flex;
@@ -276,6 +283,7 @@ export default {
       display: flex;
       gap: 5px;
       align-items: center;
+      font-size: smaller;
 
       .placeholder {
         width: 16px;
@@ -308,7 +316,7 @@ export default {
 }
 
 .part-2 {
-  font-size: smaller;
+  font-size: 12px;
 
   dt {
     font-size: small;

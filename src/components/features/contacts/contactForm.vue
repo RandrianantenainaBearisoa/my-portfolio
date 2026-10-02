@@ -124,12 +124,12 @@ export default {
     }
   }
 
-  --p-fieldset-content-padding: 10px;
-  --p-fieldset-background: none;
-  --p-fieldset-legend-background: none;
-  --p-fieldset-color: #ffffff;
-  --p-fieldset-legend-border-color: #ffffff;
-  --p-fieldset-legend-hover-color: #ffffff;
+  // --p-fieldset-content-padding: 10px;
+  // --p-fieldset-background: none;
+  // --p-fieldset-legend-background: none;
+  // --p-fieldset-color: #ffffff;
+  // --p-fieldset-legend-border-color: #ffffff;
+  // --p-fieldset-legend-hover-color: #ffffff;
 
   .input-field {
     margin: 0px 0px 5px;

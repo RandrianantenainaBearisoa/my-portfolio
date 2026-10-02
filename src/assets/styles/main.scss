@@ -10,6 +10,15 @@ body {
   overflow-x: hidden;
   font-family: 'KoHo', sans-serif;
 
+  --p-fieldset-padding: 0px;
+  --p-fieldset-content-padding: 10px;
+  --p-fieldset-background: none;
+  --p-fieldset-legend-background: none;
+  --p-fieldset-color: #ffffff;
+  --p-fieldset-legend-border-color: #ffffff;
+  --p-fieldset-legend-hover-color: #ffffff;
+  --p-fieldset-border-color: #ffffff98;
+
   a {
     text-decoration-line: none;
   }
