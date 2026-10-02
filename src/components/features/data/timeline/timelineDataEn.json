@@ -1,5 +1,16 @@
 [
   {
+    "badge": "study",
+    "isTable": false,
+    "step": "AI & Data Engineering",
+    "topics": "(Self-taught)",
+    "date": "June 2025 - Today",
+    "place": {
+      "name": "Home",
+      "link": ""
+    }
+  },
+  {
     "badge": "experience",
     "isTable": false,
     "step": "Internship",

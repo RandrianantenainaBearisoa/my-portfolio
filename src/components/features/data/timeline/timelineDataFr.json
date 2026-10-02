@@ -1,5 +1,16 @@
 [
   {
+    "badge": "study",
+    "isTable": false,
+    "step": "IA & Ingénierie de données",
+    "topics": "(Autodidacte)",
+    "date": "Juin 2025 - Aujourd'hui",
+    "place": {
+      "name": "A Domicile",
+      "link": ""
+    }
+  },
+  {
     "badge": "experience",
     "isTable": false,
     "step": "Stage",
