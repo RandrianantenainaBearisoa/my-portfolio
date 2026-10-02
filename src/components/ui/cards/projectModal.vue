@@ -13,6 +13,7 @@ import {
   piniaIcon,
   postgreIcon,
   gitlabIcon,
+  githubIcon,
 } from '../icons'
 import { typeTwoButton } from '../buttons'
 import i18n from '@/plugins/i18n'
@@ -159,7 +160,8 @@ import i18n from '@/plugins/i18n'
         <template
           v-if="
             project.relevant_links.github_repo === '' &&
-            project.relevant_links.live_demo_link === '' && project.relevant_links.gitlab_repo === ''
+            project.relevant_links.live_demo_link === '' &&
+            project.relevant_links.gitlab_repo === ''
           "
         >
           {{ i18n.global.t('labels.project.demo.no_demo') }}
@@ -168,15 +170,14 @@ import i18n from '@/plugins/i18n'
           <template v-if="project.relevant_links.github_repo !== ''">
             <type-two-button :url="project.relevant_links.github_repo">
               <div class="pseudo-button">
-                {{ i18n.global.t('labels.project.demo.github') }}
+                <githubIcon fill="#ffffff" />
               </div>
             </type-two-button>
           </template>
           <template v-if="project.relevant_links.gitlab_repo !== ''">
             <type-two-button :url="project.relevant_links.gitlab_repo">
               <div class="pseudo-button">
-                <!-- {{ i18n.global.t('labels.project.demo.github') }} -->
-                  <gitlabIcon />
+                <gitlabIcon />
               </div>
             </type-two-button>
           </template>
@@ -216,7 +217,7 @@ export default {
         fastapi: markRaw(fastapiIcon),
         pinia: markRaw(piniaIcon),
         postgre: markRaw(postgreIcon),
-        gitlab: markRaw(gitlabIcon)
+        gitlab: markRaw(gitlabIcon),
       },
     }
   },
