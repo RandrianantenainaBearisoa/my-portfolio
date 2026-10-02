@@ -46,7 +46,7 @@ import projectModal from './projectModal.vue'
       <hr />
 
       <div class="icon-list">
-        <template v-for="(techno, index) in project.approach_and_process.technos" :key="index">
+        <template v-for="(techno, index) in project.approach_and_process.technos.slice(0,4)" :key="index">
           <div class="tooltip">
             <div class="icon-container">
               <component :is="getIcon(techno.icon)" size="15px" />
