@@ -86,15 +86,12 @@ const currentYear: number = new Date().getFullYear()
       </div>
     </div>
     <div class="section hidden" id="projects-section">
-      <div class="section-part-right large">
+      <div class="section-part-left semi-large">
+        <project-list listLabel="ia_ml" />
+      </div>
+      <div class="section-part-right semi-large">
         <project-list listLabel="web" />
       </div>
-      <!-- <div class="section-part-left large">
-        <project-list listLabel="gis" />
-      </div> -->
-      <!-- <div class="section-part-left large">
-        <project-list listLabel="data_science" />
-      </div> -->
     </div>
     <div class="section hidden large" id="experiences-section">
       <div class="section-part-left-1 semi-large">
