@@ -148,6 +148,9 @@ import i18n from '@/plugins/i18n'
             </div>
           </type-two-button>
         </template>
+        <!-- <template v-if="[...project.approach_and_process.project_lifecycle].length > 0">
+          {{ project.approach_and_process.project_lifecycle }}
+        </template> -->
       </div>
     </fieldset>
 
