@@ -16,6 +16,8 @@ import { contactForm, contactList } from '@/components/features/contacts'
 import langToggle from '@/components/features/lang-toggle/langToggle.vue'
 import '@/assets/styles/views/homePage.scss'
 import i18n from '@/plugins/i18n'
+
+const currentYear: number = new Date().getFullYear()
 </script>
 
 <template>
@@ -126,7 +128,7 @@ import i18n from '@/plugins/i18n'
     <lang-toggle />
 
     <div class="copyright">
-      &copy; 2025 Randrianantenaina Bearisoa. {{ i18n.global.t('labels.copyright') }}
+      &copy; {{ currentYear }} Randrianantenaina Bearisoa. {{ i18n.global.t('labels.copyright') }}
     </div>
   </div>
 </template>
