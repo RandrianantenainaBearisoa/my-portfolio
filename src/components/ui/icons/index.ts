@@ -34,6 +34,9 @@ import typescriptIcon from './compos/typescriptIcon.vue'
 import viteIcon from './compos/viteIcon.vue'
 import vscodeIcon from './compos/vscodeIcon.vue'
 import sqlIcon from './compos/sqlIcon.vue'
+import fastapiIcon from './compos/fastapiIcon.vue'
+import piniaIcon from './compos/piniaIcon.vue'
+import postgreIcon from './compos/postgreIcon.vue'
 
 export {
   graduatedIcon,
@@ -72,4 +75,7 @@ export {
   viteIcon,
   vscodeIcon,
   sqlIcon,
+  fastapiIcon,
+  piniaIcon,
+  postgreIcon
 }
