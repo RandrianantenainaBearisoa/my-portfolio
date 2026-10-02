@@ -176,9 +176,9 @@ export default {
 
   .social-media {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    width: 120px;
+    width: 150px;
   }
 }
 

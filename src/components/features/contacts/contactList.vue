@@ -61,6 +61,8 @@ import i18n from '@/plugins/i18n'
 .contact-list {
   width: 100%;
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
 }
 
@@ -118,9 +120,9 @@ import i18n from '@/plugins/i18n'
 
   .social-media {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    width: 120px;
+    width: 50%;
   }
 }
 </style>

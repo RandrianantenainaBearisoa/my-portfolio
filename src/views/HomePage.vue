@@ -118,7 +118,7 @@ import i18n from '@/plugins/i18n'
       <div class="section-part-bottom">
         <contact-form />
       </div>
-      <div class="section-part-top small-container">
+      <div class="section-part-top semi-large small-container">
         <contact-list />
       </div>
     </div>
