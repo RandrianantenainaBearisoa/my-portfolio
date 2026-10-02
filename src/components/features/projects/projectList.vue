@@ -6,7 +6,7 @@ import i18n from '@/plugins/i18n';
 
 <template>
   <div class="project-list-container">
-    <h1 v-text="projectList.title"></h1>
+    <h3 v-text="projectList.title"></h3>
     <div class="project-list">
       <template v-for="(projet, index) in projectList.list" :key="`project_card_'${index}`">
         <project-card :project="projet" />
@@ -41,22 +41,23 @@ export default {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-height: 100%;
+  height: 450px;
   border: solid 1px #ffffff;
   border-radius: 10px;
   background: linear-gradient(180deg, #add8e600 0%, #ffffff00 100%);
   transition: 1s;
 
-  h1 {
+  h3 {
     width: 100%;
     text-align: center;
     color: #ffffff;
     transition: 1s;
+    margin: 10px 0px;
   }
 
   .project-list {
     width: 100%;
-    max-height: 100%;
+    height: 400px;
     overflow-y: auto;
     overflow-x: hidden;
     display: grid;
