@@ -46,7 +46,8 @@
               "name": "Gitlab",
               "icon": "gitlab"
             }
-          ]
+          ],
+          "project_lifecycle": []
         },
         "key_concepts": [
           "API CRUD",
@@ -57,7 +58,8 @@
           "github_repo": "",
           "gitlab_repo": "https://gitlab.com/rabearisoabex/careerlog",
           "live_demo_link": ""
-        }
+        },
+        "data_sources": []
       },
       {
         "project_title": "Gestion de Stock",
@@ -99,13 +101,15 @@
               "name": "MySQL",
               "icon": "mysql"
             }
-          ]
+          ],
+          "project_lifecycle": []
         },
         "key_concepts": [],
         "relevant_links": {
           "github_repo": "",
           "live_demo_link": ""
-        }
+        },
+        "data_sources": []
       },
       {
         "project_title": "Gestion de Garage",
@@ -139,13 +143,15 @@
               "name": "MySQL",
               "icon": "mysql"
             }
-          ]
+          ],
+          "project_lifecycle": []
         },
         "key_concepts": [],
         "relevant_links": {
           "github_repo": "",
           "live_demo_link": ""
-        }
+        },
+        "data_sources": []
       },
       {
         "project_title": "Discussion en temps réel, gestion de données",
@@ -190,7 +196,8 @@
               "name": "MySQL",
               "icon": "mysql"
             }
-          ]
+          ],
+          "project_lifecycle": []
         },
         "key_concepts": [
           "Web Socket",
@@ -199,7 +206,8 @@
         "relevant_links": {
           "github_repo": "",
           "live_demo_link": ""
-        }
+        },
+        "data_sources": []
       },
       {
         "project_title": "Gestion des ressources humaines",
@@ -244,7 +252,8 @@
               "name": "MySQL",
               "icon": "mysql"
             }
-          ]
+          ],
+          "project_lifecycle": []
         },
         "key_concepts": [
           "Base de données",
@@ -253,100 +262,198 @@
         "relevant_links": {
           "github_repo": "",
           "live_demo_link": ""
-        }
+        },
+        "data_sources": []
       }
     ]
   },
-  "data_science": {
-    "title": "Projets en science des données",
+  "ia_ml": {
+    "title": "IA et Données",
     "list": [
       {
-        "project_title": "",
+        "project_title": "Condor",
+        "entity": {
+          "name": "",
+          "link": ""
+        },
+        "team": "1",
         "role_and_responsibilities": {
-          "roles": [],
+          "roles": [
+            "Développeur IA"
+          ],
           "key_tasks": [
-            "Collecte et acquisition de données",
-            "Nettoyage et prétraitement des données",
-            "Analyse exploratoire des données (AED)",
-            "Ingénierie des fonctionnalités",
-            "Sélection et développement de modèles",
-            "Entraînement et optimisation de modèles",
-            "Évaluation et validation de modèles",
-            "Déploiement (si applicable)",
-            "Interprétation et rapport"
+            "Conception",
+            "Implémentation"
           ]
         },
         "project_context": {
-          "overall_objective": "",
-          "client_company": "",
-          "project_type": ""
+          "overall_objective": "Application web full-stack d'aide à l'orientation scolaire et professionnelle. Elle permet d'explorer des établissements et des formations, de découvrir ses profils RIASEC et d'identifier des pistes de métiers adaptées à ses intérêts.",
+          "project_type": "Projet personnel"
         },
-        "initial_problem_challenge": {
-          "business_problem": "",
-          "technical_challenge": ""
-        },
+        "initial_problem_challenge": "",
         "approach_and_process": {
-          "methodology": [
-            "CRISP-DM",
-            "Agile (Scrum/Kanban)",
-            "Lean Startup",
-            "Custom Workflow"
+          "methodology": [],
+          "technos": [
+            {
+              "name": "LangChain",
+              "icon": ""
+            },
+            {
+              "name": "LangGraph",
+              "icon": ""
+            },
+            {
+              "name": "Gemini",
+              "icon": ""
+            },
+            {
+              "name": "Ollama",
+              "icon": ""
+            },
+            {
+              "name": "Fastapi",
+              "icon": "fastapi"
+            },
+            {
+              "name": "Tavily",
+              "icon": ""
+            },
+            {
+              "name": "Python",
+              "icon": ""
+            },
+            {
+              "name": "Vue.js",
+              "icon": "vue"
+            },
+            {
+              "name": "PostgreSQL/pgVector",
+              "icon": "postgre"
+            },
+            {
+              "name": "Gitlab",
+              "icon": "gitlab"
+            }
           ],
-          "key_steps": [],
-          "data_sources": [],
-          "technos": {
-            "programming_languages": [],
-            "libraries_frameworks": [],
-            "databases": [],
-            "cloud_platforms": [],
-            "visualization_tools": [],
-            "ml_platforms_mle_tools": []
-          }
+          "project_lifecycle": [
+            {
+              "order": 1,
+              "stage": "Collecte et extraction des données",
+              "description": "Collecter des informations sur les établissements et les métiers à partir de sources PDF et Web configurées. Des agents spécialisés extraient et structurent les informations, et la recherche Web sur les établissements peut être assistée par des LLM.",
+              "applied_concepts": [
+                "Extraction de PDF",
+                "Scraping et recherche Web",
+                "Sorties structurées de LLM",
+                "Workflows d'agents"
+              ],
+              "stack_and_tools": [
+                "Python",
+                "LangChain",
+                "LangGraph",
+                "Google Gemini",
+                "Tavily",
+                "pdfplumber"
+              ]
+            },
+            {
+              "order": 2,
+              "stage": "Préparation et ingestion des données",
+              "description": "Orchestrer les étapes d'extraction et de préparation, puis charger en base les données préparées sur les établissements, les métiers et le RIASEC afin qu'elles soient utilisées par l'application.",
+              "applied_concepts": [
+                "Pipelines ETL",
+                "Normalisation des données",
+                "Persistance relationnelle",
+                "Stockage de données vectorielles"
+              ],
+              "stack_and_tools": [
+                "Python",
+                "PostgreSQL",
+                "SQLModel",
+                "pgvector"
+              ]
+            },
+            {
+              "order": 3,
+              "stage": "API backend et recherche sémantique",
+              "description": "Fournir des endpoints pour la recherche sémantique d'établissements, l'accès à leurs informations, le questionnaire RIASEC, les profils de personnalité et les suggestions de métiers associées. Les embeddings sont générés avec le modèle Ollama configuré.",
+              "applied_concepts": [
+                "Développement d'API REST",
+                "Recherche sémantique",
+                "Embeddings",
+                "Intégration d'API"
+              ],
+              "stack_and_tools": [
+                "FastAPI",
+                "Python",
+                "PostgreSQL",
+                "pgvector",
+                "Ollama",
+                "nomic-embed-text-v2-moe"
+              ]
+            },
+            {
+              "order": 4,
+              "stage": "Parcours d'orientation",
+              "description": "Proposer une interface Web où rechercher des établissements avec une description libre, consulter les informations disponibles, répondre au test RIASEC et explorer des métiers suggérés à partir des profils dominants.",
+              "applied_concepts": [
+                "Architecture d'application full-stack",
+                "Gestion d'état frontend",
+                "Interface pilotée par API",
+                "Parcours utilisateur guidé"
+              ],
+              "stack_and_tools": [
+                "Vue 3",
+                "TypeScript",
+                "Vite",
+                "Vue Router",
+                "Pinia",
+                "PrimeVue"
+              ]
+            }
+          ]
         },
-        "data_details": {
-          "data_volume": "",
-          "data_types": [],
-          "data_characteristics": []
-        },
-        "model_details": {
-          "model_type": "",
-          "algorithms_used": [],
-          "key_features_used": [],
-          "hyperparameters_tuned": [],
-          "architecture_details": ""
-        },
-        "solutions_and_deliverables": {
-          "produced": [
-            "Modèle entraîné",
-            "Notebooks Jupyter",
-            "Point de terminaison API",
-            "Tableau de bord",
-            "Document de recherche/Rapport",
-            "Preuve de concept"
-          ],
-          "visual_elements": {
-            "data_visualizations": [],
-            "model_performance_charts": [],
-            "architecture_diagrams": [],
-            "code_snippets": [],
-            "demo_screenshots_gifs": []
-          }
-        },
-        "results_and_impact": {
-          "key_metrics": [],
-          "quantitative_results": [],
-          "qualitative_impact": [],
-          "learnings": []
-        },
-        "challenges_encountered_and_solutions_provided": [],
-        "future_work_and_improvements": [],
+        "key_concepts": [
+          "Recherche sémantique",
+          "Extraction de données assistée par LLM",
+          "Pipelines de données PDF et Web"
+        ],
         "relevant_links": {
           "github_repo": "",
-          "live_demo_link": "",
-          "article_blog_post": "",
-          "presentation_slides": ""
+          "gitlab_repo": "https://gitlab.com/rabearisoabex/condor",
+          "live_demo_link": ""
         },
-        "testimonials": []
+        "data_sources": [
+          {
+            "id": "1",
+            "name": "Liste des universités de Madagascar",
+            "organization": "MESUPRES",
+            "platform": "",
+            "url": "https://www.mesupres.gov.mg/assets/front/documents/documents/habilitations/liste_des_institutions_superieures_mise_a_jour_aout_2022.pdf",
+            "format": "pdf",
+            "description": "Liste des universités de Madagascar (2022)",
+            "scope": ""
+          },
+          {
+            "id": "2",
+            "name": "RIASEC TEST",
+            "organization": "",
+            "platform": "",
+            "url": "https://pppdutgea.wordpress.com/wp-content/uploads/2015/10/le-test-riasec.pdf",
+            "format": "pdf",
+            "description": "Questionnaire utilisé pour le test de personnalité",
+            "scope": ""
+          },
+          {
+            "id": "3",
+            "name": "Job list",
+            "organization": "",
+            "platform": "",
+            "url": "https://moodle.luniversitenumerique.fr/pluginfile.php/19864/mod_folder/content/0/Ressource_Mes%20centres%20d_int%C3%A9r%C3%AAts_Livret%20les%20m%C3%A9tiers%20RIASEC%20(2021).pdf?forcedownload=1",
+            "format": "pdf",
+            "description": "Liste de travail basée sur le profil RIASEC",
+            "scope": ""
+          }
+        ]
       }
     ]
   }
