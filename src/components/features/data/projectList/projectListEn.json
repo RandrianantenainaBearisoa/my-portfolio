@@ -3,6 +3,63 @@
     "title": "Web App",
     "list": [
       {
+        "project_title": "Career Log",
+        "entity": {
+          "name": "",
+          "link": ""
+        },
+        "team": "1",
+        "role_and_responsibilities": {
+          "roles": [
+            "FullStack Developper"
+          ],
+          "key_tasks": [
+            "Conception",
+            "Implementation"
+          ]
+        },
+        "project_context": {
+          "overall_objective": "A full-stack web application for tracking companies, job applications, and interview follow-ups during a personal job search.",
+          "project_type": "Personal project"
+        },
+        "initial_problem_challenge": "",
+        "approach_and_process": {
+          "methodology": [],
+          "technos": [
+            {
+              "name": "Fastapi",
+              "icon": "fastapi"
+            },
+            {
+              "name": "Vue.js",
+              "icon": "vue"
+            },
+            {
+              "name": "Pinia",
+              "icon": "pinia"
+            },
+            {
+              "name": "PostgreSQL",
+              "icon": "postgre"
+            },
+            {
+              "name": "Gitlab",
+              "icon": "gitlab"
+            }
+          ]
+        },
+        "key_concepts": [
+          "CRUD APIs",
+          "Relational Data Modeling",
+          "Frontend State Management"
+        ],
+        "relevant_links": {
+          "github_repo": "",
+          "gitlab_repo": "https://gitlab.com/rabearisoabex/careerlog",
+          "live_demo_link": ""
+        }
+      },
+      {
         "project_title": "Stock Management",
         "entity": {
           "name": "GoDigital",
@@ -10,8 +67,13 @@
         },
         "team": "2",
         "role_and_responsibilities": {
-          "roles": ["FullStack Developper"],
-          "key_tasks": ["Implementation", "Maintenance"]
+          "roles": [
+            "FullStack Developper"
+          ],
+          "key_tasks": [
+            "Implementation",
+            "Maintenance"
+          ]
         },
         "project_context": {
           "overall_objective": "Develop an application for management of products in stock and products dispatched in stores",
@@ -53,8 +115,13 @@
         },
         "team": "3",
         "role_and_responsibilities": {
-          "roles": ["FullStack Developper"],
-          "key_tasks": ["Implementation", "Maintenance"]
+          "roles": [
+            "FullStack Developper"
+          ],
+          "key_tasks": [
+            "Implementation",
+            "Maintenance"
+          ]
         },
         "project_context": {
           "overall_objective": "Develop an application for managing garage activities",
@@ -88,8 +155,14 @@
         },
         "team": "1",
         "role_and_responsibilities": {
-          "roles": ["FullStack Developper"],
-          "key_tasks": ["Analysis", "Design", "Implementation"]
+          "roles": [
+            "FullStack Developper"
+          ],
+          "key_tasks": [
+            "Analysis",
+            "Design",
+            "Implementation"
+          ]
         },
         "project_context": {
           "overall_objective": "Optimize real-time communication and the choice of responses given during parliamentary sessions",
@@ -97,7 +170,9 @@
         },
         "initial_problem_challenge": "No computer system, no centralized database, data stored on paper and MS Word",
         "approach_and_process": {
-          "methodology": ["2TUP"],
+          "methodology": [
+            "2TUP"
+          ],
           "technos": [
             {
               "name": "Livewire",
@@ -117,7 +192,10 @@
             }
           ]
         },
-        "key_concepts": ["Web Socket", "real-time communication"],
+        "key_concepts": [
+          "Web Socket",
+          "real-time communication"
+        ],
         "relevant_links": {
           "github_repo": "",
           "live_demo_link": ""
@@ -131,8 +209,14 @@
         },
         "team": "2",
         "role_and_responsibilities": {
-          "roles": ["Laravel Developper"],
-          "key_tasks": ["Analysis", "Design", "Implementation"]
+          "roles": [
+            "Laravel Developper"
+          ],
+          "key_tasks": [
+            "Analysis",
+            "Design",
+            "Implementation"
+          ]
         },
         "project_context": {
           "overall_objective": "Digitize and optimize the file processing process in the Human Resources department",
@@ -140,7 +224,9 @@
         },
         "initial_problem_challenge": "No computer system, no centralized database, data stored on paper",
         "approach_and_process": {
-          "methodology": ["Merise"],
+          "methodology": [
+            "Merise"
+          ],
           "technos": [
             {
               "name": "Vue.js",
@@ -160,7 +246,10 @@
             }
           ]
         },
-        "key_concepts": ["Database", "MVC Architecture"],
+        "key_concepts": [
+          "Database",
+          "MVC Architecture"
+        ],
         "relevant_links": {
           "github_repo": "",
           "live_demo_link": ""
@@ -197,7 +286,12 @@
           "technical_challenge": ""
         },
         "approach_and_process": {
-          "methodology": ["CRISP-DM", "Agile (Scrum/Kanban)", "Lean Startup", "Custom Workflow"],
+          "methodology": [
+            "CRISP-DM",
+            "Agile (Scrum/Kanban)",
+            "Lean Startup",
+            "Custom Workflow"
+          ],
           "key_steps": [],
           "data_sources": [],
           "technos": {
