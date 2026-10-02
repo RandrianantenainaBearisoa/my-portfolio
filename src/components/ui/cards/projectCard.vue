@@ -12,7 +12,12 @@ import {
   fastapiIcon,
   piniaIcon,
   postgreIcon,
-  gitlabIcon
+  gitlabIcon,
+  githubIcon,
+  pythonIcon,
+  typescriptIcon,
+  jupyterIcon,
+  dockerIcon,
 } from '../icons'
 import projectModal from './projectModal.vue'
 </script>
@@ -29,7 +34,7 @@ import projectModal from './projectModal.vue'
       <hr />
 
       <template v-if="[...project.key_concepts].length > 0">
-        <template v-for="(concept, index) in [...project.key_concepts]" :key="`concept_${index}`">
+        <template v-for="(concept, index) in [...project.key_concepts].slice(0,3)" :key="`concept_${index}`">
           <p v-text="concept"></p>
         </template>
       </template>
@@ -46,7 +51,10 @@ import projectModal from './projectModal.vue'
       <hr />
 
       <div class="icon-list">
-        <template v-for="(techno, index) in project.approach_and_process.technos.slice(0,4)" :key="index">
+        <template
+          v-for="(techno, index) in project.approach_and_process.technos.slice(0, 4)"
+          :key="index"
+        >
           <div class="tooltip">
             <div class="icon-container">
               <component :is="getIcon(techno.icon)" size="15px" />
@@ -93,6 +101,10 @@ export default {
         pinia: markRaw(piniaIcon),
         postgre: markRaw(postgreIcon),
         gitlab: markRaw(gitlabIcon),
+        python: markRaw(pythonIcon),
+        typescript: markRaw(typescriptIcon),
+        jupyter: markRaw(jupyterIcon),
+        docker: markRaw(dockerIcon),
       },
       isVisible: false,
     }

@@ -279,11 +279,15 @@
         "team": "1",
         "role_and_responsibilities": {
           "roles": [
-            "AI Developper"
+            "Data Engineer",
+            "AI Engineer",
+            "Full-Stack Developer"
           ],
           "key_tasks": [
-            "Conception",
-            "Implementation"
+            "Data Collection and Extraction",
+            "Data Preparation and Ingestion",
+            "Backend API and Semantic Search",
+            "Guidance Experience"
           ]
         },
         "project_context": {
@@ -295,44 +299,52 @@
           "methodology": [],
           "technos": [
             {
-              "name": "LangChain",
-              "icon": ""
+              "name": "Python",
+              "icon": "python"
             },
             {
-              "name": "LangGraph",
-              "icon": ""
-            },
-            {
-              "name": "Gemini",
-              "icon": ""
-            },
-            {
-              "name": "Ollama",
-              "icon": ""
-            },
-            {
-              "name": "Fastapi",
+              "name": "FastAPI",
               "icon": "fastapi"
             },
             {
-              "name": "Tavily",
-              "icon": ""
-            },
-            {
-              "name": "Python",
-              "icon": ""
-            },
-            {
-              "name": "Vue.js",
+              "name": "Vue 3",
               "icon": "vue"
             },
             {
-              "name": "PostgreSQL/pgVector",
+              "name": "TypeScript",
+              "icon": "typescript"
+            },
+            {
+              "name": "PostgreSQL/pgvector",
               "icon": "postgre"
             },
             {
-              "name": "Gitlab",
-              "icon": "gitlab"
+              "name": "LangChain",
+              "icon": "langchain"
+            },
+            {
+              "name": "LangGraph",
+              "icon": "langgraph"
+            },
+            {
+              "name": "GeminiAI",
+              "icon": "gemini"
+            },
+            {
+              "name": "Tavily",
+              "icon": "tavily"
+            },
+            {
+              "name": "Ollama",
+              "icon": "ollama"
+            },
+            {
+              "name": "Pinia",
+              "icon": "pinia"
+            },
+            {
+              "name": "PrimeVue",
+              "icon": "primevue"
             }
           ],
           "project_lifecycle": [
@@ -452,6 +464,470 @@
             "format": "pdf",
             "description": "Work list based on the RIASEC profile",
             "scope": ""
+          }
+        ]
+      },
+      {
+        "project_title": "ClaReFi (Classify Reviews of Films)",
+        "entity": {
+          "name": "",
+          "link": ""
+        },
+        "team": "1",
+        "role_and_responsibilities": {
+          "roles": [
+            "Data Engineer",
+            "Data Scientist",
+            "Full-Stack Developer",
+            "DevOps"
+          ],
+          "key_tasks": [
+            "Ingestion",
+            "Feature Engineering",
+            "Training",
+            "Inference",
+            "Frontend",
+            "Deployment & Monitoring"
+          ]
+        },
+        "project_context": {
+          "overall_objective": "A full-stack AI application that classifies movie reviews as positive or negative using NLP, FastAPI backend, and Vue.js frontend.",
+          "project_type": "Personal project"
+        },
+        "initial_problem_challenge": "",
+        "approach_and_process": {
+          "methodology": [],
+          "technos": [
+            {
+              "name": "Python",
+              "icon": "python"
+            },
+            {
+              "name": "FastAPI",
+              "icon": "fastapi"
+            },
+            {
+              "name": "Vue.js",
+              "icon": "vue"
+            },
+            {
+              "name": "TypeScript",
+              "icon": "typescript"
+            },
+            {
+              "name": "Docker",
+              "icon": "docker"
+            },
+            {
+              "name": "GitHub",
+              "icon": "github"
+            },
+            {
+              "name": "GitHub Actions",
+              "icon": "gaction"
+            },
+            {
+              "name": "Prometheus",
+              "icon": "promotheus"
+            },
+            {
+              "name": "scikit-learn",
+              "icon": "sklearn"
+            },
+            {
+              "name": "Hugging Face Datasets",
+              "icon": "hugface"
+            }
+          ],
+          "project_lifecycle": [
+            {
+              "order": 1,
+              "stage": "Ingestion",
+              "description": "Download labeled movie review data from Hugging Face and store it for preprocessing.",
+              "applied_concepts": [
+                "Data Engineering"
+              ],
+              "stack_and_tools": [
+                "Python 3.12+",
+                "datasets",
+                "Hugging Face Datasets",
+                "YAML"
+              ]
+            },
+            {
+              "order": 2,
+              "stage": "Feature Engineering",
+              "description": "Convert review text into numerical features using bag-of-words and n-gram tokenization.",
+              "applied_concepts": [
+                "NLP feature extraction",
+                "Count vectorization",
+                "Reproducible pipelines"
+              ],
+              "stack_and_tools": [
+                "scikit-learn",
+                "CountVectorizer"
+              ]
+            },
+            {
+              "order": 3,
+              "stage": "Training",
+              "description": "Train and tune a sentiment classification model with GridSearchCV and export the best artifact.",
+              "applied_concepts": [
+                "Hyperparameter tuning",
+                "Cross-validation",
+                "Model versioning"
+              ],
+              "stack_and_tools": [
+                "scikit-learn",
+                "GridSearchCV",
+                "joblib",
+                "pytest"
+              ]
+            },
+            {
+              "order": 4,
+              "stage": "Inference",
+              "description": "Serve sentiment predictions through a FastAPI endpoint and expose runtime metrics.",
+              "applied_concepts": [
+                "API development",
+                "Observability",
+                "Structured logging"
+              ],
+              "stack_and_tools": [
+                "FastAPI",
+                "Uvicorn",
+                "prometheus-client",
+                "pydantic-settings"
+              ]
+            },
+            {
+              "order": 5,
+              "stage": "Frontend",
+              "description": "Build a user-facing interface for submitting movie reviews and displaying sentiment results.",
+              "applied_concepts": [
+                "Frontend architecture",
+                "Type safety",
+                "User experience"
+              ],
+              "stack_and_tools": [
+                "Vue.js",
+                "TypeScript",
+                "Vite",
+                "PrimeVue"
+              ]
+            },
+            {
+              "order": 6,
+              "stage": "Deployment & Monitoring",
+              "description": "Containerize the application, orchestrate services with Docker Compose, and monitor metrics.",
+              "applied_concepts": [
+                "Containerization",
+                "Dev/Prod configuration",
+                "Monitoring",
+                "CI/CD automation"
+              ],
+              "stack_and_tools": [
+                "Docker",
+                "Docker Compose",
+                "Nginx",
+                "Prometheus",
+                "Grafana",
+                "GitHub Actions"
+              ]
+            }
+          ]
+        },
+        "key_concepts": [
+          "Natural Language Processing",
+          "Sentiment Analysis",
+          "Model Training",
+          "API Development",
+          "Frontend Integration",
+          "Containerization",
+          "Monitoring"
+        ],
+        "relevant_links": {
+          "github_repo": "https://github.com/RandrianantenainaBearisoa/clarefi.git",
+          "gitlab_repo": "",
+          "live_demo_link": "https://clarefi-demo.netlify.app/"
+        },
+        "data_sources": [
+          {
+            "id": 1,
+            "name": "tblard/allocine",
+            "organization": "Hugging Face",
+            "platform": "Hugging Face Datasets",
+            "url": "https://huggingface.co/datasets/tblard/allocine",
+            "format": "dataset",
+            "description": "French movie review dataset with sentiment labels for binary classification.",
+            "scope": "Global"
+          }
+        ]
+      },
+      {
+        "project_title": "Rice Price Prediction",
+        "entity": {
+          "name": "",
+          "link": ""
+        },
+        "team": "1",
+        "role_and_responsibilities": {
+          "roles": [
+            "Data Engineer",
+            "Data Scientist",
+            "ML Engineer",
+            "Full-Stack Developer",
+            "DevOps"
+          ],
+          "key_tasks": [
+            "Ingestion",
+            "Cleaning",
+            "Feature Engineering",
+            "Training",
+            "Inference",
+            "Frontend",
+            "Deployment & Monitoring"
+          ]
+        },
+        "project_context": {
+          "overall_objective": "A machine learning project that predicts rice prices in Madagascar based on historical data and various factors such as weather conditions, exchange rates between the Malagasy Ariary and the US Dollar.",
+          "project_type": "Personal project"
+        },
+        "initial_problem_challenge": "",
+        "approach_and_process": {
+          "methodology": [],
+          "technos": [
+            {
+              "name": "Python",
+              "icon": "python"
+            },
+            {
+              "name": "FastAPI",
+              "icon": "fastapi"
+            },
+            {
+              "name": "Jupyter Notebook",
+              "icon": "jupyter"
+            },
+            {
+              "name": "Vue.js",
+              "icon": "vue"
+            },
+            {
+              "name": "Docker",
+              "icon": "docker"
+            },
+            {
+              "name": "GitHub",
+              "icon": "github"
+            },
+            {
+              "name": "Mlflow",
+              "icon": "mlflow"
+            },
+            {
+              "name": "Pandas",
+              "icon": "pandas"
+            },
+            {
+              "name": "Numpy",
+              "icon": "numpy"
+            }
+          ],
+          "project_lifecycle": [
+            {
+              "order": 1,
+              "stage": "Ingestion",
+              "description": "Retrieve raw data from external sources",
+              "applied_concepts": [
+                "Configuration-driven design",
+                "Data retrieval pattern"
+              ],
+              "stack_and_tools": [
+                "Python 3.12+",
+                "yfinance",
+                "geopy",
+                "boto3",
+                "pandas"
+              ]
+            },
+            {
+              "order": 2,
+              "stage": "Cleaning",
+              "description": "Validate and process data, handle missing values and outliers",
+              "applied_concepts": [
+                "Data validation",
+                "Error handling",
+                "Type hints",
+                "Configuration-driven design"
+              ],
+              "stack_and_tools": [
+                "pandas",
+                "numpy",
+                "statsmodels",
+                "SQLAlchemy",
+                "psycopg2-binary"
+              ]
+            },
+            {
+              "order": 3,
+              "stage": "Feature Engineering",
+              "description": "Transform and optimize features for model training",
+              "applied_concepts": [
+                "Type hints",
+                "Configuration-driven design",
+                "Reproducible pipelines"
+              ],
+              "stack_and_tools": [
+                "scikit-learn",
+                "pandas",
+                "numpy",
+                "matplotlib",
+                "seaborn"
+              ]
+            },
+            {
+              "order": 4,
+              "stage": "Training",
+              "description": "Train model with hyperparameter tuning and export artifacts",
+              "applied_concepts": [
+                "MLOps",
+                "Model versioning",
+                "Reproducible pipelines",
+                "S3 artifact storage",
+                "Separation of concerns"
+              ],
+              "stack_and_tools": [
+                "scikit-learn",
+                "MLflow",
+                "pytest",
+                "boto3",
+                "ruff"
+              ]
+            },
+            {
+              "order": 5,
+              "stage": "Inference",
+              "description": "Load model and serve predictions via API",
+              "applied_concepts": [
+                "Separation of concerns",
+                "Layered architecture",
+                "Type hints",
+                "Error handling",
+                "Structured logging",
+                "Microservices-ready"
+              ],
+              "stack_and_tools": [
+                "FastAPI",
+                "Uvicorn",
+                "Pydantic-settings",
+                "scikit-learn",
+                "MLflow"
+              ]
+            },
+            {
+              "order": 6,
+              "stage": "Frontend",
+              "description": "User interface for predictions and feature display",
+              "applied_concepts": [
+                "Type hints",
+                "Separation of concerns",
+                "Microservices-ready"
+              ],
+              "stack_and_tools": [
+                "Vue.js",
+                "TypeScript",
+                "Vue Router",
+                "Vite",
+                "Sass",
+                "Node.js",
+                "npm"
+              ]
+            },
+            {
+              "order": 7,
+              "stage": "Deployment & Monitoring",
+              "description": "Containerize, orchestrate, and monitor the application",
+              "applied_concepts": [
+                "Containerization",
+                "Dev/Prod configurations",
+                "Observability stack",
+                "Centralized logging",
+                "Metrics collection"
+              ],
+              "stack_and_tools": [
+                "Docker",
+                "Docker Compose",
+                "Nginx",
+                "Gunicorn",
+                "Prometheus",
+                "Grafana",
+                "Loki",
+                "Promtail",
+                "Nginx Prometheus Exporter"
+              ]
+            }
+          ]
+        },
+        "key_concepts": [
+          "Data Engineering",
+          "Feature Engineering",
+          "Model Training",
+          "Model Evaluation",
+          "Model Deployment",
+          "Monitoring"
+        ],
+        "relevant_links": {
+          "github_repo": "https://github.com/RandrianantenainaBearisoa/rice_price_predict.git",
+          "gitlab_repo": "",
+          "live_demo_link": ""
+        },
+        "data_sources": [
+          {
+            "id": 1,
+            "name": "mdg_food_price.csv",
+            "organization": "World Food Programme (WFP)",
+            "platform": "HumData",
+            "url": "https://data.humdata.org/dataset/86173d84-f1b5-4470-afb9-5ee56747f4cd/resource/8fc13d1e-abac-4262-8caa-edab795661e6/download/wfp_food_prices_mdg.csv",
+            "format": "csv",
+            "description": "Food prices data for Madagascar",
+            "region": "Madagascar"
+          },
+          {
+            "id": 2,
+            "name": "global_fuel_price.xlsx",
+            "organization": "World Bank",
+            "platform": "World Bank Data Catalog",
+            "url": "https://datacatalogfiles.worldbank.org/ddh-published/0066829/DR0095290/Global_Fuel_Prices_Database.xlsx",
+            "format": "xlsx",
+            "description": "Global fuel prices database",
+            "scope": "Global"
+          },
+          {
+            "id": 3,
+            "name": "worldbank_commodity_price.xlsx",
+            "organization": "World Bank",
+            "platform": "World Bank Documents",
+            "url": "https://thedocs.worldbank.org/en/doc/74e8be41ceb20fa0da750cda2f6b9e4e-0050012026/related/CMO-Historical-Data-Monthly.xlsx",
+            "format": "xlsx",
+            "description": "Commodity prices - historical monthly data",
+            "scope": "Global"
+          },
+          {
+            "id": 4,
+            "name": "Yahoo Finance API",
+            "library": "yfinance",
+            "type": "Library/API",
+            "description": "Financial market data, stock prices, and economic indicators",
+            "scope": "Global"
+          },
+          {
+            "id": 5,
+            "name": "Geolocation Data",
+            "library": "geopy",
+            "type": "Library/API",
+            "description": "Geographic coordinates and location-based data",
+            "scope": "Global"
           }
         ]
       }

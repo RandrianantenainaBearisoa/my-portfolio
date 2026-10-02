@@ -279,11 +279,15 @@
         "team": "1",
         "role_and_responsibilities": {
           "roles": [
-            "Développeur IA"
+            "Ingénieur de données",
+            "Ingénieur IA",
+            "Développeur FullStack"
           ],
           "key_tasks": [
-            "Conception",
-            "Implémentation"
+            "Collecte et extraction des données",
+            "Préparation et ingestion des données",
+            "API backend et recherche sémantique",
+            "Parcours d'orientation"
           ]
         },
         "project_context": {
@@ -295,44 +299,52 @@
           "methodology": [],
           "technos": [
             {
-              "name": "LangChain",
-              "icon": ""
+              "name": "Python",
+              "icon": "python"
             },
             {
-              "name": "LangGraph",
-              "icon": ""
-            },
-            {
-              "name": "Gemini",
-              "icon": ""
-            },
-            {
-              "name": "Ollama",
-              "icon": ""
-            },
-            {
-              "name": "Fastapi",
+              "name": "FastAPI",
               "icon": "fastapi"
             },
             {
-              "name": "Tavily",
-              "icon": ""
-            },
-            {
-              "name": "Python",
-              "icon": ""
-            },
-            {
-              "name": "Vue.js",
+              "name": "Vue 3",
               "icon": "vue"
             },
             {
-              "name": "PostgreSQL/pgVector",
+              "name": "TypeScript",
+              "icon": "typescript"
+            },
+            {
+              "name": "PostgreSQL/pgvector",
               "icon": "postgre"
             },
             {
-              "name": "Gitlab",
-              "icon": "gitlab"
+              "name": "LangChain",
+              "icon": "langchain"
+            },
+            {
+              "name": "LangGraph",
+              "icon": "langgraph"
+            },
+            {
+              "name": "GeminiAI",
+              "icon": "gemini"
+            },
+            {
+              "name": "Tavily",
+              "icon": "tavily"
+            },
+            {
+              "name": "Ollama",
+              "icon": "ollama"
+            },
+            {
+              "name": "Pinia",
+              "icon": "pinia"
+            },
+            {
+              "name": "PrimeVue",
+              "icon": "primevue"
             }
           ],
           "project_lifecycle": [
@@ -452,6 +464,470 @@
             "format": "pdf",
             "description": "Liste de travail basée sur le profil RIASEC",
             "scope": ""
+          }
+        ]
+      },
+      {
+        "project_title": "ClaReFi (Classification des critiques de films)",
+        "entity": {
+          "name": "",
+          "link": ""
+        },
+        "team": "1",
+        "role_and_responsibilities": {
+          "roles": [
+            "Ingénieur de données",
+            "Data scientist",
+            "Développeur FullStack",
+            "DevOps"
+          ],
+          "key_tasks": [
+            "Ingestion",
+            "Génération de caractéristiques",
+            "Entraînement",
+            "Inférence",
+            "Frontend",
+            "Déploiement et monitoring"
+          ]
+        },
+        "project_context": {
+          "overall_objective": "Application IA full-stack qui classe des critiques de films en positif ou négatif avec NLP, backend FastAPI et frontend Vue.js.",
+          "project_type": "Projet personnel"
+        },
+        "initial_problem_challenge": "",
+        "approach_and_process": {
+          "methodology": [],
+          "technos": [
+            {
+              "name": "Python",
+              "icon": "python"
+            },
+            {
+              "name": "FastAPI",
+              "icon": "fastapi"
+            },
+            {
+              "name": "Vue.js",
+              "icon": "vue"
+            },
+            {
+              "name": "TypeScript",
+              "icon": "typescript"
+            },
+            {
+              "name": "Docker",
+              "icon": "docker"
+            },
+            {
+              "name": "GitHub",
+              "icon": "github"
+            },
+            {
+              "name": "GitHub Actions",
+              "icon": "gaction"
+            },
+            {
+              "name": "Prometheus",
+              "icon": "promotheus"
+            },
+            {
+              "name": "scikit-learn",
+              "icon": "sklearn"
+            },
+            {
+              "name": "Hugging Face Datasets",
+              "icon": "hugface"
+            }
+          ],
+          "project_lifecycle": [
+            {
+              "order": 1,
+              "stage": "Ingestion",
+              "description": "Télécharger des critiques de films étiquetées depuis Hugging Face et les stocker pour le prétraitement.",
+              "applied_concepts": [
+                "Ingénierie des données"
+              ],
+              "stack_and_tools": [
+                "Python 3.12+",
+                "datasets",
+                "Hugging Face Datasets",
+                "YAML"
+              ]
+            },
+            {
+              "order": 2,
+              "stage": "Génération de caractéristiques",
+              "description": "Convertir le texte des critiques en caractéristiques numériques avec une représentation sac de mots et une tokenisation n-gram.",
+              "applied_concepts": [
+                "Extraction de caractéristiques NLP",
+                "Vectorisation de texte",
+                "Pipelines reproductibles"
+              ],
+              "stack_and_tools": [
+                "scikit-learn",
+                "CountVectorizer"
+              ]
+            },
+            {
+              "order": 3,
+              "stage": "Entraînement",
+              "description": "Entraîner et optimiser un modèle de classification de sentiment avec GridSearchCV, puis exporter le meilleur artefact.",
+              "applied_concepts": [
+                "Optimisation des hyperparamètres",
+                "Validation croisée",
+                "Versioning de modèle"
+              ],
+              "stack_and_tools": [
+                "scikit-learn",
+                "GridSearchCV",
+                "joblib",
+                "pytest"
+              ]
+            },
+            {
+              "order": 4,
+              "stage": "Inférence",
+              "description": "Fournir des prédictions de sentiment via un endpoint FastAPI et exposer des métriques d’exécution.",
+              "applied_concepts": [
+                "Développement d'API",
+                "Observabilité",
+                "Journalisation structurée"
+              ],
+              "stack_and_tools": [
+                "FastAPI",
+                "Uvicorn",
+                "prometheus-client",
+                "pydantic-settings"
+              ]
+            },
+            {
+              "order": 5,
+              "stage": "Frontend",
+              "description": "Construire une interface utilisateur pour soumettre des critiques de films et afficher les résultats de sentiment.",
+              "applied_concepts": [
+                "Architecture frontend",
+                "Sécurité des types",
+                "Expérience utilisateur"
+              ],
+              "stack_and_tools": [
+                "Vue.js",
+                "TypeScript",
+                "Vite",
+                "PrimeVue"
+              ]
+            },
+            {
+              "order": 6,
+              "stage": "Déploiement et monitoring",
+              "description": "Conteneuriser l’application, orchestrer les services avec Docker Compose et surveiller les métriques.",
+              "applied_concepts": [
+                "Conteneurisation",
+                "Configuration Dev/Prod",
+                "Monitoring",
+                "Automatisation CI/CD"
+              ],
+              "stack_and_tools": [
+                "Docker",
+                "Docker Compose",
+                "Nginx",
+                "Prometheus",
+                "Grafana",
+                "GitHub Actions"
+              ]
+            }
+          ]
+        },
+        "key_concepts": [
+          "Traitement du langage naturel",
+          "Analyse de sentiment",
+          "Entraînement de modèle",
+          "Développement d'API",
+          "Intégration frontend",
+          "Conteneurisation",
+          "Monitoring"
+        ],
+        "relevant_links": {
+          "github_repo": "https://github.com/RandrianantenainaBearisoa/clarefi.git",
+          "gitlab_repo": "",
+          "live_demo_link": "https://clarefi-demo.netlify.app/"
+        },
+        "data_sources": [
+          {
+            "id": 1,
+            "name": "tblard/allocine",
+            "organization": "Hugging Face",
+            "platform": "Hugging Face Datasets",
+            "url": "https://huggingface.co/datasets/tblard/allocine",
+            "format": "dataset",
+            "description": "Jeu de données de critiques de films en français avec étiquettes de sentiment pour une classification binaire.",
+            "scope": "Global"
+          }
+        ]
+      },
+      {
+        "project_title": "Prédiction du prix du riz",
+        "entity": {
+          "name": "",
+          "link": ""
+        },
+        "team": "1",
+        "role_and_responsibilities": {
+          "roles": [
+            "Ingénieur de données",
+            "Data scientist",
+            "Ingénieur ML",
+            "Développeur FullStack",
+            "DevOps"
+          ],
+          "key_tasks": [
+            "Ingestion",
+            "Nettoyage",
+            "Feature Engineering",
+            "Entraînement",
+            "Inférence",
+            "Frontend",
+            "Déploiement et surveillance"
+          ]
+        },
+        "project_context": {
+          "overall_objective": "Un projet de machine learning qui prédit les prix du riz à Madagascar en se basant sur des données historiques et divers facteurs tels que les conditions météorologiques et les taux de change entre l'Ariary malgache et le dollar américain.",
+          "project_type": "Projet personnel"
+        },
+        "initial_problem_challenge": "",
+        "approach_and_process": {
+          "methodology": [],
+          "technos": [
+            {
+              "name": "Python",
+              "icon": "python"
+            },
+            {
+              "name": "FastAPI",
+              "icon": "fastapi"
+            },
+            {
+              "name": "Jupyter Notebook",
+              "icon": "jupyter"
+            },
+            {
+              "name": "Vue.js",
+              "icon": "vue"
+            },
+            {
+              "name": "Docker",
+              "icon": "docker"
+            },
+            {
+              "name": "GitHub",
+              "icon": "github"
+            },
+            {
+              "name": "Mlflow",
+              "icon": "mlflow"
+            },
+            {
+              "name": "Pandas",
+              "icon": "pandas"
+            },
+            {
+              "name": "Numpy",
+              "icon": "numpy"
+            }
+          ],
+          "project_lifecycle": [
+            {
+              "order": 1,
+              "stage": "Ingestion",
+              "description": "Récupérer les données brutes à partir de sources externes",
+              "applied_concepts": [
+                "Conception pilotée par configuration",
+                "Pattern de récupération de données"
+              ],
+              "stack_and_tools": [
+                "Python 3.12+",
+                "yfinance",
+                "geopy",
+                "boto3",
+                "pandas"
+              ]
+            },
+            {
+              "order": 2,
+              "stage": "Nettoyage",
+              "description": "Valider et traiter les données, gérer les valeurs manquantes et les valeurs aberrantes",
+              "applied_concepts": [
+                "Validation des données",
+                "Gestion des erreurs",
+                "Hints de type",
+                "Conception pilotée par configuration"
+              ],
+              "stack_and_tools": [
+                "pandas",
+                "numpy",
+                "statsmodels",
+                "SQLAlchemy",
+                "psycopg2-binary"
+              ]
+            },
+            {
+              "order": 3,
+              "stage": "Feature Engineering",
+              "description": "Transformer et optimiser les features pour l'entraînement du modèle",
+              "applied_concepts": [
+                "Hints de type",
+                "Conception pilotée par configuration",
+                "Pipelines reproductibles"
+              ],
+              "stack_and_tools": [
+                "scikit-learn",
+                "pandas",
+                "numpy",
+                "matplotlib",
+                "seaborn"
+              ]
+            },
+            {
+              "order": 4,
+              "stage": "Entraînement",
+              "description": "Entraîner le modèle avec réglage des hyperparamètres et exporter les artefacts",
+              "applied_concepts": [
+                "MLOps",
+                "Versionnage du modèle",
+                "Pipelines reproductibles",
+                "Stockage d'artefacts S3",
+                "Séparation des responsabilités"
+              ],
+              "stack_and_tools": [
+                "scikit-learn",
+                "MLflow",
+                "pytest",
+                "boto3",
+                "ruff"
+              ]
+            },
+            {
+              "order": 5,
+              "stage": "Inférence",
+              "description": "Charger le modèle et fournir des prédictions via une API",
+              "applied_concepts": [
+                "Séparation des responsabilités",
+                "Architecture en couches",
+                "Hints de type",
+                "Gestion des erreurs",
+                "Journalisation structurée",
+                "Prêt pour les microservices"
+              ],
+              "stack_and_tools": [
+                "FastAPI",
+                "Uvicorn",
+                "Pydantic-settings",
+                "scikit-learn",
+                "MLflow"
+              ]
+            },
+            {
+              "order": 6,
+              "stage": "Frontend",
+              "description": "Interface utilisateur pour les prédictions et l'affichage des features",
+              "applied_concepts": [
+                "Hints de type",
+                "Séparation des responsabilités",
+                "Prêt pour les microservices"
+              ],
+              "stack_and_tools": [
+                "Vue.js",
+                "TypeScript",
+                "Vue Router",
+                "Vite",
+                "Sass",
+                "Node.js",
+                "npm"
+              ]
+            },
+            {
+              "order": 7,
+              "stage": "Déploiement et surveillance",
+              "description": "Containeriser, orchestrer et surveiller l'application",
+              "applied_concepts": [
+                "Containerisation",
+                "Configurations Dev/Prod",
+                "Pile d'observabilité",
+                "Journalisation centralisée",
+                "Collecte de métriques"
+              ],
+              "stack_and_tools": [
+                "Docker",
+                "Docker Compose",
+                "Nginx",
+                "Gunicorn",
+                "Prometheus",
+                "Grafana",
+                "Loki",
+                "Promtail",
+                "Nginx Prometheus Exporter"
+              ]
+            }
+          ]
+        },
+        "key_concepts": [
+          "Ingénierie des données",
+          "Engineering des features",
+          "Entraînement du modèle",
+          "Évaluation du modèle",
+          "Déploiement du modèle",
+          "Monitoring"
+        ],
+        "relevant_links": {
+          "github_repo": "https://github.com/RandrianantenainaBearisoa/rice_price_predict.git",
+          "gitlab_repo": "",
+          "live_demo_link": ""
+        },
+        "data_sources": [
+          {
+            "id": 1,
+            "name": "mdg_food_price.csv",
+            "organization": "Programme alimentaire mondial (PAM)",
+            "platform": "HumData",
+            "url": "https://data.humdata.org/dataset/86173d84-f1b5-4470-afb9-5ee56747f4cd/resource/8fc13d1e-abac-4262-8caa-edab795661e6/download/wfp_food_prices_mdg.csv",
+            "format": "csv",
+            "description": "Données sur les prix des aliments à Madagascar",
+            "region": "Madagascar"
+          },
+          {
+            "id": 2,
+            "name": "global_fuel_price.xlsx",
+            "organization": "Banque mondiale",
+            "platform": "Catalogue de données de la Banque mondiale",
+            "url": "https://datacatalogfiles.worldbank.org/ddh-published/0066829/DR0095290/Global_Fuel_Prices_Database.xlsx",
+            "format": "xlsx",
+            "description": "Base de données mondiale des prix des carburants",
+            "scope": "Global"
+          },
+          {
+            "id": 3,
+            "name": "worldbank_commodity_price.xlsx",
+            "organization": "Banque mondiale",
+            "platform": "Documents de la Banque mondiale",
+            "url": "https://thedocs.worldbank.org/en/doc/74e8be41ceb20fa0da750cda2f6b9e4e-0050012026/related/CMO-Historical-Data-Monthly.xlsx",
+            "format": "xlsx",
+            "description": "Prix des matières premières - données historiques mensuelles",
+            "scope": "Global"
+          },
+          {
+            "id": 4,
+            "name": "Yahoo Finance API",
+            "library": "yfinance",
+            "type": "Library/API",
+            "description": "Données des marchés financiers, prix des actions et indicateurs économiques",
+            "scope": "Global"
+          },
+          {
+            "id": 5,
+            "name": "Données de géolocalisation",
+            "library": "geopy",
+            "type": "Library/API",
+            "description": "Coordonnées géographiques et données basées sur la localisation",
+            "scope": "Global"
           }
         ]
       }
