@@ -53,6 +53,7 @@ import jupyterIcon from './compos/jupyterIcon.vue'
 import mlflowIcon from './compos/mlflowIcon.vue'
 import pandasIcon from './compos/pandasIcon.vue'
 import numpyIcon from './compos/numpyIcon.vue'
+import playIcon from './compos/playIcon.vue'
 
 export {
   graduatedIcon,
@@ -110,4 +111,5 @@ export {
   mlflowIcon,
   pandasIcon,
   numpyIcon,
+  playIcon,
 }
