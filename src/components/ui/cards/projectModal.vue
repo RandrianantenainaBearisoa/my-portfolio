@@ -31,9 +31,11 @@ import {
   mlflowIcon,
   pandasIcon,
   numpyIcon,
+  playIcon,
 } from '../icons'
 import { typeTwoButton } from '../buttons'
 import i18n from '@/plugins/i18n'
+import { videoModal } from '.'
 </script>
 
 <template>
@@ -181,7 +183,8 @@ import i18n from '@/plugins/i18n'
           v-if="
             project.relevant_links.github_repo === '' &&
             project.relevant_links.live_demo_link === '' &&
-            project.relevant_links.gitlab_repo === ''
+            project.relevant_links.gitlab_repo === '' &&
+            project.relevant_links.video.path === ''
           "
         >
           {{ i18n.global.t('labels.project.demo.no_demo') }}
@@ -208,6 +211,11 @@ import i18n from '@/plugins/i18n'
               </div>
             </type-two-button>
           </template>
+        </template>
+        <template v-if="project.relevant_links.video.path !== ''">
+          <videoModal :video_path="project.relevant_links.video.path" :modal_title="project.relevant_links.video.lang">
+            <div class="pseudo-button"><playIcon fill="currentColor" />Video</div>
+          </videoModal>
         </template>
       </div>
     </fieldset>
