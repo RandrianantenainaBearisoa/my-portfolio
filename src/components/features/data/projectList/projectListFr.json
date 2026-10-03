@@ -57,7 +57,12 @@
         "relevant_links": {
           "github_repo": "",
           "gitlab_repo": "https://gitlab.com/rabearisoabex/careerlog",
-          "live_demo_link": ""
+          "live_demo_link": "",
+          "video": {
+            "label": "Vidéo de démo",
+            "path": "",
+            "lang": ""
+          }
         },
         "data_sources": []
       },
@@ -107,7 +112,12 @@
         "key_concepts": [],
         "relevant_links": {
           "github_repo": "",
-          "live_demo_link": ""
+          "live_demo_link": "",
+          "video": {
+            "label": "Vidéo de démo",
+            "path": "",
+            "lang": ""
+          }
         },
         "data_sources": []
       },
@@ -149,7 +159,12 @@
         "key_concepts": [],
         "relevant_links": {
           "github_repo": "",
-          "live_demo_link": ""
+          "live_demo_link": "",
+          "video": {
+            "label": "Vidéo de démo",
+            "path": "",
+            "lang": ""
+          }
         },
         "data_sources": []
       },
@@ -205,7 +220,12 @@
         ],
         "relevant_links": {
           "github_repo": "",
-          "live_demo_link": ""
+          "live_demo_link": "",
+          "video": {
+            "label": "Vidéo de démo",
+            "path": "",
+            "lang": ""
+          }
         },
         "data_sources": []
       },
@@ -261,7 +281,12 @@
         ],
         "relevant_links": {
           "github_repo": "",
-          "live_demo_link": ""
+          "live_demo_link": "",
+          "video": {
+            "label": "Vidéo de démo",
+            "path": "",
+            "lang": ""
+          }
         },
         "data_sources": []
       }
@@ -432,7 +457,12 @@
         "relevant_links": {
           "github_repo": "",
           "gitlab_repo": "https://gitlab.com/rabearisoabex/condor",
-          "live_demo_link": ""
+          "live_demo_link": "",
+          "video": {
+            "label": "Vidéo de démo",
+            "path": "src/assets/video/demo_condor.mp4",
+            "lang": "Vidéo de démonstration en Français."
+          }
         },
         "data_sources": [
           {
@@ -649,7 +679,12 @@
         "relevant_links": {
           "github_repo": "https://github.com/RandrianantenainaBearisoa/clarefi.git",
           "gitlab_repo": "",
-          "live_demo_link": "https://clarefi-demo.netlify.app/"
+          "live_demo_link": "https://clarefi-demo.netlify.app/",
+          "video": {
+            "label": "Vidéo de démo",
+            "path": "src/assets/video/demo_clarefi.mp4",
+            "lang": "Vidéo de démonstration en Français."
+          }
         },
         "data_sources": [
           {
@@ -880,7 +915,12 @@
         "relevant_links": {
           "github_repo": "https://github.com/RandrianantenainaBearisoa/rice_price_predict.git",
           "gitlab_repo": "",
-          "live_demo_link": ""
+          "live_demo_link": "",
+          "video": {
+            "label": "Vidéo de démo",
+            "path": "src/assets/video/demo_rice_price_pred.mp4",
+            "lang": "Vidéo de démonstration en Anglais."
+          }
         },
         "data_sources": [
           {
