@@ -27,6 +27,148 @@
     "Stress Management"
   ],
   "hard_skills": {
+    "AI & Data": [
+      {
+        "name": "Python",
+        "icon": "python"
+      },
+      {
+        "name": "Pandas",
+        "icon": "pandas"
+      },
+      {
+        "name": "Numpy",
+        "icon": "numpy"
+      },
+      {
+        "name": "scikit-learn",
+        "icon": "sklearn"
+      },
+      {
+        "name": "Jupyter Notebook",
+        "icon": "jupyter"
+      },
+      {
+        "name": "LangChain",
+        "icon": "langchain"
+      },
+      {
+        "name": "LangGraph",
+        "icon": "langgraph"
+      },
+      {
+        "name": "MLflow",
+        "icon": "mlflow"
+      },
+      {
+        "name": "Ollama",
+        "icon": "ollama"
+      },
+      {
+        "name": "Tavily",
+        "icon": "tavily"
+      },
+      {
+        "name": "GeminiAI",
+        "icon": "gemini"
+      },
+      {
+        "name": "Hugging Face Datasets",
+        "icon": "hugface"
+      }
+    ],
+    "Backend": [
+      {
+        "name": "FastAPI",
+        "icon": "fastapi"
+      },
+      {
+        "name": "PHP",
+        "icon": "php"
+      },
+      {
+        "name": "Laravel",
+        "icon": "laravel"
+      },
+      {
+        "name": "SimcyCreative",
+        "icon": "simcy"
+      }
+    ],
+    "Database": [
+      {
+        "name": "SQL",
+        "icon": "sql"
+      },
+      {
+        "name": "MySQL",
+        "icon": "mysql"
+      },
+      {
+        "name": "SQLite",
+        "icon": "sqlite"
+      },
+      {
+        "name": "PostgreSQL/pgvector",
+        "icon": "postgre"
+      }
+    ],
+    "Tools": [
+      {
+        "name": "Git",
+        "icon": "git"
+      },
+      {
+        "name": "Github",
+        "icon": "github"
+      },
+      {
+        "name": "Gitlab",
+        "icon": "gitlab"
+      },
+      {
+        "name": "VSCode",
+        "icon": "vscode"
+      },
+      {
+        "name": "UV",
+        "icon": "uv"
+      },
+      {
+        "name": "npm",
+        "icon": "npm"
+      },
+      {
+        "name": "Vite",
+        "icon": "vite"
+      },
+      {
+        "name": "Ubuntu/Ubuntu server",
+        "icon": "ubuntu"
+      },
+      {
+        "name": "Postman",
+        "icon": "postman"
+      }
+    ],
+    "DevOps": [
+      {
+        "name": "Docker",
+        "icon": "docker"
+      },
+      {
+        "name": "GitHub Actions",
+        "icon": "gaction"
+      },
+      {
+        "name": "Prometheus",
+        "icon": "prometheus"
+      },
+      {
+        "name": "Grafana",
+        "icon": "grafana"
+      }
+    ],
     "Frontend": [
       {
         "name": "HTML",
@@ -59,64 +201,18 @@
       {
         "name": "SCSS",
         "icon": "scss"
-      }
-    ],
-    "Backend": [
-      {
-        "name": "PHP",
-        "icon": "php"
       },
       {
-        "name": "Laravel",
-        "icon": "laravel"
+        "name": "Livewire",
+        "icon": "livewire"
       },
       {
-        "name": "SimcyCreative",
-        "icon": "simcy"
-      }
-    ],
-    "Database": [
-      {
-        "name": "SQL",
-        "icon": "sql"
+        "name": "Pinia",
+        "icon": "pinia"
       },
       {
-        "name": "MySQL",
-        "icon": "mysql"
-      },
-      {
-        "name": "SQLite",
-        "icon": "sqlite"
-      }
-    ],
-    "Tools": [
-      {
-        "name": "Git",
-        "icon": "git"
-      },
-      {
-        "name": "Github",
-        "icon": "github"
-      },
-      {
-        "name": "Gitlab",
-        "icon": "gitlab"
-      },
-      {
-        "name": "npm",
-        "icon": "npm"
-      },
-      {
-        "name": "Vite",
-        "icon": "vite"
-      },
-      {
-        "name": "Postman",
-        "icon": "postman"
-      },
-      {
-        "name": "VSCode",
-        "icon": "vscode"
+        "name": "PrimeVue",
+        "icon": "primevue"
       }
     ]
   }
