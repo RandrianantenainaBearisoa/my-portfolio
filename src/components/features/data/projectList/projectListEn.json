@@ -558,7 +558,7 @@
             },
             {
               "name": "Prometheus",
-              "icon": "promotheus"
+              "icon": "prometheus"
             },
             {
               "name": "scikit-learn",

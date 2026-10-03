@@ -257,7 +257,7 @@ export default {
         primevue: markRaw(primevueIcon),
         docker: markRaw(dockerIcon),
         gaction: markRaw(githubActionIcon),
-        promotheus: markRaw(prometheusIcon),
+        prometheus: markRaw(prometheusIcon),
         sklearn: markRaw(scikitLearnIcon),
         hugface: markRaw(hugginFaceIcon),
         jupyter: markRaw(jupyterIcon),
