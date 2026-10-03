@@ -296,7 +296,9 @@ fieldset {
     font-size: smaller;
 
     .content-wrapper {
+      max-width: 500px;
       display: flex;
+      justify-content: left;
       flex-wrap: wrap;
       text-align: center;
     }
