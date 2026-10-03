@@ -214,6 +214,28 @@
         "name": "PrimeVue",
         "icon": "primevue"
       }
+    ],
+    "Applied_Competencies": [
+      {
+        "name": "Data Engineering",
+        "icon": "python"
+      },
+      {
+        "name": "Machine Learning",
+        "icon": "sklearn"
+      },
+      {
+        "name": "AI Applications",
+        "icon": "langchain"
+      },
+      {
+        "name": "Web Development",
+        "icon": "fastapi"
+      },
+      {
+        "name": "Deployment & Monitoring",
+        "icon": "docker"
+      }
     ]
   }
 }

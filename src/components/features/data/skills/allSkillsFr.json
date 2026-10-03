@@ -214,6 +214,28 @@
         "name": "PrimeVue",
         "icon": "primevue"
       }
+    ],
+    "Compétences_appliquées": [
+      {
+        "name": "Ingénierie des données",
+        "icon": "python"
+      },
+      {
+        "name": "Machine Learning",
+        "icon": "sklearn"
+      },
+      {
+        "name": "Applications d'IA",
+        "icon": "langchain"
+      },
+      {
+        "name": "Développement Web",
+        "icon": "fastapi"
+      },
+      {
+        "name": "Déploiement et monitoring",
+        "icon": "docker"
+      }
     ]
   }
 }
