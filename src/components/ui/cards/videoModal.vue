@@ -10,7 +10,7 @@
       :header="modal_title"
       :style="{ width: '50rem', height: '40rem' }"
     >
-      <video width="100%" height="95%" controls>
+      <video width="100%" height="95%" controls autoplay>
         <source :src="video_path" type="video/mp4" />
         Error
       </video>
