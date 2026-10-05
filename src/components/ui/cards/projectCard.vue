@@ -23,8 +23,8 @@ import projectModal from './projectModal.vue'
 </script>
 
 <template>
-  <div class="card-container" @click="onMoreInfo">
-    <div class="project-ui">
+  <div class="card-container">
+    <div class="project-ui" @click="onMoreInfo">
       <h5 v-text="project.project_title"></h5>
 
       <hr />
