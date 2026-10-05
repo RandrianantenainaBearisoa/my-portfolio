@@ -16,12 +16,20 @@ import { contactForm, contactList } from '@/components/features/contacts'
 import langToggle from '@/components/features/lang-toggle/langToggle.vue'
 import '@/assets/styles/views/homePage.scss'
 import i18n from '@/plugins/i18n'
+import { isRouteLoading } from '@/router'
+import { spinner } from '@/components/ui/loader'
 
 const currentYear: number = new Date().getFullYear()
+
 </script>
 
 <template>
   <div>
+    <transition name="fade">
+      <div class="loading-div" v-if="isRouteLoading">
+        <spinner />
+      </div>
+    </transition>
     <div class="menu-container">
       <div class="menu-group">
         <a href="#home-section" class="menu active" @click.self.prevent="scrollToSection($event)">
