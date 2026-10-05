@@ -7,6 +7,7 @@ import {
   whatsappIcon,
   githubIcon,
   gitlabIcon2,
+  downloadIcon,
 } from '@/components/ui/icons'
 import { personalData } from '../data'
 import i18n from '@/plugins/i18n'
@@ -43,14 +44,14 @@ const status_bool = true // true when I'm open to opportunities
           </span>
         </light-button>
       </div>
-      <!-- <div class="get-cv">
+      <div class="get-cv">
         <light-button usedClass="cv" @click.prevent="onDownloadCV">
           <download-icon />
           <span>
-            {{ i18n.global.t("labels.home.cv") }}
+            {{ i18n.global.t('labels.home.cv') }}
           </span>
         </light-button>
-      </div> -->
+      </div>
     </div>
     <div class="social-media-container">
       <p>
@@ -99,8 +100,12 @@ export default {
   methods: {
     onDownloadCV() {
       const link = document.createElement('a')
-      link.href = '/pdfs/cv.pdf'
-      link.download = 'RANDRIANANTENAINA Bearisoa - CV.pdf'
+      link.href = '/pdfs/CV_Bearisoa_Randrianantenaina_FR.pdf'
+      link.download = 'RANDRIANANTENAINA Bearisoa - CV - FR.pdf'
+      if (localStorage.getItem('lang') === 'en') {
+        link.href = '/pdfs/CV_Bearisoa_Randrianantenaina_EN.pdf'
+        link.download = 'RANDRIANANTENAINA Bearisoa - CV - EN.pdf'
+      }
       document.body.appendChild(link)
       link.click()
       document.body.removeChild(link)
