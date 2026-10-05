@@ -54,8 +54,8 @@ import i18n from '@/plugins/i18n'
 <template>
   <div>
     <skills-layout :legend="i18n.global.t('labels.skill.hard')">
-      <template v-for="(cle, index) in keys" :key="index">
-        <dl>
+      <dl>
+        <template v-for="(cle, index) in keys" :key="index">
           <dt>{{ cle.replace(/_/g, ' ') }}:</dt>
           <dd>
             <template v-for="(item, index) in getSkillsByCategory(cle)" :key="`item_${index}`">
@@ -68,8 +68,8 @@ import i18n from '@/plugins/i18n'
               </span>
             </template>
           </dd>
-        </dl>
-      </template>
+        </template>
+      </dl>
     </skills-layout>
   </div>
 </template>
@@ -151,6 +151,10 @@ export default {
 <style lang="scss" scoped>
 dl {
   margin: 10px 0px;
+  max-height: 400px;
+  overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #add8e67c #add8e600;
 }
 
 dt {

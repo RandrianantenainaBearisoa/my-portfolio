@@ -213,7 +213,6 @@
     width: 400px;
     height: 400px;
     display: flex;
-    overflow: auto;
 
     &.row-disposed {
       flex-direction: column;
