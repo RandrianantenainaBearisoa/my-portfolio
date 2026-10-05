@@ -77,11 +77,13 @@ const status_bool = true // true when I'm open to opportunities
     <div :class="`picture-container ${status_bool ? 'disponible' : 'not-dispo'}`">
       <img :src="_profilePic" alt="profile picture" />
       <div :class="`status-container ${status_bool ? 'disponible' : 'not-dispo'}`">
-        {{
-          status_bool
-            ? i18n.global.t('labels.home.status.available')
-            : i18n.global.t('labels.home.status.unavailable')
-        }}
+        <div class="job-search-status">
+          {{
+            status_bool
+              ? i18n.global.t('labels.home.status.available')
+              : i18n.global.t('labels.home.status.unavailable')
+          }}
+        </div>
       </div>
     </div>
   </div>
@@ -228,13 +230,26 @@ export default {
     bottom: 20px;
     color: #0000008b;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .job-search-status {
+      width: fit-content;
+      padding: 5px;
+      border-radius: 10px;
+    }
 
     &.disponible {
-      background-color: var(--open-to-work-color);
+      .job-search-status {
+        background-color: var(--open-to-work-color);
+      }
     }
 
     &.not-dispo {
-      background-color: var(--not-available-color);
+      .job-search-status {
+        background-color: var(--not-available-color);
+      }
     }
   }
 }
