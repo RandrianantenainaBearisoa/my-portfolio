@@ -460,7 +460,7 @@
           "live_demo_link": "",
           "video": {
             "label": "Vidéo de démo",
-            "path": "src/assets/video/demo_condor.mp4",
+            "path": "demo_condor",
             "lang": "Vidéo de démonstration en Français."
           }
         },
@@ -682,7 +682,7 @@
           "live_demo_link": "https://clarefi-demo.netlify.app/",
           "video": {
             "label": "Vidéo de démo",
-            "path": "src/assets/video/demo_clarefi.mp4",
+            "path": "demo_clarefi",
             "lang": "Vidéo de démonstration en Français."
           }
         },
@@ -918,7 +918,7 @@
           "live_demo_link": "",
           "video": {
             "label": "Vidéo de démo",
-            "path": "src/assets/video/demo_rice_price_pred.mp4",
+            "path": "demo_rice_price_pred",
             "lang": "Vidéo de démonstration en Anglais."
           }
         },

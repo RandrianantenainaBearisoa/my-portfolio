@@ -213,9 +213,14 @@ import { videoModal } from '.'
           </template>
         </template>
         <template v-if="project.relevant_links.video.path !== ''">
-          <videoModal :video_path="project.relevant_links.video.path" :modal_title="project.relevant_links.video.lang">
-            <div class="pseudo-button"><playIcon fill="currentColor" />Video</div>
-          </videoModal>
+          <Suspense>
+            <videoModal
+              :video_path="project.relevant_links.video.path"
+              :modal_title="project.relevant_links.video.lang"
+            >
+              <div class="pseudo-button"><playIcon fill="currentColor" />Video</div>
+            </videoModal>
+          </Suspense>
         </template>
       </div>
     </fieldset>
