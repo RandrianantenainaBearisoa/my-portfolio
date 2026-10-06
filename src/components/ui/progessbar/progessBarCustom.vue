@@ -22,7 +22,7 @@ export default defineComponent({
     },
     height: {
       type: Number,
-      default: 18,
+      default: 10,
     },
     color: {
       type: String,

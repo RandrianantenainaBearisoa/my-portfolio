@@ -1,8 +1,14 @@
 <script lang="ts" setup>
-import { lightButton } from "@/components/ui/buttons";
-import { linkedinIcon, eMailIcon, whatsappIcon, githubIcon } from "@/components/ui/icons";
-import { personalData } from "../data";
-import i18n from "@/plugins/i18n";
+import { lightButton } from '@/components/ui/buttons'
+import {
+  linkedinIcon,
+  eMailIcon,
+  whatsappIcon,
+  githubIcon,
+  gitlabIcon2,
+} from '@/components/ui/icons'
+import { personalData } from '../data'
+import i18n from '@/plugins/i18n'
 </script>
 
 <template>
@@ -10,7 +16,7 @@ import i18n from "@/plugins/i18n";
     <div class="home-contact">
       <div>
         <p>
-          {{ i18n.global.t("labels.contact.contact_me") }}
+          {{ i18n.global.t('labels.contact.contact_me') }}
         </p>
       </div>
       <div class="direct-contact">
@@ -30,14 +36,21 @@ import i18n from "@/plugins/i18n";
     </div>
     <div class="social-media-container">
       <p>
-        {{ i18n.global.t("labels.contact.join_me") }}
+        {{ i18n.global.t('labels.contact.join_me') }}
       </p>
       <div class="social-media">
-        <light-button usedClass="icon-only linkedin" :url="personalData.linkedin.link" :newTab="true">
+        <light-button
+          usedClass="icon-only linkedin"
+          :url="personalData.linkedin.link"
+          :newTab="true"
+        >
           <linkedin-icon />
         </light-button>
         <light-button usedClass="icon-only github" :url="personalData.github.link" :newTab="true">
           <github-icon fill="currentColor" />
+        </light-button>
+        <light-button usedClass="icon-only gitlab" :url="personalData.gitlab.link" :newTab="true">
+          <gitlab-icon2 fill="currentColor" />
         </light-button>
       </div>
     </div>
@@ -48,6 +61,8 @@ import i18n from "@/plugins/i18n";
 .contact-list {
   width: 100%;
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
 }
 
@@ -60,13 +75,16 @@ import i18n from "@/plugins/i18n";
   .direct-contact {
     width: 80%;
     display: flex;
+    flex-direction: column;
     margin: auto;
     gap: 10px;
     justify-content: center;
 
-    @media (max-width: 700px) {
-      flex-direction: column;
+    .link-container {
+      justify-content: center !important;
+    }
 
+    @media (max-width: 700px) {
       .link-container {
         width: 100%;
         justify-content: center !important;
@@ -102,9 +120,9 @@ import i18n from "@/plugins/i18n";
 
   .social-media {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    width: 120px;
+    width: 50%;
   }
 }
 </style>

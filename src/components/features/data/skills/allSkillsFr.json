@@ -27,6 +27,148 @@
     "Gestion du stress"
   ],
   "hard_skills": {
+    "IA_et_Données": [
+      {
+        "name": "Python",
+        "icon": "python"
+      },
+      {
+        "name": "Pandas",
+        "icon": "pandas"
+      },
+      {
+        "name": "Numpy",
+        "icon": "numpy"
+      },
+      {
+        "name": "scikit-learn",
+        "icon": "sklearn"
+      },
+      {
+        "name": "Jupyter Notebook",
+        "icon": "jupyter"
+      },
+      {
+        "name": "LangChain",
+        "icon": "langchain"
+      },
+      {
+        "name": "LangGraph",
+        "icon": "langgraph"
+      },
+      {
+        "name": "MLflow",
+        "icon": "mlflow"
+      },
+      {
+        "name": "Ollama",
+        "icon": "ollama"
+      },
+      {
+        "name": "Tavily",
+        "icon": "tavily"
+      },
+      {
+        "name": "GeminiAI",
+        "icon": "gemini"
+      },
+      {
+        "name": "Hugging Face Datasets",
+        "icon": "hugface"
+      }
+    ],
+    "Backend": [
+      {
+        "name": "FastAPI",
+        "icon": "fastapi"
+      },
+      {
+        "name": "PHP",
+        "icon": "php"
+      },
+      {
+        "name": "Laravel",
+        "icon": "laravel"
+      },
+      {
+        "name": "SimcyCreative",
+        "icon": "simcy"
+      }
+    ],
+    "Base_de_Données": [
+      {
+        "name": "SQL",
+        "icon": "sql"
+      },
+      {
+        "name": "MySQL",
+        "icon": "mysql"
+      },
+      {
+        "name": "SQLite",
+        "icon": "sqlite"
+      },
+      {
+        "name": "PostgreSQL/pgvector",
+        "icon": "postgre"
+      }
+    ],
+    "Outils": [
+      {
+        "name": "Git",
+        "icon": "git"
+      },
+      {
+        "name": "Github",
+        "icon": "github"
+      },
+      {
+        "name": "Gitlab",
+        "icon": "gitlab"
+      },
+      {
+        "name": "VSCode",
+        "icon": "vscode"
+      },
+      {
+        "name": "UV",
+        "icon": "uv"
+      },
+      {
+        "name": "npm",
+        "icon": "npm"
+      },
+      {
+        "name": "Vite",
+        "icon": "vite"
+      },
+      {
+        "name": "Ubuntu/Ubuntu server",
+        "icon": "ubuntu"
+      },
+      {
+        "name": "Postman",
+        "icon": "postman"
+      }
+    ],
+    "DevOps": [
+      {
+        "name": "Docker",
+        "icon": "docker"
+      },
+      {
+        "name": "GitHub Actions",
+        "icon": "gaction"
+      },
+      {
+        "name": "Prometheus",
+        "icon": "prometheus"
+      },
+      {
+        "name": "Grafana",
+        "icon": "grafana"
+      }
+    ],
     "Frontend": [
       {
         "name": "HTML",
@@ -59,64 +201,40 @@
       {
         "name": "SCSS",
         "icon": "scss"
+      },
+      {
+        "name": "Livewire",
+        "icon": "livewire"
+      },
+      {
+        "name": "Pinia",
+        "icon": "pinia"
+      },
+      {
+        "name": "PrimeVue",
+        "icon": "primevue"
       }
     ],
-    "Backend": [
+    "Compétences_appliquées": [
       {
-        "name": "PHP",
-        "icon": "php"
+        "name": "Ingénierie des données",
+        "icon": "python"
       },
       {
-        "name": "Laravel",
-        "icon": "laravel"
+        "name": "Machine Learning",
+        "icon": "sklearn"
       },
       {
-        "name": "SimcyCreative",
-        "icon": "simcy"
-      }
-    ],
-    "Base_de_Données": [
-      {
-        "name": "SQL",
-        "icon": "sql"
+        "name": "Applications d'IA",
+        "icon": "langchain"
       },
       {
-        "name": "MySQL",
-        "icon": "mysql"
+        "name": "Développement Web",
+        "icon": "fastapi"
       },
       {
-        "name": "SQLite",
-        "icon": "sqlite"
-      }
-    ],
-    "Outils": [
-      {
-        "name": "Git",
-        "icon": "git"
-      },
-      {
-        "name": "Github",
-        "icon": "github"
-      },
-      {
-        "name": "Gitlab",
-        "icon": "gitlab"
-      },
-      {
-        "name": "npm",
-        "icon": "npm"
-      },
-      {
-        "name": "Vite",
-        "icon": "vite"
-      },
-      {
-        "name": "Postman",
-        "icon": "postman"
-      },
-      {
-        "name": "VSCode",
-        "icon": "vscode"
+        "name": "Déploiement et monitoring",
+        "icon": "docker"
       }
     ]
   }

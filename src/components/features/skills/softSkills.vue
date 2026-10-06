@@ -40,6 +40,7 @@ export default {
     margin: 3px;
     text-wrap: nowrap;
     font-weight: 900;
+    font-size: 12px;
   }
 }
 </style>

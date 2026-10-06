@@ -1,38 +1,60 @@
 <script setup lang="ts">
-import { markRaw } from 'vue';
-import { userIcon, simcyIcon, livewireIcon, tailwindIcon, laravelIcon, mysqlIcon, vuejsIcon, bootstrapIcon } from '../icons';
-import projectModal from './projectModal.vue';
+import { markRaw } from 'vue'
+import {
+  userIcon,
+  simcyIcon,
+  livewireIcon,
+  tailwindIcon,
+  laravelIcon,
+  mysqlIcon,
+  vuejsIcon,
+  bootstrapIcon,
+  fastapiIcon,
+  piniaIcon,
+  postgreIcon,
+  gitlabIcon,
+  githubIcon,
+  pythonIcon,
+  typescriptIcon,
+  jupyterIcon,
+  dockerIcon,
+} from '../icons'
+import projectModal from './projectModal.vue'
 </script>
 
 <template>
-  <div class="card-container" @click="onMoreInfo">
-    <div class="project-ui">
+  <div class="card-container">
+    <div class="project-ui" @click="onMoreInfo">
       <h5 v-text="project.project_title"></h5>
 
-      <hr>
+      <hr />
 
       <p v-text="project.role_and_responsibilities.roles[0]"></p>
 
-      <hr>
+      <hr />
 
-      <template v-if="([...project.key_concepts].length > 0)">
-        <template v-for="(concept, index) in [...project.key_concepts]" :key="`concept_${index}`">
-          <p v-text="concept">
-          </p>
+      <template v-if="[...project.key_concepts].length > 0">
+        <template v-for="(concept, index) in [...project.key_concepts].slice(0,3)" :key="`concept_${index}`">
+          <p v-text="concept"></p>
         </template>
       </template>
 
       <template v-else>
-        <template v-for="(task, index) in [...project.role_and_responsibilities.key_tasks]" :key="`task_${index}`">
-          <p v-text="task">
-          </p>
+        <template
+          v-for="(task, index) in [...project.role_and_responsibilities.key_tasks]"
+          :key="`task_${index}`"
+        >
+          <p v-text="task"></p>
         </template>
       </template>
 
-      <hr>
+      <hr />
 
       <div class="icon-list">
-        <template v-for="(techno, index) in project.approach_and_process.technos" :key="index">
+        <template
+          v-for="(techno, index) in project.approach_and_process.technos.slice(0, 4)"
+          :key="index"
+        >
           <div class="tooltip">
             <div class="icon-container">
               <component :is="getIcon(techno.icon)" size="15px" />
@@ -43,21 +65,25 @@ import projectModal from './projectModal.vue';
       </div>
     </div>
 
-    <PrimevueDialog v-model:visible="isVisible" modal :header="project.project_title" :style="{ width: '50rem' }"
-      :breakpoints="{ '1199px': '75vw', '575px': '90vw' }">
+    <PrimevueDialog
+      v-model:visible="isVisible"
+      modal
+      :header="project.project_title"
+      :style="{ width: '50rem' }"
+      :breakpoints="{ '1199px': '75vw', '575px': '90vw' }"
+    >
       <project-modal :project="project" />
     </PrimevueDialog>
-
   </div>
 </template>
 
 <script lang="ts">
 export default {
-  name: "project-card",
+  name: 'project-card',
   props: {
     project: {
       type: Object,
-      required: true
+      required: true,
     },
   },
   data() {
@@ -70,20 +96,28 @@ export default {
         laravel: markRaw(laravelIcon),
         mysql: markRaw(mysqlIcon),
         vue: markRaw(vuejsIcon),
-        bootstrap: markRaw(bootstrapIcon)
+        bootstrap: markRaw(bootstrapIcon),
+        fastapi: markRaw(fastapiIcon),
+        pinia: markRaw(piniaIcon),
+        postgre: markRaw(postgreIcon),
+        gitlab: markRaw(gitlabIcon),
+        python: markRaw(pythonIcon),
+        typescript: markRaw(typescriptIcon),
+        jupyter: markRaw(jupyterIcon),
+        docker: markRaw(dockerIcon),
       },
       isVisible: false,
-    };
+    }
   },
   methods: {
     getIcon(icon_name: string) {
-      return this.iconComponents[icon_name as keyof typeof this.iconComponents];
+      return this.iconComponents[icon_name as keyof typeof this.iconComponents]
     },
     onMoreInfo() {
-      this.isVisible = true;
+      this.isVisible = true
     },
   },
-};
+}
 </script>
 
 <style scoped lang="scss">
@@ -116,7 +150,9 @@ export default {
       border-color: rgba(255, 255, 255, 0.333);
       transform: translate(0px, 0px) rotate(0deg);
       transition: 0.2s;
-      box-shadow: -4px -2px 10px 0px #ffffff, 4px 2px 10px 0px #5f9de77a;
+      box-shadow:
+        -4px -2px 10px 0px #ffffff,
+        4px 2px 10px 0px #5f9de77a;
     }
 
     hr {
@@ -153,7 +189,6 @@ export default {
         align-items: center;
       }
     }
-
   }
 
   .tooltip {
@@ -179,7 +214,7 @@ export default {
   }
 
   .tooltip .tooltiptext::after {
-    content: "";
+    content: '';
     position: absolute;
     bottom: 100%;
     left: 50%;
@@ -194,6 +229,5 @@ export default {
     visibility: visible;
     opacity: 1;
   }
-
 }
 </style>

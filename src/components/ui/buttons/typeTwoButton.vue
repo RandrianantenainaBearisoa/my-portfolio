@@ -36,8 +36,8 @@ a, div {
   font-size: smaller;
   font-weight: 500;
   letter-spacing: 0.4px;
-  color: #7e97b8;
-  background-color: #e0e8ef;
+  color: #d1e4fe;
+  background-color: #253645;
   border-style: solid;
   border-width: 2px 2px 2px 2px;
   border-color: rgba(255, 255, 255, 0.333);
@@ -46,7 +46,7 @@ a, div {
   margin: 10px 2px;
   transform: translate(0px, 0px) rotate(0deg);
   transition: 0.2s;
-  box-shadow: -4px -2px 16px 0px #ffffff, 4px 2px 16px 0px #5f9de77a;
+  box-shadow: -2px -1px 8px 0px #ffffff, 2px 1px 8px 0px #5f9de77a;
 }
 
 button:hover {

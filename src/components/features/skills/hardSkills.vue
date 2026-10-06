@@ -1,40 +1,82 @@
 <script lang="ts" setup>
-import { markRaw } from 'vue';
-import { skillsLayout } from '@/components/layouts';
-import type { HardSkillsCategory } from '@/static/interfaces/hardSkillType';
-import { htmlIcon, cssIcon, javascriptIcon, typescriptIcon, vuejsIcon, bootstrapIcon, tailwindIcon, sassIcon, phpIcon, laravelIcon, simcyIcon, sqlIcon, mysqlIcon, sqliteIcon, gitIcon, githubIcon, gitlabIcon, npmIcon, viteIcon, postmanIcon, vscodeIcon } from '@/components/ui/icons';
-import i18n from "@/plugins/i18n";
+import { markRaw } from 'vue'
+import { skillsLayout } from '@/components/layouts'
+import type { HardSkillsCategory } from '@/static/interfaces/hardSkillType'
+import {
+  githubIcon,
+  bootstrapIcon,
+  laravelIcon,
+  livewireIcon,
+  mysqlIcon,
+  simcyIcon,
+  tailwindIcon,
+  vuejsIcon,
+  gitIcon,
+  gitlabIcon,
+  cssIcon,
+  htmlIcon,
+  javascriptIcon,
+  npmIcon,
+  phpIcon,
+  postmanIcon,
+  sassIcon,
+  sqliteIcon,
+  typescriptIcon,
+  viteIcon,
+  vscodeIcon,
+  sqlIcon,
+  fastapiIcon,
+  piniaIcon,
+  postgreIcon,
+  pythonIcon,
+  langchainIcon,
+  langgraphIcon,
+  ollamaIcon,
+  primevueIcon,
+  geminiIcon,
+  tavilyIcon,
+  dockerIcon,
+  githubActionIcon,
+  prometheusIcon,
+  scikitLearnIcon,
+  hugginFaceIcon,
+  jupyterIcon,
+  mlflowIcon,
+  pandasIcon,
+  numpyIcon,
+  grafanaIcon,
+  uvIcon,
+  ubuntuIcon,
+} from '@/components/ui/icons'
+import i18n from '@/plugins/i18n'
 </script>
 
 <template>
   <div>
     <skills-layout :legend="i18n.global.t('labels.skill.hard')">
-      <template v-for="(cle, index) in keys" :key="index">
-        <dl>
-          <dt>
-            {{ cle.replace(/_/g, " ") }}:
-          </dt>
+      <dl>
+        <template v-for="(cle, index) in keys" :key="index">
+          <dt>{{ cle.replace(/_/g, ' ') }}:</dt>
           <dd>
             <template v-for="(item, index) in getSkillsByCategory(cle)" :key="`item_${index}`">
               <span class="list-enum">
                 <span class="stack-icon">
                   <component :is="getIcon(item.icon)" size="15px" />
                 </span>
-                <span class="placeholder">
-                </span>
+                <span class="placeholder"> </span>
                 {{ item.name }}
               </span>
             </template>
           </dd>
-        </dl>
-      </template>
+        </template>
+      </dl>
     </skills-layout>
   </div>
 </template>
 
 <script lang="ts">
 export default {
-  name: "hard-skills",
+  name: 'hard-skills',
   data() {
     return {
       iconComponents: {
@@ -58,32 +100,63 @@ export default {
         npm: markRaw(npmIcon),
         vite: markRaw(viteIcon),
         postman: markRaw(postmanIcon),
-        vscode: markRaw(vscodeIcon)
-      }
-    };
+        vscode: markRaw(vscodeIcon),
+        livewire: markRaw(livewireIcon),
+        pinia: markRaw(piniaIcon),
+        primevue: markRaw(primevueIcon),
+        python: markRaw(pythonIcon),
+        fastapi: markRaw(fastapiIcon),
+        postgre: markRaw(postgreIcon),
+        langchain: markRaw(langchainIcon),
+        langgraph: markRaw(langgraphIcon),
+        gemini: markRaw(geminiIcon),
+        tavily: markRaw(tavilyIcon),
+        ollama: markRaw(ollamaIcon),
+        sklearn: markRaw(scikitLearnIcon),
+        hugface: markRaw(hugginFaceIcon),
+        mlflow: markRaw(mlflowIcon),
+        pandas: markRaw(pandasIcon),
+        numpy: markRaw(numpyIcon),
+        jupyter: markRaw(jupyterIcon),
+        docker: markRaw(dockerIcon),
+        gaction: markRaw(githubActionIcon),
+        prometheus: markRaw(prometheusIcon),
+        grafana: markRaw(grafanaIcon),
+        uv: markRaw(uvIcon),
+        ubuntu: markRaw(ubuntuIcon),
+      },
+    }
   },
   methods: {
     getSkillsByCategory(categoryName: string) {
-      return [...this.hardSkills[categoryName]];
+      return [...this.hardSkills[categoryName]]
     },
     getIcon(icon_name: string) {
-      return this.iconComponents[icon_name as keyof typeof this.iconComponents];
+      return this.iconComponents[icon_name as keyof typeof this.iconComponents]
     },
   },
   computed: {
     hardSkills() {
-      if (i18n.global.locale === "fr")
-        return i18n.global.messages.fr.skills.hard_skills as HardSkillsCategory;
-      return i18n.global.messages.en.skills.hard_skills as HardSkillsCategory;
+      if (i18n.global.locale === 'fr')
+        return i18n.global.messages.fr.skills.hard_skills as HardSkillsCategory
+      return i18n.global.messages.en.skills.hard_skills as HardSkillsCategory
     },
     keys() {
-      return Object.keys(this.hardSkills);
+      return Object.keys(this.hardSkills)
     },
-  }
-};
+  },
+}
 </script>
 
 <style lang="scss" scoped>
+dl {
+  margin: 10px 0px;
+  max-height: 400px;
+  overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #add8e67c #add8e600;
+}
+
 dt {
   font-size: medium;
   font-weight: 500;
@@ -94,7 +167,8 @@ dd {
   font-size: smaller;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 3px;
+  margin: 0px;
 
   .list-enum {
     border: solid 1px;
@@ -106,6 +180,7 @@ dd {
     gap: 5px;
     align-items: center;
     transition: 1s;
+    font-size: 10px;
 
     &:hover {
       background-color: #ffffff;
@@ -129,7 +204,6 @@ dd {
       position: absolute;
       left: -5%;
     }
-
   }
 }
 </style>

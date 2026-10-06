@@ -1,4 +1,10 @@
 {
-  "hobbies": ["Jouer de la guitare", "Lecture"],
-  "interests": ["IA", "SIG", "Science de données", "Musique"]
+  "hobbies": [
+    "Jouer de la guitare",
+    "Lecture"
+  ],
+  "interests": [
+    "IA & Data",
+    "Musique"
+  ]
 }

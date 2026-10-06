@@ -3,6 +3,70 @@
     "title": "Web App",
     "list": [
       {
+        "project_title": "Career Log",
+        "entity": {
+          "name": "",
+          "link": ""
+        },
+        "team": "1",
+        "role_and_responsibilities": {
+          "roles": [
+            "FullStack Developper"
+          ],
+          "key_tasks": [
+            "Conception",
+            "Implementation"
+          ]
+        },
+        "project_context": {
+          "overall_objective": "A full-stack web application for tracking companies, job applications, and interview follow-ups during a personal job search.",
+          "project_type": "Personal project"
+        },
+        "initial_problem_challenge": "",
+        "approach_and_process": {
+          "methodology": [],
+          "technos": [
+            {
+              "name": "Fastapi",
+              "icon": "fastapi"
+            },
+            {
+              "name": "Vue.js",
+              "icon": "vue"
+            },
+            {
+              "name": "Pinia",
+              "icon": "pinia"
+            },
+            {
+              "name": "PostgreSQL",
+              "icon": "postgre"
+            },
+            {
+              "name": "Gitlab",
+              "icon": "gitlab"
+            }
+          ],
+          "project_lifecycle": []
+        },
+        "key_concepts": [
+          "CRUD APIs",
+          "Relational Data Modeling",
+          "Frontend State Management"
+        ],
+        "relevant_links": {
+          "github_repo": "",
+          "gitlab_repo": "https://gitlab.com/rabearisoabex/careerlog",
+          "live_demo_link": "",
+          "video": {
+            "label": "Demo video",
+            "path": "",
+            "lang": ""
+          }
+        },
+        "data_sources": []
+      },
+      {
         "project_title": "Stock Management",
         "entity": {
           "name": "GoDigital",
@@ -10,8 +74,13 @@
         },
         "team": "2",
         "role_and_responsibilities": {
-          "roles": ["FullStack Developper"],
-          "key_tasks": ["Implementation", "Maintenance"]
+          "roles": [
+            "FullStack Developper"
+          ],
+          "key_tasks": [
+            "Implementation",
+            "Maintenance"
+          ]
         },
         "project_context": {
           "overall_objective": "Develop an application for management of products in stock and products dispatched in stores",
@@ -37,13 +106,20 @@
               "name": "MySQL",
               "icon": "mysql"
             }
-          ]
+          ],
+          "project_lifecycle": []
         },
         "key_concepts": [],
         "relevant_links": {
           "github_repo": "",
-          "live_demo_link": ""
-        }
+          "live_demo_link": "",
+          "video": {
+            "label": "Demo video",
+            "path": "",
+            "lang": ""
+          }
+        },
+        "data_sources": []
       },
       {
         "project_title": "Garage Management",
@@ -53,8 +129,13 @@
         },
         "team": "3",
         "role_and_responsibilities": {
-          "roles": ["FullStack Developper"],
-          "key_tasks": ["Implementation", "Maintenance"]
+          "roles": [
+            "FullStack Developper"
+          ],
+          "key_tasks": [
+            "Implementation",
+            "Maintenance"
+          ]
         },
         "project_context": {
           "overall_objective": "Develop an application for managing garage activities",
@@ -72,13 +153,20 @@
               "name": "MySQL",
               "icon": "mysql"
             }
-          ]
+          ],
+          "project_lifecycle": []
         },
         "key_concepts": [],
         "relevant_links": {
           "github_repo": "",
-          "live_demo_link": ""
-        }
+          "live_demo_link": "",
+          "video": {
+            "label": "Demo video",
+            "path": "",
+            "lang": ""
+          }
+        },
+        "data_sources": []
       },
       {
         "project_title": "Real Time chat app, Data management",
@@ -88,8 +176,14 @@
         },
         "team": "1",
         "role_and_responsibilities": {
-          "roles": ["FullStack Developper"],
-          "key_tasks": ["Analysis", "Design", "Implementation"]
+          "roles": [
+            "FullStack Developper"
+          ],
+          "key_tasks": [
+            "Analysis",
+            "Design",
+            "Implementation"
+          ]
         },
         "project_context": {
           "overall_objective": "Optimize real-time communication and the choice of responses given during parliamentary sessions",
@@ -97,7 +191,9 @@
         },
         "initial_problem_challenge": "No computer system, no centralized database, data stored on paper and MS Word",
         "approach_and_process": {
-          "methodology": ["2TUP"],
+          "methodology": [
+            "2TUP"
+          ],
           "technos": [
             {
               "name": "Livewire",
@@ -115,13 +211,23 @@
               "name": "MySQL",
               "icon": "mysql"
             }
-          ]
+          ],
+          "project_lifecycle": []
         },
-        "key_concepts": ["Web Socket", "real-time communication"],
+        "key_concepts": [
+          "Web Socket",
+          "real-time communication"
+        ],
         "relevant_links": {
           "github_repo": "",
-          "live_demo_link": ""
-        }
+          "live_demo_link": "",
+          "video": {
+            "label": "Demo video",
+            "path": "",
+            "lang": ""
+          }
+        },
+        "data_sources": []
       },
       {
         "project_title": "Human Resources Management App",
@@ -131,8 +237,14 @@
         },
         "team": "2",
         "role_and_responsibilities": {
-          "roles": ["Laravel Developper"],
-          "key_tasks": ["Analysis", "Design", "Implementation"]
+          "roles": [
+            "Laravel Developper"
+          ],
+          "key_tasks": [
+            "Analysis",
+            "Design",
+            "Implementation"
+          ]
         },
         "project_context": {
           "overall_objective": "Digitize and optimize the file processing process in the Human Resources department",
@@ -140,7 +252,9 @@
         },
         "initial_problem_challenge": "No computer system, no centralized database, data stored on paper",
         "approach_and_process": {
-          "methodology": ["Merise"],
+          "methodology": [
+            "Merise"
+          ],
           "technos": [
             {
               "name": "Vue.js",
@@ -158,101 +272,704 @@
               "name": "MySQL",
               "icon": "mysql"
             }
-          ]
-        },
-        "key_concepts": ["Database", "MVC Architecture"],
-        "relevant_links": {
-          "github_repo": "",
-          "live_demo_link": ""
-        }
-      }
-    ]
-  },
-  "data_science": {
-    "title": "Data Science Projects",
-    "list": [
-      {
-        "project_title": "",
-        "role_and_responsibilities": {
-          "roles": [],
-          "key_tasks": [
-            "Data Collection & Acquisition",
-            "Data Cleaning & Preprocessing",
-            "Exploratory Data Analysis (EDA)",
-            "Feature Engineering",
-            "Model Selection & Development",
-            "Model Training & Optimization",
-            "Model Evaluation & Validation",
-            "Deployment (if applicable)",
-            "Interpretation & Reporting"
-          ]
-        },
-        "project_context": {
-          "overall_objective": "",
-          "client_company": "",
-          "project_type": ""
-        },
-        "initial_problem_challenge": {
-          "business_problem": "",
-          "technical_challenge": ""
-        },
-        "approach_and_process": {
-          "methodology": ["CRISP-DM", "Agile (Scrum/Kanban)", "Lean Startup", "Custom Workflow"],
-          "key_steps": [],
-          "data_sources": [],
-          "technos": {
-            "programming_languages": [],
-            "libraries_frameworks": [],
-            "databases": [],
-            "cloud_platforms": [],
-            "visualization_tools": [],
-            "ml_platforms_mle_tools": []
-          }
-        },
-        "data_details": {
-          "data_volume": "",
-          "data_types": [],
-          "data_characteristics": []
-        },
-        "model_details": {
-          "model_type": "",
-          "algorithms_used": [],
-          "key_features_used": [],
-          "hyperparameters_tuned": [],
-          "architecture_details": ""
-        },
-        "solutions_and_deliverables": {
-          "produced": [
-            "Trained Model",
-            "Jupyter Notebooks",
-            "API Endpoint",
-            "Dashboard",
-            "Research Paper/Report",
-            "Proof of Concept"
           ],
-          "visual_elements": {
-            "data_visualizations": [],
-            "model_performance_charts": [],
-            "architecture_diagrams": [],
-            "code_snippets": [],
-            "demo_screenshots_gifs": []
-          }
+          "project_lifecycle": []
         },
-        "results_and_impact": {
-          "key_metrics": [],
-          "quantitative_results": [],
-          "qualitative_impact": [],
-          "learnings": []
-        },
-        "challenges_encountered_and_solutions_provided": [],
-        "future_work_and_improvements": [],
+        "key_concepts": [
+          "Database",
+          "MVC Architecture"
+        ],
         "relevant_links": {
           "github_repo": "",
           "live_demo_link": "",
-          "article_blog_post": "",
-          "presentation_slides": ""
+          "video": {
+            "label": "Demo video",
+            "path": "",
+            "lang": ""
+          }
         },
-        "testimonials": []
+        "data_sources": []
+      }
+    ]
+  },
+  "ia_ml": {
+    "title": "IA et Données",
+    "list": [
+      {
+        "project_title": "Condor",
+        "entity": {
+          "name": "",
+          "link": ""
+        },
+        "team": "1",
+        "role_and_responsibilities": {
+          "roles": [
+            "Data Engineer",
+            "AI Engineer",
+            "Full-Stack Developer"
+          ],
+          "key_tasks": [
+            "Data Collection and Extraction",
+            "Data Preparation and Ingestion",
+            "Backend API and Semantic Search",
+            "Guidance Experience"
+          ]
+        },
+        "project_context": {
+          "overall_objective": "A full-stack career and education guidance application that helps users explore schools and training programs, discover their RIASEC profiles, and find career ideas suited to their interests.",
+          "project_type": "Personal project"
+        },
+        "initial_problem_challenge": "",
+        "approach_and_process": {
+          "methodology": [],
+          "technos": [
+            {
+              "name": "Python",
+              "icon": "python"
+            },
+            {
+              "name": "FastAPI",
+              "icon": "fastapi"
+            },
+            {
+              "name": "Vue 3",
+              "icon": "vue"
+            },
+            {
+              "name": "TypeScript",
+              "icon": "typescript"
+            },
+            {
+              "name": "PostgreSQL/pgvector",
+              "icon": "postgre"
+            },
+            {
+              "name": "LangChain",
+              "icon": "langchain"
+            },
+            {
+              "name": "LangGraph",
+              "icon": "langgraph"
+            },
+            {
+              "name": "GeminiAI",
+              "icon": "gemini"
+            },
+            {
+              "name": "Tavily",
+              "icon": "tavily"
+            },
+            {
+              "name": "Ollama",
+              "icon": "ollama"
+            },
+            {
+              "name": "Pinia",
+              "icon": "pinia"
+            },
+            {
+              "name": "PrimeVue",
+              "icon": "primevue"
+            }
+          ],
+          "project_lifecycle": [
+            {
+              "order": 1,
+              "stage": "Data Collection and Extraction",
+              "description": "Collect information about educational institutions and careers from configured PDF and web sources. Specialized agents extract and structure institution and job information, with LLM-assisted web research for institution details.",
+              "applied_concepts": [
+                "PDF parsing",
+                "Web scraping and research",
+                "Structured LLM output",
+                "Agent workflows"
+              ],
+              "stack_and_tools": [
+                "Python",
+                "LangChain",
+                "LangGraph",
+                "Google Gemini",
+                "Tavily",
+                "pdfplumber"
+              ]
+            },
+            {
+              "order": 2,
+              "stage": "Data Preparation and Ingestion",
+              "description": "Orchestrate extraction and preparation pipelines, then load the prepared institution, career, and RIASEC data into the database for use by the application.",
+              "applied_concepts": [
+                "ETL pipelines",
+                "Data normalization",
+                "Relational persistence",
+                "Vector data storage"
+              ],
+              "stack_and_tools": [
+                "Python",
+                "PostgreSQL",
+                "SQLModel",
+                "pgvector"
+              ]
+            },
+            {
+              "order": 3,
+              "stage": "Backend API and Semantic Search",
+              "description": "Expose endpoints for semantic institution search, institution information retrieval, the RIASEC questionnaire, personality profiles, and related career suggestions. Embeddings are generated through the configured Ollama model.",
+              "applied_concepts": [
+                "REST API development",
+                "Semantic retrieval",
+                "Embeddings",
+                "API integration"
+              ],
+              "stack_and_tools": [
+                "FastAPI",
+                "Python",
+                "PostgreSQL",
+                "pgvector",
+                "Ollama",
+                "nomic-embed-text-v2-moe"
+              ]
+            },
+            {
+              "order": 4,
+              "stage": "Guidance Experience",
+              "description": "Provide a web interface where users can search for institutions using a free-text description, review available institution information, complete the RIASEC test, and explore suggested careers based on their dominant profiles.",
+              "applied_concepts": [
+                "Full-stack application architecture",
+                "Frontend state management",
+                "API-driven interface",
+                "Guided user flows"
+              ],
+              "stack_and_tools": [
+                "Vue 3",
+                "TypeScript",
+                "Vite",
+                "Vue Router",
+                "Pinia",
+                "PrimeVue"
+              ]
+            }
+          ]
+        },
+        "key_concepts": [
+          "Semantic search",
+          "LLM-assisted data extraction",
+          "PDF and web data pipelines"
+        ],
+        "relevant_links": {
+          "github_repo": "",
+          "gitlab_repo": "https://gitlab.com/rabearisoabex/condor",
+          "live_demo_link": "",
+          "video": {
+            "label": "Demo video",
+            "path": "src/assets/video/demo_condor.mp4",
+            "lang": "This demo video is in French."
+          }
+        },
+        "data_sources": [
+          {
+            "id": "1",
+            "name": "College list",
+            "organization": "MESUPRES",
+            "platform": "",
+            "url": "https://www.mesupres.gov.mg/assets/front/documents/documents/habilitations/liste_des_institutions_superieures_mise_a_jour_aout_2022.pdf",
+            "format": "pdf",
+            "description": "List of universities in Madagascar",
+            "scope": ""
+          },
+          {
+            "id": "2",
+            "name": "RIASEC TEST",
+            "organization": "",
+            "platform": "",
+            "url": "https://pppdutgea.wordpress.com/wp-content/uploads/2015/10/le-test-riasec.pdf",
+            "format": "pdf",
+            "description": "Questionnaire used for the personality test",
+            "scope": ""
+          },
+          {
+            "id": "3",
+            "name": "Job list",
+            "organization": "",
+            "platform": "",
+            "url": "https://moodle.luniversitenumerique.fr/pluginfile.php/19864/mod_folder/content/0/Ressource_Mes%20centres%20d_int%C3%A9r%C3%AAts_Livret%20les%20m%C3%A9tiers%20RIASEC%20(2021).pdf?forcedownload=1",
+            "format": "pdf",
+            "description": "Work list based on the RIASEC profile",
+            "scope": ""
+          }
+        ]
+      },
+      {
+        "project_title": "ClaReFi (Classify Reviews of Films)",
+        "entity": {
+          "name": "",
+          "link": ""
+        },
+        "team": "1",
+        "role_and_responsibilities": {
+          "roles": [
+            "Data Engineer",
+            "Data Scientist",
+            "Full-Stack Developer",
+            "DevOps"
+          ],
+          "key_tasks": [
+            "Ingestion",
+            "Feature Engineering",
+            "Training",
+            "Inference",
+            "Frontend",
+            "Deployment & Monitoring"
+          ]
+        },
+        "project_context": {
+          "overall_objective": "A full-stack AI application that classifies movie reviews as positive or negative using NLP, FastAPI backend, and Vue.js frontend.",
+          "project_type": "Personal project"
+        },
+        "initial_problem_challenge": "",
+        "approach_and_process": {
+          "methodology": [],
+          "technos": [
+            {
+              "name": "Python",
+              "icon": "python"
+            },
+            {
+              "name": "FastAPI",
+              "icon": "fastapi"
+            },
+            {
+              "name": "Vue.js",
+              "icon": "vue"
+            },
+            {
+              "name": "TypeScript",
+              "icon": "typescript"
+            },
+            {
+              "name": "Docker",
+              "icon": "docker"
+            },
+            {
+              "name": "GitHub",
+              "icon": "github"
+            },
+            {
+              "name": "GitHub Actions",
+              "icon": "gaction"
+            },
+            {
+              "name": "Prometheus",
+              "icon": "prometheus"
+            },
+            {
+              "name": "scikit-learn",
+              "icon": "sklearn"
+            },
+            {
+              "name": "Hugging Face Datasets",
+              "icon": "hugface"
+            }
+          ],
+          "project_lifecycle": [
+            {
+              "order": 1,
+              "stage": "Ingestion",
+              "description": "Download labeled movie review data from Hugging Face and store it for preprocessing.",
+              "applied_concepts": [
+                "Data Engineering"
+              ],
+              "stack_and_tools": [
+                "Python 3.12+",
+                "datasets",
+                "Hugging Face Datasets",
+                "YAML"
+              ]
+            },
+            {
+              "order": 2,
+              "stage": "Feature Engineering",
+              "description": "Convert review text into numerical features using bag-of-words and n-gram tokenization.",
+              "applied_concepts": [
+                "NLP feature extraction",
+                "Count vectorization",
+                "Reproducible pipelines"
+              ],
+              "stack_and_tools": [
+                "scikit-learn",
+                "CountVectorizer"
+              ]
+            },
+            {
+              "order": 3,
+              "stage": "Training",
+              "description": "Train and tune a sentiment classification model with GridSearchCV and export the best artifact.",
+              "applied_concepts": [
+                "Hyperparameter tuning",
+                "Cross-validation",
+                "Model versioning"
+              ],
+              "stack_and_tools": [
+                "scikit-learn",
+                "GridSearchCV",
+                "joblib",
+                "pytest"
+              ]
+            },
+            {
+              "order": 4,
+              "stage": "Inference",
+              "description": "Serve sentiment predictions through a FastAPI endpoint and expose runtime metrics.",
+              "applied_concepts": [
+                "API development",
+                "Observability",
+                "Structured logging"
+              ],
+              "stack_and_tools": [
+                "FastAPI",
+                "Uvicorn",
+                "prometheus-client",
+                "pydantic-settings"
+              ]
+            },
+            {
+              "order": 5,
+              "stage": "Frontend",
+              "description": "Build a user-facing interface for submitting movie reviews and displaying sentiment results.",
+              "applied_concepts": [
+                "Frontend architecture",
+                "Type safety",
+                "User experience"
+              ],
+              "stack_and_tools": [
+                "Vue.js",
+                "TypeScript",
+                "Vite",
+                "PrimeVue"
+              ]
+            },
+            {
+              "order": 6,
+              "stage": "Deployment & Monitoring",
+              "description": "Containerize the application, orchestrate services with Docker Compose, and monitor metrics.",
+              "applied_concepts": [
+                "Containerization",
+                "Dev/Prod configuration",
+                "Monitoring",
+                "CI/CD automation"
+              ],
+              "stack_and_tools": [
+                "Docker",
+                "Docker Compose",
+                "Nginx",
+                "Prometheus",
+                "Grafana",
+                "GitHub Actions"
+              ]
+            }
+          ]
+        },
+        "key_concepts": [
+          "Natural Language Processing",
+          "Sentiment Analysis",
+          "Model Training",
+          "API Development",
+          "Frontend Integration",
+          "Containerization",
+          "Monitoring"
+        ],
+        "relevant_links": {
+          "github_repo": "https://github.com/RandrianantenainaBearisoa/clarefi.git",
+          "gitlab_repo": "",
+          "live_demo_link": "https://clarefi-demo.netlify.app/",
+          "video": {
+            "label": "Demo video",
+            "path": "src/assets/video/demo_clarefi.mp4",
+            "lang": "This demo video is in French."
+          }
+        },
+        "data_sources": [
+          {
+            "id": 1,
+            "name": "tblard/allocine",
+            "organization": "Hugging Face",
+            "platform": "Hugging Face Datasets",
+            "url": "https://huggingface.co/datasets/tblard/allocine",
+            "format": "dataset",
+            "description": "French movie review dataset with sentiment labels for binary classification.",
+            "scope": "Global"
+          }
+        ]
+      },
+      {
+        "project_title": "Rice Price Prediction",
+        "entity": {
+          "name": "",
+          "link": ""
+        },
+        "team": "1",
+        "role_and_responsibilities": {
+          "roles": [
+            "Data Engineer",
+            "Data Scientist",
+            "ML Engineer",
+            "Full-Stack Developer",
+            "DevOps"
+          ],
+          "key_tasks": [
+            "Ingestion",
+            "Cleaning",
+            "Feature Engineering",
+            "Training",
+            "Inference",
+            "Frontend",
+            "Deployment & Monitoring"
+          ]
+        },
+        "project_context": {
+          "overall_objective": "A machine learning project that predicts rice prices in Madagascar based on historical data and various factors such as weather conditions, exchange rates between the Malagasy Ariary and the US Dollar.",
+          "project_type": "Personal project"
+        },
+        "initial_problem_challenge": "",
+        "approach_and_process": {
+          "methodology": [],
+          "technos": [
+            {
+              "name": "Python",
+              "icon": "python"
+            },
+            {
+              "name": "FastAPI",
+              "icon": "fastapi"
+            },
+            {
+              "name": "Jupyter Notebook",
+              "icon": "jupyter"
+            },
+            {
+              "name": "Vue.js",
+              "icon": "vue"
+            },
+            {
+              "name": "Docker",
+              "icon": "docker"
+            },
+            {
+              "name": "GitHub",
+              "icon": "github"
+            },
+            {
+              "name": "Mlflow",
+              "icon": "mlflow"
+            },
+            {
+              "name": "Pandas",
+              "icon": "pandas"
+            },
+            {
+              "name": "Numpy",
+              "icon": "numpy"
+            }
+          ],
+          "project_lifecycle": [
+            {
+              "order": 1,
+              "stage": "Ingestion",
+              "description": "Retrieve raw data from external sources",
+              "applied_concepts": [
+                "Configuration-driven design",
+                "Data retrieval pattern"
+              ],
+              "stack_and_tools": [
+                "Python 3.12+",
+                "yfinance",
+                "geopy",
+                "boto3",
+                "pandas"
+              ]
+            },
+            {
+              "order": 2,
+              "stage": "Cleaning",
+              "description": "Validate and process data, handle missing values and outliers",
+              "applied_concepts": [
+                "Data validation",
+                "Error handling",
+                "Type hints",
+                "Configuration-driven design"
+              ],
+              "stack_and_tools": [
+                "pandas",
+                "numpy",
+                "statsmodels",
+                "SQLAlchemy",
+                "psycopg2-binary"
+              ]
+            },
+            {
+              "order": 3,
+              "stage": "Feature Engineering",
+              "description": "Transform and optimize features for model training",
+              "applied_concepts": [
+                "Type hints",
+                "Configuration-driven design",
+                "Reproducible pipelines"
+              ],
+              "stack_and_tools": [
+                "scikit-learn",
+                "pandas",
+                "numpy",
+                "matplotlib",
+                "seaborn"
+              ]
+            },
+            {
+              "order": 4,
+              "stage": "Training",
+              "description": "Train model with hyperparameter tuning and export artifacts",
+              "applied_concepts": [
+                "MLOps",
+                "Model versioning",
+                "Reproducible pipelines",
+                "S3 artifact storage",
+                "Separation of concerns"
+              ],
+              "stack_and_tools": [
+                "scikit-learn",
+                "MLflow",
+                "pytest",
+                "boto3",
+                "ruff"
+              ]
+            },
+            {
+              "order": 5,
+              "stage": "Inference",
+              "description": "Load model and serve predictions via API",
+              "applied_concepts": [
+                "Separation of concerns",
+                "Layered architecture",
+                "Type hints",
+                "Error handling",
+                "Structured logging",
+                "Microservices-ready"
+              ],
+              "stack_and_tools": [
+                "FastAPI",
+                "Uvicorn",
+                "Pydantic-settings",
+                "scikit-learn",
+                "MLflow"
+              ]
+            },
+            {
+              "order": 6,
+              "stage": "Frontend",
+              "description": "User interface for predictions and feature display",
+              "applied_concepts": [
+                "Type hints",
+                "Separation of concerns",
+                "Microservices-ready"
+              ],
+              "stack_and_tools": [
+                "Vue.js",
+                "TypeScript",
+                "Vue Router",
+                "Vite",
+                "Sass",
+                "Node.js",
+                "npm"
+              ]
+            },
+            {
+              "order": 7,
+              "stage": "Deployment & Monitoring",
+              "description": "Containerize, orchestrate, and monitor the application",
+              "applied_concepts": [
+                "Containerization",
+                "Dev/Prod configurations",
+                "Observability stack",
+                "Centralized logging",
+                "Metrics collection"
+              ],
+              "stack_and_tools": [
+                "Docker",
+                "Docker Compose",
+                "Nginx",
+                "Gunicorn",
+                "Prometheus",
+                "Grafana",
+                "Loki",
+                "Promtail",
+                "Nginx Prometheus Exporter"
+              ]
+            }
+          ]
+        },
+        "key_concepts": [
+          "Data Engineering",
+          "Feature Engineering",
+          "Model Training",
+          "Model Evaluation",
+          "Model Deployment",
+          "Monitoring"
+        ],
+        "relevant_links": {
+          "github_repo": "https://github.com/RandrianantenainaBearisoa/rice_price_predict.git",
+          "gitlab_repo": "",
+          "live_demo_link": "",
+          "video": {
+            "label": "Demo video",
+            "path": "src/assets/video/demo_rice_price_pred.mp4",
+            "lang": "This demo video is in English."
+          }
+        },
+        "data_sources": [
+          {
+            "id": 1,
+            "name": "mdg_food_price.csv",
+            "organization": "World Food Programme (WFP)",
+            "platform": "HumData",
+            "url": "https://data.humdata.org/dataset/86173d84-f1b5-4470-afb9-5ee56747f4cd/resource/8fc13d1e-abac-4262-8caa-edab795661e6/download/wfp_food_prices_mdg.csv",
+            "format": "csv",
+            "description": "Food prices data for Madagascar",
+            "region": "Madagascar"
+          },
+          {
+            "id": 2,
+            "name": "global_fuel_price.xlsx",
+            "organization": "World Bank",
+            "platform": "World Bank Data Catalog",
+            "url": "https://datacatalogfiles.worldbank.org/ddh-published/0066829/DR0095290/Global_Fuel_Prices_Database.xlsx",
+            "format": "xlsx",
+            "description": "Global fuel prices database",
+            "scope": "Global"
+          },
+          {
+            "id": 3,
+            "name": "worldbank_commodity_price.xlsx",
+            "organization": "World Bank",
+            "platform": "World Bank Documents",
+            "url": "https://thedocs.worldbank.org/en/doc/74e8be41ceb20fa0da750cda2f6b9e4e-0050012026/related/CMO-Historical-Data-Monthly.xlsx",
+            "format": "xlsx",
+            "description": "Commodity prices - historical monthly data",
+            "scope": "Global"
+          },
+          {
+            "id": 4,
+            "name": "Yahoo Finance API",
+            "library": "yfinance",
+            "type": "Library/API",
+            "description": "Financial market data, stock prices, and economic indicators",
+            "scope": "Global"
+          },
+          {
+            "id": 5,
+            "name": "Geolocation Data",
+            "library": "geopy",
+            "type": "Library/API",
+            "description": "Geographic coordinates and location-based data",
+            "scope": "Global"
+          }
+        ]
       }
     ]
   }

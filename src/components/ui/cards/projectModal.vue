@@ -1,8 +1,41 @@
 <script setup lang="ts">
-import { markRaw } from 'vue';
-import { userIcon, simcyIcon, livewireIcon, tailwindIcon, laravelIcon, mysqlIcon, vuejsIcon, bootstrapIcon } from '../icons';
-import { typeTwoButton } from '../buttons';
-import i18n from "@/plugins/i18n";
+import { markRaw } from 'vue'
+import {
+  userIcon,
+  simcyIcon,
+  livewireIcon,
+  tailwindIcon,
+  laravelIcon,
+  mysqlIcon,
+  vuejsIcon,
+  bootstrapIcon,
+  fastapiIcon,
+  piniaIcon,
+  postgreIcon,
+  gitlabIcon,
+  githubIcon,
+  pythonIcon,
+  typescriptIcon,
+  langchainIcon,
+  langgraphIcon,
+  geminiIcon,
+  tavilyIcon,
+  ollamaIcon,
+  primevueIcon,
+  dockerIcon,
+  githubActionIcon,
+  prometheusIcon,
+  scikitLearnIcon,
+  hugginFaceIcon,
+  jupyterIcon,
+  mlflowIcon,
+  pandasIcon,
+  numpyIcon,
+  playIcon,
+} from '../icons'
+import { typeTwoButton } from '../buttons'
+import i18n from '@/plugins/i18n'
+import { videoModal } from '.'
 </script>
 
 <template>
@@ -10,24 +43,29 @@ import i18n from "@/plugins/i18n";
     <!-- Actors and Functions -->
     <fieldset>
       <legend>
-        {{ i18n.global.t("labels.project.actors_and_functions") }}
+        {{ i18n.global.t('labels.project.actors_and_functions') }}
       </legend>
       <div class="part-1">
-        <type-two-button :url="project.entity.link">
+        <type-two-button :url="project.entity.link" v-if="project.entity.name.length > 0">
           <div class="pseudo-button">
-            {{ i18n.global.t("labels.project.host") }}: <span class="upper-size">{{ project.entity.name }}</span>
+            {{ i18n.global.t('labels.project.host') }}:
+            <span class="upper-size">{{ project.entity.name }}</span>
           </div>
         </type-two-button>
         <type-two-button>
           <div class="pseudo-button">
-            {{ i18n.global.t("labels.project.team") }}: <span class="upper-size">{{ project.team }}</span>
+            {{ i18n.global.t('labels.project.team') }}:
+            <span class="upper-size">{{ project.team }}</span>
           </div>
         </type-two-button>
         <type-two-button>
           <div class="pseudo-button">
-            {{ i18n.global.t("labels.project.role") }}:
+            {{ i18n.global.t('labels.project.role') }}:
             <div class="content-wrapper">
-              <template v-for="(role, index) in project.role_and_responsibilities.roles" :key="`role_${index}`">
+              <template
+                v-for="(role, index) in project.role_and_responsibilities.roles"
+                :key="`role_${index}`"
+              >
                 <span class="list-enum">{{ role }}</span>
               </template>
             </div>
@@ -35,9 +73,12 @@ import i18n from "@/plugins/i18n";
         </type-two-button>
         <type-two-button>
           <div class="pseudo-button">
-            {{ i18n.global.t("labels.project.task") }}:
+            {{ i18n.global.t('labels.project.task') }}:
             <div class="content-wrapper">
-              <template v-for="(task, index) in project.role_and_responsibilities.key_tasks" :key="`task_${index}`">
+              <template
+                v-for="(task, index) in project.role_and_responsibilities.key_tasks"
+                :key="`task_${index}`"
+              >
                 <span class="list-enum">{{ task }}</span>
               </template>
             </div>
@@ -49,16 +90,16 @@ import i18n from "@/plugins/i18n";
     <!-- project context -->
     <fieldset>
       <legend>
-        {{ i18n.global.t("labels.project.project_context") }}
+        {{ i18n.global.t('labels.project.project_context') }}
       </legend>
       <div class="part-2">
         <dl>
-          <dt>{{ i18n.global.t("labels.project.project_type") }}</dt>
+          <dt>{{ i18n.global.t('labels.project.project_type') }}</dt>
           <dd>{{ project.project_context.project_type }}</dd>
         </dl>
         <template v-if="project.project_context.overall_objective !== ''">
           <dl>
-            <dt>{{ i18n.global.t("labels.project.overall_objective") }}</dt>
+            <dt>{{ i18n.global.t('labels.project.overall_objective') }}</dt>
             <dd>
               {{ project.project_context.overall_objective }}
             </dd>
@@ -66,7 +107,7 @@ import i18n from "@/plugins/i18n";
         </template>
         <template v-if="project.initial_problem_challenge !== ''">
           <dl>
-            <dt>{{ i18n.global.t("labels.project.initial_problem_challenge") }}</dt>
+            <dt>{{ i18n.global.t('labels.project.initial_problem_challenge') }}</dt>
             <dd>{{ project.initial_problem_challenge }}</dd>
           </dl>
         </template>
@@ -75,14 +116,17 @@ import i18n from "@/plugins/i18n";
 
     <!-- approach and process -->
     <fieldset>
-      <legend>{{ i18n.global.t("labels.project.approach_and_process") }}</legend>
+      <legend>{{ i18n.global.t('labels.project.approach_and_process') }}</legend>
       <div class="part-3">
         <template v-if="[...project.approach_and_process.methodology].length > 0">
           <type-two-button>
             <div class="pseudo-button">
-              {{ i18n.global.t("labels.project.methodology") }}:
+              {{ i18n.global.t('labels.project.methodology') }}:
               <div class="content-wrapper">
-                <template v-for="(method, index) in project.approach_and_process.methodology" :key="`method_${index}`">
+                <template
+                  v-for="(method, index) in project.approach_and_process.methodology"
+                  :key="`method_${index}`"
+                >
                   <span class="list-enum">{{ method }}</span>
                 </template>
               </div>
@@ -91,15 +135,17 @@ import i18n from "@/plugins/i18n";
         </template>
         <type-two-button>
           <div class="pseudo-button">
-            {{ i18n.global.t("labels.project.tech_stack") }}:
+            {{ i18n.global.t('labels.project.tech_stack') }}:
             <div class="content-wrapper">
-              <template v-for="(stack, index) in project.approach_and_process.technos" :key="`stack_${index}`">
+              <template
+                v-for="(stack, index) in project.approach_and_process.technos"
+                :key="`stack_${index}`"
+              >
                 <span class="list-enum">
                   <span class="stack-icon">
                     <component :is="getIcon(stack.icon)" size="15px" />
                   </span>
-                  <span class="placeholder">
-                  </span>
+                  <span class="placeholder"> </span>
                   {{ stack.name }}
                 </span>
               </template>
@@ -109,52 +155,76 @@ import i18n from "@/plugins/i18n";
         <template v-if="[...project.key_concepts].length > 0">
           <type-two-button>
             <div class="pseudo-button">
-              {{ i18n.global.t("labels.project.key_concepts") }}:
+              {{ i18n.global.t('labels.project.key_concepts') }}:
               <div class="content-wrapper">
-                <template v-for="(concept, index) in project.key_concepts" :key="`concept_${index}`">
+                <template
+                  v-for="(concept, index) in project.key_concepts"
+                  :key="`concept_${index}`"
+                >
                   <span class="list-enum">{{ concept }}</span>
                 </template>
               </div>
             </div>
           </type-two-button>
         </template>
+        <!-- <template v-if="[...project.approach_and_process.project_lifecycle].length > 0">
+          {{ project.approach_and_process.project_lifecycle }}
+        </template> -->
       </div>
     </fieldset>
 
     <!-- Demos -->
     <fieldset>
       <legend>
-        {{ i18n.global.t("labels.project.demo.title") }}
+        {{ i18n.global.t('labels.project.demo.title') }}
       </legend>
       <div class="part-4">
-        <template v-if="project.relevant_links.github_repo === '' && project.relevant_links.live_demo_link === ''">
-          {{ i18n.global.t("labels.project.demo.no_demo") }}
+        <template
+          v-if="
+            project.relevant_links.github_repo === '' &&
+            project.relevant_links.live_demo_link === '' &&
+            project.relevant_links.gitlab_repo === '' &&
+            project.relevant_links.video.path === ''
+          "
+        >
+          {{ i18n.global.t('labels.project.demo.no_demo') }}
         </template>
         <template v-else>
           <template v-if="project.relevant_links.github_repo !== ''">
             <type-two-button :url="project.relevant_links.github_repo">
               <div class="pseudo-button">
-                {{ i18n.global.t("labels.project.demo.github") }}
+                <githubIcon fill="#ffffff" />
+              </div>
+            </type-two-button>
+          </template>
+          <template v-if="project.relevant_links.gitlab_repo !== ''">
+            <type-two-button :url="project.relevant_links.gitlab_repo">
+              <div class="pseudo-button">
+                <gitlabIcon />
               </div>
             </type-two-button>
           </template>
           <template v-if="project.relevant_links.live_demo_link !== ''">
             <type-two-button :url="project.relevant_links.live_demo_link">
               <div class="pseudo-button">
-                {{ i18n.global.t("labels.project.demo.live") }}
+                {{ i18n.global.t('labels.project.demo.live') }}
               </div>
             </type-two-button>
           </template>
         </template>
+        <template v-if="project.relevant_links.video.path !== ''">
+          <videoModal :video_path="project.relevant_links.video.path" :modal_title="project.relevant_links.video.lang">
+            <div class="pseudo-button"><playIcon fill="currentColor" />Video</div>
+          </videoModal>
+        </template>
       </div>
     </fieldset>
-
   </div>
 </template>
 
 <script lang="ts">
 export default {
-  name: "project-modal",
+  name: 'project-modal',
   props: {
     project: {
       type: Object,
@@ -171,16 +241,38 @@ export default {
         laravel: markRaw(laravelIcon),
         mysql: markRaw(mysqlIcon),
         vue: markRaw(vuejsIcon),
-        bootstrap: markRaw(bootstrapIcon)
+        bootstrap: markRaw(bootstrapIcon),
+        fastapi: markRaw(fastapiIcon),
+        pinia: markRaw(piniaIcon),
+        postgre: markRaw(postgreIcon),
+        gitlab: markRaw(gitlabIcon),
+        github: markRaw(githubIcon),
+        python: markRaw(pythonIcon),
+        typescript: markRaw(typescriptIcon),
+        langchain: markRaw(langchainIcon),
+        langgraph: markRaw(langgraphIcon),
+        gemini: markRaw(geminiIcon),
+        tavily: markRaw(tavilyIcon),
+        ollama: markRaw(ollamaIcon),
+        primevue: markRaw(primevueIcon),
+        docker: markRaw(dockerIcon),
+        gaction: markRaw(githubActionIcon),
+        prometheus: markRaw(prometheusIcon),
+        sklearn: markRaw(scikitLearnIcon),
+        hugface: markRaw(hugginFaceIcon),
+        jupyter: markRaw(jupyterIcon),
+        mlflow: markRaw(mlflowIcon),
+        pandas: markRaw(pandasIcon),
+        numpy: markRaw(numpyIcon),
       },
-    };
+    }
   },
   methods: {
     getIcon(icon_name: string) {
-      return this.iconComponents[icon_name as keyof typeof this.iconComponents];
+      return this.iconComponents[icon_name as keyof typeof this.iconComponents]
     },
   },
-};
+}
 </script>
 
 <style scoped>
@@ -188,7 +280,7 @@ fieldset {
   border-color: #ffffff6e;
   border-radius: 20px;
 
-  &>legend {
+  & > legend {
     /* background-color: #ffffff; */
     padding: 0px 10px;
     font-size: small;
@@ -209,15 +301,18 @@ fieldset {
     justify-content: center;
     align-items: center;
     gap: 10px;
+    font-size: smaller;
 
     .content-wrapper {
+      max-width: 500px;
       display: flex;
+      justify-content: left;
       flex-wrap: wrap;
       text-align: center;
     }
 
     .upper-size {
-      font-size: large;
+      font-size: small;
       font-weight: 600;
     }
 
@@ -246,7 +341,6 @@ fieldset {
         position: absolute;
         left: -5%;
       }
-
     }
   }
 }

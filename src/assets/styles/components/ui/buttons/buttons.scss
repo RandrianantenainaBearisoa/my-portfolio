@@ -4,9 +4,9 @@
   align-items: center;
   width: 85%;
 
-  @media (min-width: 561px) {
-    justify-content: start;
-  }
+  // @media (min-width: 561px) {
+  //   justify-content: start;
+  // }
 }
 
 a {
@@ -68,6 +68,14 @@ a {
     &:hover {
       background-color: #104c35;
       box-shadow: 0px 0px 15px 5px #104c35;
+      transition: 0.5s;
+    }
+  }
+
+    &.gitlab {
+    &:hover {
+      background-color: #e2432ad5;
+      box-shadow: 0px 0px 15px 5px #e2432a;
       transition: 0.5s;
     }
   }

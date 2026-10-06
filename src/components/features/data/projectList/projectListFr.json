@@ -3,6 +3,70 @@
     "title": "Application Web",
     "list": [
       {
+        "project_title": "Career Log",
+        "entity": {
+          "name": "",
+          "link": ""
+        },
+        "team": "1",
+        "role_and_responsibilities": {
+          "roles": [
+            "Développeur FullStack"
+          ],
+          "key_tasks": [
+            "Conception",
+            "Implémentation"
+          ]
+        },
+        "project_context": {
+          "overall_objective": "Application web full-stack pour suivre les entreprises, les candidatures et les relances pendant une recherche d’emploi personnelle.",
+          "project_type": "Projet personnel"
+        },
+        "initial_problem_challenge": "",
+        "approach_and_process": {
+          "methodology": [],
+          "technos": [
+            {
+              "name": "Fastapi",
+              "icon": "fastapi"
+            },
+            {
+              "name": "Vue.js",
+              "icon": "vue"
+            },
+            {
+              "name": "Pinia",
+              "icon": "pinia"
+            },
+            {
+              "name": "PostgreSQL",
+              "icon": "postgre"
+            },
+            {
+              "name": "Gitlab",
+              "icon": "gitlab"
+            }
+          ],
+          "project_lifecycle": []
+        },
+        "key_concepts": [
+          "API CRUD",
+          "Modélisation de données relationnelles",
+          "Gestion d’état frontend"
+        ],
+        "relevant_links": {
+          "github_repo": "",
+          "gitlab_repo": "https://gitlab.com/rabearisoabex/careerlog",
+          "live_demo_link": "",
+          "video": {
+            "label": "Vidéo de démo",
+            "path": "",
+            "lang": ""
+          }
+        },
+        "data_sources": []
+      },
+      {
         "project_title": "Gestion de Stock",
         "entity": {
           "name": "GoDigital",
@@ -10,8 +74,13 @@
         },
         "team": "2",
         "role_and_responsibilities": {
-          "roles": ["Développeur FullStack"],
-          "key_tasks": ["Implémentation", "Maintenance"]
+          "roles": [
+            "Développeur FullStack"
+          ],
+          "key_tasks": [
+            "Implémentation",
+            "Maintenance"
+          ]
         },
         "project_context": {
           "overall_objective": "Développer une application pour la gestion des produits en stock et des produits distribués dans les magasins",
@@ -37,13 +106,20 @@
               "name": "MySQL",
               "icon": "mysql"
             }
-          ]
+          ],
+          "project_lifecycle": []
         },
         "key_concepts": [],
         "relevant_links": {
           "github_repo": "",
-          "live_demo_link": ""
-        }
+          "live_demo_link": "",
+          "video": {
+            "label": "Vidéo de démo",
+            "path": "",
+            "lang": ""
+          }
+        },
+        "data_sources": []
       },
       {
         "project_title": "Gestion de Garage",
@@ -53,8 +129,13 @@
         },
         "team": "3",
         "role_and_responsibilities": {
-          "roles": ["Développeur FullStack"],
-          "key_tasks": ["Implémentation", "Maintenance"]
+          "roles": [
+            "Développeur FullStack"
+          ],
+          "key_tasks": [
+            "Implémentation",
+            "Maintenance"
+          ]
         },
         "project_context": {
           "overall_objective": "Développer une application pour la gestion des activités d'un garage",
@@ -72,13 +153,20 @@
               "name": "MySQL",
               "icon": "mysql"
             }
-          ]
+          ],
+          "project_lifecycle": []
         },
         "key_concepts": [],
         "relevant_links": {
           "github_repo": "",
-          "live_demo_link": ""
-        }
+          "live_demo_link": "",
+          "video": {
+            "label": "Vidéo de démo",
+            "path": "",
+            "lang": ""
+          }
+        },
+        "data_sources": []
       },
       {
         "project_title": "Discussion en temps réel, gestion de données",
@@ -88,8 +176,14 @@
         },
         "team": "1",
         "role_and_responsibilities": {
-          "roles": ["Développeur FullStack"],
-          "key_tasks": ["Analyse", "Conception", "Implémentation"]
+          "roles": [
+            "Développeur FullStack"
+          ],
+          "key_tasks": [
+            "Analyse",
+            "Conception",
+            "Implémentation"
+          ]
         },
         "project_context": {
           "overall_objective": "Optimiser la communication en temps réel et le choix des réponses données lors des sessions parlementaires",
@@ -97,7 +191,9 @@
         },
         "initial_problem_challenge": "Pas de système informatique, pas de base de données centralisée, données stockées sur papier et MS Word",
         "approach_and_process": {
-          "methodology": ["2TUP"],
+          "methodology": [
+            "2TUP"
+          ],
           "technos": [
             {
               "name": "Livewire",
@@ -115,13 +211,23 @@
               "name": "MySQL",
               "icon": "mysql"
             }
-          ]
+          ],
+          "project_lifecycle": []
         },
-        "key_concepts": ["Web Socket", "communication en temps réel"],
+        "key_concepts": [
+          "Web Socket",
+          "communication en temps réel"
+        ],
         "relevant_links": {
           "github_repo": "",
-          "live_demo_link": ""
-        }
+          "live_demo_link": "",
+          "video": {
+            "label": "Vidéo de démo",
+            "path": "",
+            "lang": ""
+          }
+        },
+        "data_sources": []
       },
       {
         "project_title": "Gestion des ressources humaines",
@@ -131,8 +237,14 @@
         },
         "team": "2",
         "role_and_responsibilities": {
-          "roles": ["Développeur Laravel"],
-          "key_tasks": ["Analyse", "Conception", "Implémentation"]
+          "roles": [
+            "Développeur Laravel"
+          ],
+          "key_tasks": [
+            "Analyse",
+            "Conception",
+            "Implémentation"
+          ]
         },
         "project_context": {
           "overall_objective": "Numériser et optimiser le processus de traitement des dossiers au sein du service des ressources humaines",
@@ -140,7 +252,9 @@
         },
         "initial_problem_challenge": "Pas de système informatique, pas de base de données centralisée, données stockées sur papier",
         "approach_and_process": {
-          "methodology": ["Merise"],
+          "methodology": [
+            "Merise"
+          ],
           "technos": [
             {
               "name": "Vue.js",
@@ -158,106 +272,704 @@
               "name": "MySQL",
               "icon": "mysql"
             }
-          ]
-        },
-        "key_concepts": ["Base de données", "Architecture MVC"],
-        "relevant_links": {
-          "github_repo": "",
-          "live_demo_link": ""
-        }
-      }
-    ]
-  },
-  "data_science": {
-    "title": "Projets en science des données",
-    "list": [
-      {
-        "project_title": "",
-        "role_and_responsibilities": {
-          "roles": [],
-          "key_tasks": [
-            "Collecte et acquisition de données",
-            "Nettoyage et prétraitement des données",
-            "Analyse exploratoire des données (AED)",
-            "Ingénierie des fonctionnalités",
-            "Sélection et développement de modèles",
-            "Entraînement et optimisation de modèles",
-            "Évaluation et validation de modèles",
-            "Déploiement (si applicable)",
-            "Interprétation et rapport"
-          ]
-        },
-        "project_context": {
-          "overall_objective": "",
-          "client_company": "",
-          "project_type": ""
-        },
-        "initial_problem_challenge": {
-          "business_problem": "",
-          "technical_challenge": ""
-        },
-        "approach_and_process": {
-          "methodology": [
-            "CRISP-DM",
-            "Agile (Scrum/Kanban)",
-            "Lean Startup",
-            "Custom Workflow"
           ],
-          "key_steps": [],
-          "data_sources": [],
-          "technos": {
-            "programming_languages": [],
-            "libraries_frameworks": [],
-            "databases": [],
-            "cloud_platforms": [],
-            "visualization_tools": [],
-            "ml_platforms_mle_tools": []
-          }
+          "project_lifecycle": []
         },
-        "data_details": {
-          "data_volume": "",
-          "data_types": [],
-          "data_characteristics": []
-        },
-        "model_details": {
-          "model_type": "",
-          "algorithms_used": [],
-          "key_features_used": [],
-          "hyperparameters_tuned": [],
-          "architecture_details": ""
-        },
-        "solutions_and_deliverables": {
-          "produced": [
-            "Modèle entraîné",
-            "Notebooks Jupyter",
-            "Point de terminaison API",
-            "Tableau de bord",
-            "Document de recherche/Rapport",
-            "Preuve de concept"
-          ],
-          "visual_elements": {
-            "data_visualizations": [],
-            "model_performance_charts": [],
-            "architecture_diagrams": [],
-            "code_snippets": [],
-            "demo_screenshots_gifs": []
-          }
-        },
-        "results_and_impact": {
-          "key_metrics": [],
-          "quantitative_results": [],
-          "qualitative_impact": [],
-          "learnings": []
-        },
-        "challenges_encountered_and_solutions_provided": [],
-        "future_work_and_improvements": [],
+        "key_concepts": [
+          "Base de données",
+          "Architecture MVC"
+        ],
         "relevant_links": {
           "github_repo": "",
           "live_demo_link": "",
-          "article_blog_post": "",
-          "presentation_slides": ""
+          "video": {
+            "label": "Vidéo de démo",
+            "path": "",
+            "lang": ""
+          }
         },
-        "testimonials": []
+        "data_sources": []
+      }
+    ]
+  },
+  "ia_ml": {
+    "title": "IA et Données",
+    "list": [
+      {
+        "project_title": "Condor",
+        "entity": {
+          "name": "",
+          "link": ""
+        },
+        "team": "1",
+        "role_and_responsibilities": {
+          "roles": [
+            "Ingénieur de données",
+            "Ingénieur IA",
+            "Développeur FullStack"
+          ],
+          "key_tasks": [
+            "Collecte et extraction des données",
+            "Préparation et ingestion des données",
+            "API backend et recherche sémantique",
+            "Parcours d'orientation"
+          ]
+        },
+        "project_context": {
+          "overall_objective": "Application web full-stack d'aide à l'orientation scolaire et professionnelle. Elle permet d'explorer des établissements et des formations, de découvrir ses profils RIASEC et d'identifier des pistes de métiers adaptées à ses intérêts.",
+          "project_type": "Projet personnel"
+        },
+        "initial_problem_challenge": "",
+        "approach_and_process": {
+          "methodology": [],
+          "technos": [
+            {
+              "name": "Python",
+              "icon": "python"
+            },
+            {
+              "name": "FastAPI",
+              "icon": "fastapi"
+            },
+            {
+              "name": "Vue 3",
+              "icon": "vue"
+            },
+            {
+              "name": "TypeScript",
+              "icon": "typescript"
+            },
+            {
+              "name": "PostgreSQL/pgvector",
+              "icon": "postgre"
+            },
+            {
+              "name": "LangChain",
+              "icon": "langchain"
+            },
+            {
+              "name": "LangGraph",
+              "icon": "langgraph"
+            },
+            {
+              "name": "GeminiAI",
+              "icon": "gemini"
+            },
+            {
+              "name": "Tavily",
+              "icon": "tavily"
+            },
+            {
+              "name": "Ollama",
+              "icon": "ollama"
+            },
+            {
+              "name": "Pinia",
+              "icon": "pinia"
+            },
+            {
+              "name": "PrimeVue",
+              "icon": "primevue"
+            }
+          ],
+          "project_lifecycle": [
+            {
+              "order": 1,
+              "stage": "Collecte et extraction des données",
+              "description": "Collecter des informations sur les établissements et les métiers à partir de sources PDF et Web configurées. Des agents spécialisés extraient et structurent les informations, et la recherche Web sur les établissements peut être assistée par des LLM.",
+              "applied_concepts": [
+                "Extraction de PDF",
+                "Scraping et recherche Web",
+                "Sorties structurées de LLM",
+                "Workflows d'agents"
+              ],
+              "stack_and_tools": [
+                "Python",
+                "LangChain",
+                "LangGraph",
+                "Google Gemini",
+                "Tavily",
+                "pdfplumber"
+              ]
+            },
+            {
+              "order": 2,
+              "stage": "Préparation et ingestion des données",
+              "description": "Orchestrer les étapes d'extraction et de préparation, puis charger en base les données préparées sur les établissements, les métiers et le RIASEC afin qu'elles soient utilisées par l'application.",
+              "applied_concepts": [
+                "Pipelines ETL",
+                "Normalisation des données",
+                "Persistance relationnelle",
+                "Stockage de données vectorielles"
+              ],
+              "stack_and_tools": [
+                "Python",
+                "PostgreSQL",
+                "SQLModel",
+                "pgvector"
+              ]
+            },
+            {
+              "order": 3,
+              "stage": "API backend et recherche sémantique",
+              "description": "Fournir des endpoints pour la recherche sémantique d'établissements, l'accès à leurs informations, le questionnaire RIASEC, les profils de personnalité et les suggestions de métiers associées. Les embeddings sont générés avec le modèle Ollama configuré.",
+              "applied_concepts": [
+                "Développement d'API REST",
+                "Recherche sémantique",
+                "Embeddings",
+                "Intégration d'API"
+              ],
+              "stack_and_tools": [
+                "FastAPI",
+                "Python",
+                "PostgreSQL",
+                "pgvector",
+                "Ollama",
+                "nomic-embed-text-v2-moe"
+              ]
+            },
+            {
+              "order": 4,
+              "stage": "Parcours d'orientation",
+              "description": "Proposer une interface Web où rechercher des établissements avec une description libre, consulter les informations disponibles, répondre au test RIASEC et explorer des métiers suggérés à partir des profils dominants.",
+              "applied_concepts": [
+                "Architecture d'application full-stack",
+                "Gestion d'état frontend",
+                "Interface pilotée par API",
+                "Parcours utilisateur guidé"
+              ],
+              "stack_and_tools": [
+                "Vue 3",
+                "TypeScript",
+                "Vite",
+                "Vue Router",
+                "Pinia",
+                "PrimeVue"
+              ]
+            }
+          ]
+        },
+        "key_concepts": [
+          "Recherche sémantique",
+          "Extraction de données assistée par LLM",
+          "Pipelines de données PDF et Web"
+        ],
+        "relevant_links": {
+          "github_repo": "",
+          "gitlab_repo": "https://gitlab.com/rabearisoabex/condor",
+          "live_demo_link": "",
+          "video": {
+            "label": "Vidéo de démo",
+            "path": "src/assets/video/demo_condor.mp4",
+            "lang": "Vidéo de démonstration en Français."
+          }
+        },
+        "data_sources": [
+          {
+            "id": "1",
+            "name": "Liste des universités de Madagascar",
+            "organization": "MESUPRES",
+            "platform": "",
+            "url": "https://www.mesupres.gov.mg/assets/front/documents/documents/habilitations/liste_des_institutions_superieures_mise_a_jour_aout_2022.pdf",
+            "format": "pdf",
+            "description": "Liste des universités de Madagascar (2022)",
+            "scope": ""
+          },
+          {
+            "id": "2",
+            "name": "RIASEC TEST",
+            "organization": "",
+            "platform": "",
+            "url": "https://pppdutgea.wordpress.com/wp-content/uploads/2015/10/le-test-riasec.pdf",
+            "format": "pdf",
+            "description": "Questionnaire utilisé pour le test de personnalité",
+            "scope": ""
+          },
+          {
+            "id": "3",
+            "name": "Job list",
+            "organization": "",
+            "platform": "",
+            "url": "https://moodle.luniversitenumerique.fr/pluginfile.php/19864/mod_folder/content/0/Ressource_Mes%20centres%20d_int%C3%A9r%C3%AAts_Livret%20les%20m%C3%A9tiers%20RIASEC%20(2021).pdf?forcedownload=1",
+            "format": "pdf",
+            "description": "Liste de travail basée sur le profil RIASEC",
+            "scope": ""
+          }
+        ]
+      },
+      {
+        "project_title": "ClaReFi (Classification des critiques de films)",
+        "entity": {
+          "name": "",
+          "link": ""
+        },
+        "team": "1",
+        "role_and_responsibilities": {
+          "roles": [
+            "Ingénieur de données",
+            "Data scientist",
+            "Développeur FullStack",
+            "DevOps"
+          ],
+          "key_tasks": [
+            "Ingestion",
+            "Génération de caractéristiques",
+            "Entraînement",
+            "Inférence",
+            "Frontend",
+            "Déploiement et monitoring"
+          ]
+        },
+        "project_context": {
+          "overall_objective": "Application IA full-stack qui classe des critiques de films en positif ou négatif avec NLP, backend FastAPI et frontend Vue.js.",
+          "project_type": "Projet personnel"
+        },
+        "initial_problem_challenge": "",
+        "approach_and_process": {
+          "methodology": [],
+          "technos": [
+            {
+              "name": "Python",
+              "icon": "python"
+            },
+            {
+              "name": "FastAPI",
+              "icon": "fastapi"
+            },
+            {
+              "name": "Vue.js",
+              "icon": "vue"
+            },
+            {
+              "name": "TypeScript",
+              "icon": "typescript"
+            },
+            {
+              "name": "Docker",
+              "icon": "docker"
+            },
+            {
+              "name": "GitHub",
+              "icon": "github"
+            },
+            {
+              "name": "GitHub Actions",
+              "icon": "gaction"
+            },
+            {
+              "name": "Prometheus",
+              "icon": "prometheus"
+            },
+            {
+              "name": "scikit-learn",
+              "icon": "sklearn"
+            },
+            {
+              "name": "Hugging Face Datasets",
+              "icon": "hugface"
+            }
+          ],
+          "project_lifecycle": [
+            {
+              "order": 1,
+              "stage": "Ingestion",
+              "description": "Télécharger des critiques de films étiquetées depuis Hugging Face et les stocker pour le prétraitement.",
+              "applied_concepts": [
+                "Ingénierie des données"
+              ],
+              "stack_and_tools": [
+                "Python 3.12+",
+                "datasets",
+                "Hugging Face Datasets",
+                "YAML"
+              ]
+            },
+            {
+              "order": 2,
+              "stage": "Génération de caractéristiques",
+              "description": "Convertir le texte des critiques en caractéristiques numériques avec une représentation sac de mots et une tokenisation n-gram.",
+              "applied_concepts": [
+                "Extraction de caractéristiques NLP",
+                "Vectorisation de texte",
+                "Pipelines reproductibles"
+              ],
+              "stack_and_tools": [
+                "scikit-learn",
+                "CountVectorizer"
+              ]
+            },
+            {
+              "order": 3,
+              "stage": "Entraînement",
+              "description": "Entraîner et optimiser un modèle de classification de sentiment avec GridSearchCV, puis exporter le meilleur artefact.",
+              "applied_concepts": [
+                "Optimisation des hyperparamètres",
+                "Validation croisée",
+                "Versioning de modèle"
+              ],
+              "stack_and_tools": [
+                "scikit-learn",
+                "GridSearchCV",
+                "joblib",
+                "pytest"
+              ]
+            },
+            {
+              "order": 4,
+              "stage": "Inférence",
+              "description": "Fournir des prédictions de sentiment via un endpoint FastAPI et exposer des métriques d’exécution.",
+              "applied_concepts": [
+                "Développement d'API",
+                "Observabilité",
+                "Journalisation structurée"
+              ],
+              "stack_and_tools": [
+                "FastAPI",
+                "Uvicorn",
+                "prometheus-client",
+                "pydantic-settings"
+              ]
+            },
+            {
+              "order": 5,
+              "stage": "Frontend",
+              "description": "Construire une interface utilisateur pour soumettre des critiques de films et afficher les résultats de sentiment.",
+              "applied_concepts": [
+                "Architecture frontend",
+                "Sécurité des types",
+                "Expérience utilisateur"
+              ],
+              "stack_and_tools": [
+                "Vue.js",
+                "TypeScript",
+                "Vite",
+                "PrimeVue"
+              ]
+            },
+            {
+              "order": 6,
+              "stage": "Déploiement et monitoring",
+              "description": "Conteneuriser l’application, orchestrer les services avec Docker Compose et surveiller les métriques.",
+              "applied_concepts": [
+                "Conteneurisation",
+                "Configuration Dev/Prod",
+                "Monitoring",
+                "Automatisation CI/CD"
+              ],
+              "stack_and_tools": [
+                "Docker",
+                "Docker Compose",
+                "Nginx",
+                "Prometheus",
+                "Grafana",
+                "GitHub Actions"
+              ]
+            }
+          ]
+        },
+        "key_concepts": [
+          "Traitement du langage naturel",
+          "Analyse de sentiment",
+          "Entraînement de modèle",
+          "Développement d'API",
+          "Intégration frontend",
+          "Conteneurisation",
+          "Monitoring"
+        ],
+        "relevant_links": {
+          "github_repo": "https://github.com/RandrianantenainaBearisoa/clarefi.git",
+          "gitlab_repo": "",
+          "live_demo_link": "https://clarefi-demo.netlify.app/",
+          "video": {
+            "label": "Vidéo de démo",
+            "path": "src/assets/video/demo_clarefi.mp4",
+            "lang": "Vidéo de démonstration en Français."
+          }
+        },
+        "data_sources": [
+          {
+            "id": 1,
+            "name": "tblard/allocine",
+            "organization": "Hugging Face",
+            "platform": "Hugging Face Datasets",
+            "url": "https://huggingface.co/datasets/tblard/allocine",
+            "format": "dataset",
+            "description": "Jeu de données de critiques de films en français avec étiquettes de sentiment pour une classification binaire.",
+            "scope": "Global"
+          }
+        ]
+      },
+      {
+        "project_title": "Prédiction du prix du riz",
+        "entity": {
+          "name": "",
+          "link": ""
+        },
+        "team": "1",
+        "role_and_responsibilities": {
+          "roles": [
+            "Ingénieur de données",
+            "Data scientist",
+            "Ingénieur ML",
+            "Développeur FullStack",
+            "DevOps"
+          ],
+          "key_tasks": [
+            "Ingestion",
+            "Nettoyage",
+            "Feature Engineering",
+            "Entraînement",
+            "Inférence",
+            "Frontend",
+            "Déploiement et surveillance"
+          ]
+        },
+        "project_context": {
+          "overall_objective": "Un projet de machine learning qui prédit les prix du riz à Madagascar en se basant sur des données historiques et divers facteurs tels que les conditions météorologiques et les taux de change entre l'Ariary malgache et le dollar américain.",
+          "project_type": "Projet personnel"
+        },
+        "initial_problem_challenge": "",
+        "approach_and_process": {
+          "methodology": [],
+          "technos": [
+            {
+              "name": "Python",
+              "icon": "python"
+            },
+            {
+              "name": "FastAPI",
+              "icon": "fastapi"
+            },
+            {
+              "name": "Jupyter Notebook",
+              "icon": "jupyter"
+            },
+            {
+              "name": "Vue.js",
+              "icon": "vue"
+            },
+            {
+              "name": "Docker",
+              "icon": "docker"
+            },
+            {
+              "name": "GitHub",
+              "icon": "github"
+            },
+            {
+              "name": "Mlflow",
+              "icon": "mlflow"
+            },
+            {
+              "name": "Pandas",
+              "icon": "pandas"
+            },
+            {
+              "name": "Numpy",
+              "icon": "numpy"
+            }
+          ],
+          "project_lifecycle": [
+            {
+              "order": 1,
+              "stage": "Ingestion",
+              "description": "Récupérer les données brutes à partir de sources externes",
+              "applied_concepts": [
+                "Conception pilotée par configuration",
+                "Pattern de récupération de données"
+              ],
+              "stack_and_tools": [
+                "Python 3.12+",
+                "yfinance",
+                "geopy",
+                "boto3",
+                "pandas"
+              ]
+            },
+            {
+              "order": 2,
+              "stage": "Nettoyage",
+              "description": "Valider et traiter les données, gérer les valeurs manquantes et les valeurs aberrantes",
+              "applied_concepts": [
+                "Validation des données",
+                "Gestion des erreurs",
+                "Hints de type",
+                "Conception pilotée par configuration"
+              ],
+              "stack_and_tools": [
+                "pandas",
+                "numpy",
+                "statsmodels",
+                "SQLAlchemy",
+                "psycopg2-binary"
+              ]
+            },
+            {
+              "order": 3,
+              "stage": "Feature Engineering",
+              "description": "Transformer et optimiser les features pour l'entraînement du modèle",
+              "applied_concepts": [
+                "Hints de type",
+                "Conception pilotée par configuration",
+                "Pipelines reproductibles"
+              ],
+              "stack_and_tools": [
+                "scikit-learn",
+                "pandas",
+                "numpy",
+                "matplotlib",
+                "seaborn"
+              ]
+            },
+            {
+              "order": 4,
+              "stage": "Entraînement",
+              "description": "Entraîner le modèle avec réglage des hyperparamètres et exporter les artefacts",
+              "applied_concepts": [
+                "MLOps",
+                "Versionnage du modèle",
+                "Pipelines reproductibles",
+                "Stockage d'artefacts S3",
+                "Séparation des responsabilités"
+              ],
+              "stack_and_tools": [
+                "scikit-learn",
+                "MLflow",
+                "pytest",
+                "boto3",
+                "ruff"
+              ]
+            },
+            {
+              "order": 5,
+              "stage": "Inférence",
+              "description": "Charger le modèle et fournir des prédictions via une API",
+              "applied_concepts": [
+                "Séparation des responsabilités",
+                "Architecture en couches",
+                "Hints de type",
+                "Gestion des erreurs",
+                "Journalisation structurée",
+                "Prêt pour les microservices"
+              ],
+              "stack_and_tools": [
+                "FastAPI",
+                "Uvicorn",
+                "Pydantic-settings",
+                "scikit-learn",
+                "MLflow"
+              ]
+            },
+            {
+              "order": 6,
+              "stage": "Frontend",
+              "description": "Interface utilisateur pour les prédictions et l'affichage des features",
+              "applied_concepts": [
+                "Hints de type",
+                "Séparation des responsabilités",
+                "Prêt pour les microservices"
+              ],
+              "stack_and_tools": [
+                "Vue.js",
+                "TypeScript",
+                "Vue Router",
+                "Vite",
+                "Sass",
+                "Node.js",
+                "npm"
+              ]
+            },
+            {
+              "order": 7,
+              "stage": "Déploiement et surveillance",
+              "description": "Containeriser, orchestrer et surveiller l'application",
+              "applied_concepts": [
+                "Containerisation",
+                "Configurations Dev/Prod",
+                "Pile d'observabilité",
+                "Journalisation centralisée",
+                "Collecte de métriques"
+              ],
+              "stack_and_tools": [
+                "Docker",
+                "Docker Compose",
+                "Nginx",
+                "Gunicorn",
+                "Prometheus",
+                "Grafana",
+                "Loki",
+                "Promtail",
+                "Nginx Prometheus Exporter"
+              ]
+            }
+          ]
+        },
+        "key_concepts": [
+          "Ingénierie des données",
+          "Engineering des features",
+          "Entraînement du modèle",
+          "Évaluation du modèle",
+          "Déploiement du modèle",
+          "Monitoring"
+        ],
+        "relevant_links": {
+          "github_repo": "https://github.com/RandrianantenainaBearisoa/rice_price_predict.git",
+          "gitlab_repo": "",
+          "live_demo_link": "",
+          "video": {
+            "label": "Vidéo de démo",
+            "path": "src/assets/video/demo_rice_price_pred.mp4",
+            "lang": "Vidéo de démonstration en Anglais."
+          }
+        },
+        "data_sources": [
+          {
+            "id": 1,
+            "name": "mdg_food_price.csv",
+            "organization": "Programme alimentaire mondial (PAM)",
+            "platform": "HumData",
+            "url": "https://data.humdata.org/dataset/86173d84-f1b5-4470-afb9-5ee56747f4cd/resource/8fc13d1e-abac-4262-8caa-edab795661e6/download/wfp_food_prices_mdg.csv",
+            "format": "csv",
+            "description": "Données sur les prix des aliments à Madagascar",
+            "region": "Madagascar"
+          },
+          {
+            "id": 2,
+            "name": "global_fuel_price.xlsx",
+            "organization": "Banque mondiale",
+            "platform": "Catalogue de données de la Banque mondiale",
+            "url": "https://datacatalogfiles.worldbank.org/ddh-published/0066829/DR0095290/Global_Fuel_Prices_Database.xlsx",
+            "format": "xlsx",
+            "description": "Base de données mondiale des prix des carburants",
+            "scope": "Global"
+          },
+          {
+            "id": 3,
+            "name": "worldbank_commodity_price.xlsx",
+            "organization": "Banque mondiale",
+            "platform": "Documents de la Banque mondiale",
+            "url": "https://thedocs.worldbank.org/en/doc/74e8be41ceb20fa0da750cda2f6b9e4e-0050012026/related/CMO-Historical-Data-Monthly.xlsx",
+            "format": "xlsx",
+            "description": "Prix des matières premières - données historiques mensuelles",
+            "scope": "Global"
+          },
+          {
+            "id": 4,
+            "name": "Yahoo Finance API",
+            "library": "yfinance",
+            "type": "Library/API",
+            "description": "Données des marchés financiers, prix des actions et indicateurs économiques",
+            "scope": "Global"
+          },
+          {
+            "id": 5,
+            "name": "Données de géolocalisation",
+            "library": "geopy",
+            "type": "Library/API",
+            "description": "Coordonnées géographiques et données basées sur la localisation",
+            "scope": "Global"
+          }
+        ]
       }
     ]
   }

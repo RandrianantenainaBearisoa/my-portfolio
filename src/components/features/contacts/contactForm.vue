@@ -1,7 +1,11 @@
 <script lang="ts" setup>
-import Toast from 'primevue/toast';
-import i18n from "@/plugins/i18n";
-import { EMAIL_JS_PUBLIC_KEY, EMAIL_JS_SERVICE_ID, EMAIL_JS_TEMPLATE_ID } from '@/static/constants/constants';
+import Toast from 'primevue/toast'
+import i18n from '@/plugins/i18n'
+import {
+  EMAIL_JS_PUBLIC_KEY,
+  EMAIL_JS_SERVICE_ID,
+  EMAIL_JS_TEMPLATE_ID,
+} from '@/static/constants/constants'
 </script>
 
 <template>
@@ -11,22 +15,28 @@ import { EMAIL_JS_PUBLIC_KEY, EMAIL_JS_SERVICE_ID, EMAIL_JS_TEMPLATE_ID } from '
       <div class="input-field">
         <PrimevueFloatLabel variant="in">
           <PrimevueInputText id="in_label_name" name="name" v-model="name" />
-          <label for="in_label_name">{{ i18n.global.t("labels.contact.name") }}</label>
+          <label for="in_label_name">{{ i18n.global.t('labels.contact.name') }}</label>
         </PrimevueFloatLabel>
       </div>
 
       <div class="input-field">
         <PrimevueFloatLabel variant="in">
           <PrimevueInputText id="in_label_email" name="email" v-model="email" />
-          <label for="in_label_email">{{ i18n.global.t("labels.contact.email") }}</label>
+          <label for="in_label_email">{{ i18n.global.t('labels.contact.email') }}</label>
         </PrimevueFloatLabel>
       </div>
 
       <div class="input-field">
         <PrimevueFloatLabel variant="in">
-          <PrimevueTextarea id="in_label_mess" rows="5" cols="40" style="resize: none" name="message"
-            v-model="message" />
-          <label for="in_label_mess">{{ i18n.global.t("labels.contact.message") }}</label>
+          <PrimevueTextarea
+            id="in_label_mess"
+            rows="5"
+            cols="35"
+            style="resize: none"
+            name="message"
+            v-model="message"
+          />
+          <label for="in_label_mess">{{ i18n.global.t('labels.contact.message') }}</label>
         </PrimevueFloatLabel>
       </div>
 
@@ -38,8 +48,8 @@ import { EMAIL_JS_PUBLIC_KEY, EMAIL_JS_SERVICE_ID, EMAIL_JS_TEMPLATE_ID } from '
 </template>
 
 <script lang="ts">
-import emailjs from '@emailjs/browser';
-import { useToast } from "primevue/usetoast";
+import emailjs from '@emailjs/browser'
+import { useToast } from 'primevue/usetoast'
 
 export default {
   data() {
@@ -48,18 +58,18 @@ export default {
       name: '',
       email: '',
       message: '',
-    };
+    }
   },
   methods: {
     formValidate() {
       if (this.name === '' || this.email === '' || this.message === '') {
-        return false;
+        return false
       }
 
-      return true;
+      return true
     },
     sendEmail(event: any) {
-      const send_msg_form = event.target;
+      const send_msg_form = event.target
       if (this.formValidate()) {
         emailjs
           .sendForm(EMAIL_JS_SERVICE_ID, EMAIL_JS_TEMPLATE_ID, send_msg_form, {
@@ -67,41 +77,67 @@ export default {
           })
           .then(
             () => {
-              this.toast.add({ severity: 'success', summary: i18n.global.t("labels.message.contact.success.summary"), detail: i18n.global.t("labels.message.contact.success.detail"), life: 3000 });
-              this.name = '';
-              this.email = '';
-              this.message = '';
+              this.toast.add({
+                severity: 'success',
+                summary: i18n.global.t('labels.message.contact.success.summary'),
+                detail: i18n.global.t('labels.message.contact.success.detail'),
+                life: 3000,
+              })
+              this.name = ''
+              this.email = ''
+              this.message = ''
             },
             (error) => {
-              console.log('FAILED...', error.text);
-              this.toast.add({ severity: 'error', summary: i18n.global.t("labels.message.contact.error.summary"), detail: i18n.global.t("labels.message.contact.error.detail"), life: 3000 });
+              console.log('FAILED...', error.text)
+              this.toast.add({
+                severity: 'error',
+                summary: i18n.global.t('labels.message.contact.error.summary'),
+                detail: i18n.global.t('labels.message.contact.error.detail'),
+                life: 3000,
+              })
             },
-          );
+          )
       } else {
-        this.toast.add({ severity: 'warn', summary: i18n.global.t("labels.message.contact.fill_all.summary"), detail: i18n.global.t("labels.message.contact.fill_all.detail"), life: 3000 });
+        this.toast.add({
+          severity: 'warn',
+          summary: i18n.global.t('labels.message.contact.fill_all.summary'),
+          detail: i18n.global.t('labels.message.contact.fill_all.detail'),
+          life: 3000,
+        })
       }
     },
   },
-};
+}
 </script>
 
 <style lang="scss" scoped>
 .contact-form {
   margin: auto;
+  width: 400px !important;
+  height: 450px !important;
 
-  --p-fieldset-content-padding: 10px;
-  --p-fieldset-background: none;
-  --p-fieldset-legend-background: none;
-  --p-fieldset-color: #ffffff;
-  --p-fieldset-legend-border-color: #ffffff;
-  --p-fieldset-legend-hover-color: #ffffff;
+  .p-fieldset {
+    padding: 0px;
 
-  .input-field {
-    margin: 10px;
+    .p-fieldset-content {
+      width: 100px !important;
+    }
   }
 
-  .p-inputtext {
-    width: 100%;
+  // --p-fieldset-content-padding: 10px;
+  // --p-fieldset-background: none;
+  // --p-fieldset-legend-background: none;
+  // --p-fieldset-color: #ffffff;
+  // --p-fieldset-legend-border-color: #ffffff;
+  // --p-fieldset-legend-hover-color: #ffffff;
+
+  .input-field {
+    margin: 0px 0px 5px;
+    width: 355px;
+
+    .p-inputtext {
+      width: 100%;
+    }
   }
 }
 </style>

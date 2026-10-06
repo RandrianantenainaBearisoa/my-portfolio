@@ -39,8 +39,9 @@ export default {
 .cards-container {
   width: 100%;
   display: flex;
-  justify-content: space-around;
   flex-direction: column;
+  gap: 10px;
+  justify-content: space-around;
 
   .card {
     width: 100%;
