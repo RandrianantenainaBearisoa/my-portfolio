@@ -13,7 +13,7 @@ import { timelineLayout } from "@/components/layouts";
 export default {
   name: "personal-journey",
   mounted() {
-    console.log("");
+    
   },
   computed: {
     timelineDatas() {
