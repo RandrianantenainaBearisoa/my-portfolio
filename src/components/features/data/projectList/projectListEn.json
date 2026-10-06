@@ -460,7 +460,7 @@
           "live_demo_link": "",
           "video": {
             "label": "Demo video",
-            "path": "src/assets/video/demo_condor.mp4",
+            "path": "demo_condor",
             "lang": "This demo video is in French."
           }
         },
@@ -682,7 +682,7 @@
           "live_demo_link": "https://clarefi-demo.netlify.app/",
           "video": {
             "label": "Demo video",
-            "path": "src/assets/video/demo_clarefi.mp4",
+            "path": "demo_clarefi",
             "lang": "This demo video is in French."
           }
         },
@@ -918,7 +918,7 @@
           "live_demo_link": "",
           "video": {
             "label": "Demo video",
-            "path": "src/assets/video/demo_rice_price_pred.mp4",
+            "path": "demo_rice_price_pred",
             "lang": "This demo video is in English."
           }
         },
