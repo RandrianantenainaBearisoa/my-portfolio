@@ -3,7 +3,7 @@ export interface projectType {
     title: string,
     list: []
   },
-  data_science: {
+  ia_ml: {
     title: string,
     list: []
   },
